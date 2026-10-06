@@ -23,7 +23,7 @@
 
 **Los clips de iPhone están en HDR (HLG, BT.2020, 10 bits).** Si se suben así o se convierten sin cuidado, Facebook los muestra lavados o con rojos "neón". El proyecto los convierte a SDR (BT.709) con mapeo de tonos y compresión suave de gama, para que el atardecer se vea natural.
 
-> **Dato a favor:** el atardecer de la playa se grabó un 2 de enero, en pleno invierno. Por favor confirma que es la playa de Bucerías: se etiqueta así en el video.
+> **Dato a favor:** el atardecer de la playa se grabó un 2 de enero, en pleno invierno, y la propietaria confirmó que es la playa de Bucerías.
 
 ---
 
@@ -46,7 +46,7 @@
 1. **"Pool nearby" cambió a "Shared pool & gardens".** Las fotos muestran que la alberca y los jardines son del condominio. "Nearby" la hacía sonar externa y restaba valor. Si prefieres el texto original, se cambia en una línea del JSON.
 2. **Versión B: no repetir la misma toma.** En B, de 0 a 6 s hay dos tomas seguidas de terraza. Por eso la apertura usa el clip `IMG_6032` (mesa de día con cortinas en movimiento) y 3–6 s usa el plano amplio de la terraza con el ventanal.
 3. **Electricidad sin tope (confirmado).** "Electricity, water & Wi-Fi included" se queda tal cual. Es un diferenciador real: en México la luz es cara cuando se usa el A/C, y muchos anuncios la cobran aparte.
-4. **El precio no va en el video, pero sí en el copy.** Para estancias largas, el precio es el primer filtro del cliente. Un "From $X USD/month" en el texto del anuncio reduce las conversaciones que no llegan a nada y sube la proporción de mensajes con fechas reales. El video queda sin precio para que siga sirviendo si la tarifa cambia.
+4. **El precio no va en el video, pero sí en el copy: "$55,000 MXN/month (≈ US$3,000 · CA$4,300)".** Para estancias largas, el precio es el primer filtro del cliente: reduce las conversaciones que no llegan a nada y sube la proporción de mensajes con fechas reales. **"MXN" va siempre pegado al número**, porque "$55,000" a secas se lee como dólares y espanta al cliente. El video queda sin precio para que siga sirviendo si la tarifa cambia.
 5. **"Condo fees included".** Para un turista estadounidense el término natural es *HOA fees*; para un canadiense, *condo fees*. Se mantiene "Condo fees included", que ambos entienden. En el copy largo se aclara como "Condo (HOA) fees included".
 6. **La llamada a la acción ya es correcta.** "Message us for dates & rates" funciona tanto con Messenger como con WhatsApp y pide justo lo que buscamos: fechas.
 7. **"Monthly stays" cambió a "3–4 month stays".** Con una estancia mínima de 3 meses, "Monthly stays" atraería a quien busca 1 o 2 meses y llenaría el chat de consultas que no cierran. "3–4 month stays" filtra desde el video, que es justo el objetivo del brief: consultas con duración real.
@@ -90,7 +90,7 @@ Consecuencias prácticas:
 | Idioma | Inglés. Agrega un conjunto en francés para Quebec solo si alguien puede atender en francés (copy en [03-copy-anuncio.md](03-copy-anuncio.md)) |
 | Ubicaciones del anuncio | Reels y Stories de Facebook e Instagram (9:16). Si se quiere aparecer en el feed, conviene una versión 4:5 adicional |
 | Prueba A/B | Usa la herramienta *A/B test* de Meta, o pon cada versión en su propio conjunto de anuncios, idéntico en todo lo demás y con el mismo presupuesto. **No las pongas juntas en un mismo conjunto**: ahí Meta no reparte el presupuesto por igual, sino que concentra la entrega en la que predice mejor, y la comparación de aperturas deja de ser justa |
-| Presupuesto de prueba | Orientativo: USD 10–15 diarios por versión durante 7 días. Después se apaga la perdedora y el presupuesto pasa a la ganadora |
+| Presupuesto de prueba | Orientativo: USD 10–15 diarios por versión (≈ MXN $180–270) durante 7 días. Después se apaga la perdedora y el presupuesto pasa a la ganadora |
 | Calendario | **Lanzar cuanto antes.** Para enero–abril, muchos *snowbirds* deciden entre octubre y diciembre, antes de las fiestas |
 
 ### 4.3 Métricas para decidir

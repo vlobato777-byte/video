@@ -21,6 +21,16 @@ El archivo preliminar no tiene audio, y el render actual lleva una pista de audi
 2. **Bibliotecas de pago** (Artlist, Epidemic Sound, Musicbed, Soundstripe). Verifica que **tu plan cubra anuncios pagados**: en general, los planes personales o "creator" no los cubren.
 3. **No usar** las canciones "en tendencia" de la biblioteca de Reels: son para uso personal, no para anuncios de empresa.
 
+## Decisión: Meta Sound Collection
+
+**Paso a paso para elegir la pista:**
+1. Entra a **Meta Business Suite → Todas las herramientas → Sound Collection** con la cuenta de la página.
+2. Filtra por **Música** y busca con los términos de arriba (por ejemplo, `acoustic` o `bossa`). Si hay filtros de género y estado de ánimo, usa *Acoustic / Latin / Ambient* y *Calm / Happy*.
+3. Escucha los primeros 5 segundos de cada opción: deben entrar suaves y sin voz.
+4. Descarga 2 o 3 candidatas en MP3 y **adjúntalas en este chat**. Las mezclo en el video, elijo con qué sección arranca cada una para que el cambio a la playa caiga en el compás y te mando las versiones finales para que escojas.
+
+**Opción rápida (sin re-render):** al crear el anuncio en Ads Manager, en la sección de creativo, marca **Agregar música** y elige una pista de Sound Collection. Funciona, pero la mezcla y el punto de inicio no se pueden controlar.
+
 ## Cómo agregarla al proyecto
 
 1. Guarda el archivo (WAV o MP3 de buena calidad) en `media/music/`, por ejemplo `media/music/pista.wav`.

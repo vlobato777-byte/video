@@ -1,6 +1,8 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Lo que falta en el copy es la **tarifa mensual**, marcada como `$[X]`, y el depósito y la forma de pago, marcados como `[Deposit / payment terms]` en la respuesta *Tarifa*. No envíes esa respuesta hasta reemplazar ambos. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. La tarifa de limpieza sigue pendiente, pero las respuestas dicen "pregúntanos la tarifa" en lugar de dar una cifra. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
+
+> **Escribe siempre "MXN" pegado al precio.** Un canadiense o estadounidense que lea "$55,000" piensa en dólares y descarta el anuncio. Por eso el copy usa `$55,000 MXN` y agrega el equivalente aproximado (≈ US$3,000 · CA$4,300, al tipo de cambio del 6 de octubre de 2026: USD/MXN ≈ 18.2, CAD/MXN ≈ 12.7). **Si el peso se mueve más de ~5 %, actualiza los equivalentes.**
 
 **Datos confirmados con la propietaria** (6 de octubre de 2026):
 
@@ -13,6 +15,12 @@ Los textos para el público van en inglés (Canadá y Estados Unidos) y se agreg
 | También incluidos | Agua, Wi-Fi y cuota de mantenimiento del condominio |
 | Distancias (en auto, verificadas) | Playa de Bucerías, Zona Dorada: 11 min / 5.7 km · Fibba Beach: 15 min / 7.6 km · Aeropuerto PVR: 25 min / 13.4 km · Supermercados cercanos: La Comer, Mega Soriana y Walmart |
 | Canales | **WhatsApp y Messenger** |
+| Tarifa | **$55,000 MXN por mes** (≈ US$3,000 · CA$4,300) |
+| Depósito | **1 mes** ($55,000 MXN) |
+| Formas de pago | **Wise** (transferencia) o **efectivo** |
+| Limpieza | Servicio disponible; **tarifa pendiente** |
+| Playa del video (`IMG_3349`) | **Bucerías**, confirmado |
+| Fotos editadas con Gemini | Solo se ajustó la luz: se pueden usar |
 
 > **Regla de oro:** el texto no debe prometer nada que el video o la realidad no respalden. Nada de "all-inclusive", "beachfront", "ocean view", "walk to the beach", "heated pool", "gym" ni "step-free".
 
@@ -34,7 +42,8 @@ January–April 2027 · 3-month minimum stay, with the option to add a 4th month
 ✔ Parking · gated community with security booth
 🚗 11 min drive to Bucerías beach · 25 min to Puerto Vallarta airport (PVR) · supermarkets nearby
 
-From $[X] USD/month
+💲 $55,000 MXN/month (≈ US$3,000 · CA$4,300)
+1-month deposit · pay easily by Wise transfer or in cash
 
 Message us your dates and length of stay. We'll confirm availability and rates.
 ```
@@ -47,7 +56,7 @@ Your winter could look like this. 🌴
 Private terrace · 2 bed / 2 bath · ground floor · Bucerías, Mexico.
 Electricity, water, Wi-Fi & condo fees included.
 
-January–April 2027 · stays of 3 to 4 months.
+January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000).
 👉 Message us your dates for availability & rates.
 ```
 
@@ -58,6 +67,7 @@ January–April 2027 · stays of 3 to 4 months.
 | 1 | **Winter 2027 in Bucerías, Mexico** | Principal |
 | 2 | Your winter home in Bucerías | Alternativa emocional |
 | 3 | Jan–Apr 2027 · 3–4 month stays | Alternativa informativa (filtra mejor por duración) |
+| 4 | Winter 2027 · $55,000 MXN/month | Alternativa con precio (filtra mejor por presupuesto) |
 
 **Descripción:** `Electricity, water, Wi-Fi & condo fees included`
 **Botón:** *Send message*. Con WhatsApp y Messenger activos, Meta muestra a cada persona la app que más usa. Coincide con el "Message us" del video.
@@ -82,7 +92,8 @@ De janvier à avril 2027 · séjour minimum de 3 mois, avec possibilité de prol
 ✔ Stationnement · complexe à accès contrôlé avec guérite
 🚗 À 11 min en voiture de la plage de Bucerías · à 25 min de l'aéroport de Puerto Vallarta (PVR) · supermarchés à proximité
 
-À partir de [X] $ US/mois
+💲 55 000 $ MXN par mois (environ 3 000 $ US · 4 300 $ CA)
+Dépôt d'un mois · paiement par virement Wise ou en espèces
 
 Écrivez-nous vos dates et la durée de votre séjour pour connaître la disponibilité et les tarifs.
 ```
@@ -145,7 +156,10 @@ Condo Lua is in a gated community in Bucerías, Riviera Nayarit. By car it's abo
 
 *Tarifa*
 ```
-For January–April 2027 the rate is $[X] USD/month (3-month minimum, optional 4th month). [Deposit / payment terms]. Would you like us to hold your dates?
+For January–April 2027 the rate is $55,000 MXN per month (about US$3,000 / CA$4,300 at today's exchange rate), with a 3-month minimum and the option to add a 4th month (subject to availability).
+A one-month deposit ($55,000 MXN) is required. You can pay by Wise transfer, an easy way to pay from Canada or the US, or in cash.
+Cleaning service is available for an additional fee; just ask us for the rate.
+Would you like us to hold your dates?
 ```
 
 ---

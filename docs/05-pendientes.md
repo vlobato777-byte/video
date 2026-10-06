@@ -2,7 +2,7 @@
 
 ## A. Material que falta para la versión final
 
-El render actual sirve como **versión de revisión** (todavía no para la pauta). Muchas tomas salen de cuadros del video de WhatsApp (`media/source/borrador_whatsapp/`), que tienen menor calidad. Para la exportación final hay que reemplazarlas por las **fotos originales**.
+El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.md](04-musica.md)). Ya se confirmaron la playa de Bucerías y las fotos editadas, que solo tienen ajuste de luz. Muchas tomas salen de cuadros del video de WhatsApp (`media/source/borrador_whatsapp/`), que tienen menor calidad. Para la exportación final hay que reemplazarlas por las **fotos originales**.
 
 | Toma | Estado | Qué falta (archivo original) |
 |---|---|---|
@@ -22,14 +22,9 @@ El render actual sirve como **versión de revisión** (todavía no para la pauta
 | 09 Cierre | Cuadro del borrador | ⏳ Terraza de noche (copas, vela, luces) |
 | 01B Terraza (versión B) | ✅ `IMG_6032.MOV` original | — |
 
-**Faltan 8 archivos para la versión 35 s definitiva** (marcados con ⏳). La versión actual **todavía no se debe pautar**. Antes hay que (1) confirmar que el atardecer de `IMG_3349` es en la playa de Bucerías (B2 #7); si no lo es, cambiar o quitar la etiqueta "Bucerías beach"; y (2) enviar los originales sin editar del baño (04c) y de la terraza de noche (09), o confirmar que la edición solo ajustó la luz. Con los originales, además, gana nitidez.
+**Opcional: 8 archivos originales** (marcados con ⏳) para ganar nitidez. Estas tomas usan cuadros del video de WhatsApp: se ven bien en el teléfono, pero los originales dan una imagen más limpia. No bloquean la pauta.
 
-> ⚠️ **Fotos con marca de IA:** dos de las imágenes que pegaste en el chat (la terraza de noche con copas y vela, y el baño con regadera) tienen en la esquina inferior derecha el destello de cuatro puntas que agrega Google Gemini al editar. El brief pide no añadir nada con IA. Envía la **foto original sin editar** o confirma que la edición solo ajustó la luz, sin agregar ni quitar elementos.
-
-**Cómo enviarlos:** adjunta los archivos en el chat (como hiciste con `IMG_5837.HEIC` y los `.MOV`). Las imágenes **pegadas** dentro del mensaje no llegan como archivo y no se pueden usar en el video. Los HEIC sirven tal cual.
-**Drive:** si prefieres la carpeta completa, agrega `drive.google.com` y `drive.usercontent.google.com` a los dominios permitidos del entorno (menú del entorno → Edit → Network access → Custom). Los pasos están en https://code.claude.com/docs/en/cloud-environments#network-access
-
-> `IMG_4126` (reunión con personas) no se usa ni se sube al repositorio. `IMG_5694` (autopista a Guadalajara) queda guardada para el reel de la región (ver [06-serie-de-reels.md](06-serie-de-reels.md)).
+> ✅ **Fotos editadas con Gemini (terraza de noche y baño):** la propietaria confirmó que solo se ajustó la luz, sin agregar ni quitar elementos. Se pueden usar.
 
 ## B. Datos confirmados (6 de octubre de 2026)
 
@@ -40,18 +35,22 @@ El render actual sirve como **versión de revisión** (todavía no para la pauta
 | Distancias | **Verificadas, en auto** | Copy y respuesta de ubicación ("11 min drive", "25 min to PVR") |
 | Nombre | **Condo Lua** | Video y copy. El mapa dice "Lua Condo (Matiari)": conviene actualizarlo antes de usarlo en un reel |
 | Destino del anuncio | **WhatsApp y Messenger** | Copy, sección 5: objetivo Interacción con las dos apps de mensajes |
+| Tarifa | **$55,000 MXN por mes** (≈ US$3,000 · CA$4,300 al 6 oct 2026) | Copy (siempre con "MXN") y respuesta *Tarifa* |
+| Depósito y pago | **1 mes de depósito**; pago por **Wise** o en **efectivo** | Copy y respuesta *Tarifa* |
+| Playa de `IMG_3349` | **Bucerías**, confirmado | Etiqueta "Bucerías beach" del video |
+| Fotos editadas con Gemini | **Solo ajuste de luz** | Se usan tal cual |
+| Música | **Meta Sound Collection** | Ver [04-musica.md](04-musica.md) |
 
 ## B2. Datos que aún faltan
 
 | # | Pregunta | Dónde impacta |
 |---|---|---|
-| 1 | **Tarifa mensual** enero–abril 2027 y moneda (USD/CAD/MXN) | Copy ("From $[X] USD/month") y respuestas |
-| 2 | Depósito, forma de pago, cancelación y limpieza | Respuestas |
+| 1 | **Servicio de limpieza:** ¿cuánto cuesta? ¿Es una limpieza final obligatoria o un servicio periódico opcional (semanal o quincenal)? | Respuesta *Tarifa* (hoy dice "ask us for the rate") |
+| 2 | Cancelación: ¿hay política de reembolso del depósito? | Respuestas |
 | 3 | Ocupación máxima y camas (king + 2 individuales/matrimoniales) | Copy |
 | 4 | ¿Se aceptan mascotas? ¿Se permite fumar? | Respuestas (*snowbirds* con perro es un caso común) |
 | 5 | Velocidad del Wi-Fi (Mbps) | Copy (atrae a trabajadores remotos) |
 | 6 | Estacionamiento: ¿cuántos lugares? ¿techado? · Vigilancia: ¿caseta 24/7? | Copy |
-| 7 | ¿El atardecer de `IMG_3349` es en la playa de Bucerías? | Etiqueta "Bucerías beach" del video |
 
 ## C. Decisiones ya tomadas con base en el material
 
