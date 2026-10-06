@@ -1,0 +1,704 @@
+{
+  "project": "Condo Lua — Winter 2027 · Reel 35 s",
+  "notes": "Proyecto editable. Tiempos en segundos. Las rutas son relativas a la raíz del repositorio. Si un archivo de 'source' no existe, el render usa una tarjeta provisional con la descripción de la toma requerida.",
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 35.0
+  },
+  "safe_zone": {
+    "top": 0.14,
+    "bottom": 0.35,
+    "side": 0.06
+  },
+  "versions": {
+    "A": {
+      "label": "Apertura alberca",
+      "file": "CondoLua_Winter2027_35s_A_apertura-alberca"
+    },
+    "B": {
+      "label": "Apertura terraza",
+      "file": "CondoLua_Winter2027_35s_B_apertura-terraza"
+    }
+  },
+  "look": {
+    "exposure": 0.0,
+    "temperature": 0.0,
+    "tint": 0.0,
+    "contrast": 1.0,
+    "saturation": 1.0,
+    "shadows": 0.0,
+    "highlights": 0.0
+  },
+  "music": {
+    "file": null,
+    "offset": 0.0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "target_lufs": -14.0
+  },
+  "styles": {
+    "headline": {
+      "font": "assets/fonts/CormorantGaramond[wght].ttf",
+      "weight": 600,
+      "size": 104,
+      "line_height": 1.02,
+      "color": "#FFFBF4",
+      "glow": 0.42
+    },
+    "label": {
+      "font": "assets/fonts/CormorantGaramond[wght].ttf",
+      "weight": 600,
+      "size": 92,
+      "line_height": 1.05,
+      "color": "#FFFBF4",
+      "glow": 0.42
+    },
+    "brand": {
+      "font": "assets/fonts/CormorantGaramond[wght].ttf",
+      "weight": 600,
+      "size": 128,
+      "line_height": 1.0,
+      "color": "#FFFBF4",
+      "glow": 0.4,
+      "tracking": 0.06,
+      "uppercase": true
+    },
+    "place": {
+      "font": "assets/fonts/CormorantGaramond-Italic[wght].ttf",
+      "weight": 500,
+      "size": 64,
+      "line_height": 1.1,
+      "color": "#FFF4E4",
+      "glow": 0.42
+    },
+    "sub": {
+      "font": "assets/fonts/Inter-Medium.otf",
+      "size": 46,
+      "line_height": 1.2,
+      "color": "#FFF6EA",
+      "glow": 0.46
+    },
+    "info": {
+      "font": "assets/fonts/Inter-SemiBold.otf",
+      "size": 66,
+      "line_height": 1.16,
+      "color": "#FFFBF4",
+      "glow": 0.5
+    },
+    "dates": {
+      "font": "assets/fonts/Inter-SemiBold.otf",
+      "size": 58,
+      "line_height": 1.2,
+      "color": "#F7DDB5",
+      "glow": 0.5
+    },
+    "tag": {
+      "font": "assets/fonts/Inter-SemiBold.otf",
+      "size": 48,
+      "line_height": 1.2,
+      "color": "#FFF6EA",
+      "pill": {
+        "fill": "#1C140ECC",
+        "pad_x": 34,
+        "pad_y": 22
+      }
+    },
+    "cta": {
+      "font": "assets/fonts/Inter-SemiBold.otf",
+      "size": 54,
+      "line_height": 1.2,
+      "color": "#2A1E15",
+      "pill": {
+        "fill": "#F5EDE0",
+        "pad_x": 44,
+        "pad_y": 28
+      }
+    }
+  },
+  "shots": [
+    {
+      "id": "01A_alberca",
+      "only": "A",
+      "start": 0.0,
+      "end": 3.0,
+      "source": "media/source/01_alberca.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.62,
+        "zoom": 1.04
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.6,
+        "zoom": 1.12
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "ALBERCA",
+        "need": "La toma más luminosa e impactante. Encuadre con poco cielo vacío (recortar desde arriba)."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_10_18.45s.jpg",
+      "shade": {
+        "amount": 0.2,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "01B_terraza",
+      "only": "B",
+      "start": 0.0,
+      "end": 3.0,
+      "source": "media/source/originales/IMG_6032_terraza.MOV",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.04
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "TERRAZA (apertura B)",
+        "need": "Ángulo distinto al de 3–6 s: terraza amplia y luminosa, de día, que invite a quedarse."
+      },
+      "source_in": 1.0,
+      "shade": {
+        "amount": 0.34,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "02_terraza",
+      "start": 3.0,
+      "end": 6.0,
+      "source": "media/source/02_terraza_mesa.jpg",
+      "from": {
+        "cx": 0.45,
+        "cy": 0.55,
+        "zoom": 1.02
+      },
+      "to": {
+        "cx": 0.55,
+        "cy": 0.55,
+        "zoom": 1.06
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "TERRAZA PRIVADA",
+        "need": "Toma diurna: mesa de la terraza y su conexión con el departamento (puerta o ventanal visible)."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_02_05.95s.jpg",
+      "shade": {
+        "amount": 0.26,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "03a_comedor_sala_terraza",
+      "start": 6.0,
+      "end": 8.0,
+      "source": "media/source/originales/IMG_5993_2.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.48,
+        "zoom": 1.06
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "COMEDOR → SALA → TERRAZA",
+        "need": "Plano vertical de día que muestre la distribución."
+      },
+      "shade": {
+        "amount": 0.22,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "03b_sala_cocina",
+      "start": 8.0,
+      "end": 10.0,
+      "source": "media/source/originales/IMG_5857_3.jpg",
+      "from": {
+        "cx": 0.47,
+        "cy": 0.52,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.53,
+        "cy": 0.52,
+        "zoom": 1.0
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "SALA → COCINA",
+        "need": "Plano amplio de la sala hacia la cocina."
+      },
+      "shade": {
+        "amount": 0.12,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "04a_recamara_principal",
+      "start": 10.0,
+      "end": 11.6,
+      "source": "media/source/04a_recamara_principal.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.05
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "RECÁMARA PRINCIPAL",
+        "need": "Plano amplio con la cama completa y luz natural."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_05_10.45s.jpg",
+      "shade": {
+        "amount": 0.22,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "04b_recamara_2",
+      "start": 11.6,
+      "end": 12.9,
+      "source": "media/source/originales/IMG_5896.jpg",
+      "from": {
+        "cx": 0.56,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "SEGUNDA RECÁMARA",
+        "need": "Plano amplio de la segunda recámara."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_06_12.85s.jpg",
+      "shade": {
+        "amount": 0.12,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "04c_bano",
+      "start": 12.9,
+      "end": 14.0,
+      "source": "media/source/04c_bano.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.04
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "BAÑO",
+        "need": "Toma breve del baño, solo si hay material de calidad (si no, se reparte el tiempo entre recámaras)."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_07_13.35s.jpg",
+      "shade": {
+        "amount": 0.14,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "05a_cocina",
+      "start": 14.0,
+      "end": 16.2,
+      "source": "media/source/originales/IMG_5864_2.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.4,
+        "zoom": 1.1
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.4,
+        "zoom": 1.16
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "COCINA EQUIPADA",
+        "need": "MATERIAL FALTANTE: cocina completa con estufa, refrigerador y barra. No usar imágenes genéricas."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_08_14.45s.jpg",
+      "shade": {
+        "amount": 0.1,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "05b_lavanderia",
+      "start": 16.2,
+      "end": 18.0,
+      "source": "media/source/05b_lavanderia.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.06
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "LAVANDERÍA",
+        "need": "MATERIAL FALTANTE: lavadora y secadora dentro del departamento."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_09_17.95s.jpg",
+      "shade": {
+        "amount": 0.16,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "06a_alberca_jardin",
+      "start": 18.0,
+      "end": 20.0,
+      "source": "media/source/06a_alberca_jardin.jpg",
+      "transition_in": {
+        "type": "dissolve",
+        "duration": 0.2
+      },
+      "from": {
+        "cx": 0.5,
+        "cy": 0.66,
+        "zoom": 1.12
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.64,
+        "zoom": 1.18
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "ALBERCA / JARDINES 1",
+        "need": "Ángulo distinto al de la apertura. Evitar repetir vistas similares del edificio."
+      },
+      "draft": "media/source/borrador_whatsapp/pre30_alberca_atardecer_00.05s.jpg",
+      "shade": {
+        "amount": 0.16,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "06b_jardines",
+      "start": 20.0,
+      "end": 22.0,
+      "source": "media/source/06b_jardines.jpg",
+      "from": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.04
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.0
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "JARDINES 2",
+        "need": "Jardín, sombra o rincón para descansar."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_11_21.95s.jpg",
+      "shade": {
+        "amount": 0.18,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "07_toma_tranquila",
+      "start": 22.0,
+      "end": 27.0,
+      "source": "media/source/07_toma_tranquila.jpg",
+      "transition_in": {
+        "type": "dissolve",
+        "duration": 0.2
+      },
+      "from": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "zoom": 1.05
+      },
+      "shade": {
+        "amount": 0.18,
+        "center_y": 0.4,
+        "spread": 0.3
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "TOMA TRANQUILA DEL DEPTO",
+        "need": "Interior sereno con zona despejada en el tercio superior para leer los beneficios."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_12_22.45s.jpg"
+    },
+    {
+      "id": "08_playa_bucerias",
+      "start": 27.0,
+      "end": 30.0,
+      "source": "media/source/originales/IMG_3349.mov",
+      "source_in": 0.4,
+      "transition_in": {
+        "type": "dissolve",
+        "duration": 0.2
+      },
+      "from": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.05
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "PLAYA DE BUCERÍAS",
+        "need": "Toma real de la playa (no desde el departamento). Si no hay, usar jardín o terraza."
+      }
+    },
+    {
+      "id": "09_cierre_terraza",
+      "start": 30.0,
+      "end": 35.0,
+      "source": "media/source/09_cierre_terraza.jpg",
+      "transition_in": {
+        "type": "dissolve",
+        "duration": 0.3
+      },
+      "from": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "zoom": 1.06
+      },
+      "shade": {
+        "amount": 0.38,
+        "center_y": 0.42,
+        "spread": 0.34
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "CIERRE · TERRAZA CÁLIDA",
+        "need": "La terraza cálida del cierre actual, con oscurecimiento sutil detrás del texto."
+      },
+      "draft": "media/source/borrador_whatsapp/pre35_14_34.95s.jpg"
+    }
+  ],
+  "captions": [
+    {
+      "id": "c01_hook",
+      "start": 0.2,
+      "end": 2.9,
+      "y": 0.34,
+      "gap": 26,
+      "lines": [
+        {
+          "text": "Your winter could\nlook like this.",
+          "style": "headline"
+        },
+        {
+          "text": "Bucerías, Mexico",
+          "style": "sub",
+          "delay": 0.45
+        }
+      ]
+    },
+    {
+      "id": "c02_terraza",
+      "start": 3.15,
+      "end": 5.9,
+      "y": 0.34,
+      "lines": [
+        {
+          "text": "Your own\nprivate terrace",
+          "style": "headline"
+        }
+      ]
+    },
+    {
+      "id": "c03_sala",
+      "start": 6.15,
+      "end": 9.9,
+      "y": 0.34,
+      "gap": 14,
+      "lines": [
+        {
+          "text": "Fully furnished",
+          "style": "info"
+        },
+        {
+          "text": "Ground floor",
+          "style": "info",
+          "delay": 0.35
+        }
+      ]
+    },
+    {
+      "id": "c04_recamaras",
+      "start": 10.15,
+      "end": 13.9,
+      "y": 0.34,
+      "lines": [
+        {
+          "text": "2 bedrooms · 2 bathrooms",
+          "style": "info"
+        }
+      ]
+    },
+    {
+      "id": "c05_cocina",
+      "start": 14.15,
+      "end": 17.9,
+      "y": 0.34,
+      "gap": 14,
+      "lines": [
+        {
+          "text": "Equipped kitchen",
+          "style": "info"
+        },
+        {
+          "text": "In-suite laundry",
+          "style": "info",
+          "delay": 2.15
+        }
+      ]
+    },
+    {
+      "id": "c06_alberca",
+      "start": 18.2,
+      "end": 21.9,
+      "y": 0.34,
+      "gap": 14,
+      "lines": [
+        {
+          "text": "Shared pool & gardens",
+          "style": "info"
+        },
+        {
+          "text": "Space to unwind",
+          "style": "info",
+          "delay": 0.35
+        }
+      ]
+    },
+    {
+      "id": "c07_incluido",
+      "start": 22.2,
+      "end": 26.9,
+      "y": 0.36,
+      "gap": 34,
+      "lines": [
+        {
+          "text": "Electricity, water\n& Wi-Fi included",
+          "style": "info"
+        },
+        {
+          "text": "Condo fees included",
+          "style": "tag",
+          "delay": 0.6
+        }
+      ]
+    },
+    {
+      "id": "c08_playa",
+      "start": 27.2,
+      "end": 29.9,
+      "y": 0.34,
+      "lines": [
+        {
+          "text": "Bucerías beach",
+          "style": "label"
+        }
+      ]
+    },
+    {
+      "id": "c09_cierre",
+      "start": 30.25,
+      "end": 35.0,
+      "fade_out": 0,
+      "y": 0.4,
+      "gap": 30,
+      "lines": [
+        {
+          "text": "Condo Lua",
+          "style": "brand"
+        },
+        {
+          "text": "Bucerías · Winter 2027",
+          "style": "place",
+          "delay": 0.3
+        },
+        {
+          "text": "January–April · Monthly stays",
+          "style": "dates",
+          "delay": 0.6,
+          "gap_before": 40
+        },
+        {
+          "text": "Message us for dates & rates",
+          "style": "cta",
+          "delay": 1.0,
+          "gap_before": 48
+        }
+      ]
+    }
+  ],
+  "alternates": {
+    "media/source/originales/IMG_5872_2.jpg": "Sala y comedor de noche con la terraza al fondo (sin personas)",
+    "media/source/originales/IMG_5866_2.jpg": "Cocina horizontal, de noche",
+    "media/source/originales/IMG_5837_comedor.jpg": "Comedor de día (horizontal)",
+    "media/source/originales/IMG_6083.jpg": "Área común con pérgola y jardín (vertical, de día)",
+    "media/source/originales/IMG_5694_carretera_gdl.jpg": "Autopista a Guadalajara con campos de agave (para el reel de la región)"
+  }
+}
