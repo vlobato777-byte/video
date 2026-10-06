@@ -25,7 +25,7 @@ Cada pieza responde una sola pregunta del cliente. Se arman con el mismo proyect
 
 1. Las fotos originales adjuntas como archivo (ver [05-pendientes.md](05-pendientes.md)), sobre todo terraza de día, cocina amplia, vestidor, estacionamiento y caseta.
 2. El mapa en alta resolución (PNG o PDF).
-3. Ya está todo confirmado: tarifa ($55,000 MXN/mes), electricidad sin tope, estancia mínima de 3 meses y distancias. El reel 3 puede cerrar con "One monthly rate · $55,000 MXN".
+3. Ya están confirmados la tarifa ($55,000 MXN/mes), la electricidad sin tope, la estancia mínima de 3 meses y las distancias. El reel 3 puede cerrar con "$55,000 MXN/month · Electricity, water, Wi-Fi & condo fees included". "One monthly rate" solo se puede usar si se confirma que la limpieza no es un cargo obligatorio (ver [05-pendientes.md](05-pendientes.md), sección B2).
 4. Para el 5b: los clips de playa y atardeceres (video vertical si es posible) y la confirmación de que son de Bucerías. Cada lugar se etiqueta con su nombre real, para que ninguna vista se confunda con la del departamento.
 5. Tu elección: ¿cuáles hago primero? Mi recomendación es **2 (emocional), 3 (incluido) y 5b (región)**, porque son los más distintos al principal.
 

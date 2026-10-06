@@ -1,6 +1,6 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. La tarifa de limpieza sigue pendiente, pero las respuestas dicen "pregúntanos la tarifa" en lugar de dar una cifra. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. La tarifa de limpieza sigue pendiente: la respuesta *Tarifa* dice que la limpieza no está incluida en la renta y que nos pregunten la tarifa, sin dar una cifra. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
 
 > **Escribe siempre "MXN" pegado al precio.** Un canadiense o estadounidense que lea "$55,000" piensa en dólares y descarta el anuncio. Por eso el copy usa `$55,000 MXN` y agrega el equivalente aproximado (≈ US$3,000 · CA$4,300, al tipo de cambio del 6 de octubre de 2026: USD/MXN ≈ 18.2, CAD/MXN ≈ 12.7). **Si el peso se mueve más de ~5 %, actualiza los equivalentes.**
 
@@ -56,7 +56,7 @@ Your winter could look like this. 🌴
 Private terrace · 2 bed / 2 bath · ground floor · Bucerías, Mexico.
 Electricity, water, Wi-Fi & condo fees included.
 
-January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000).
+January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000 · CA$4,300).
 👉 Message us your dates for availability & rates.
 ```
 
@@ -92,7 +92,7 @@ De janvier à avril 2027 · séjour minimum de 3 mois, avec possibilité de prol
 ✔ Stationnement · complexe à accès contrôlé avec guérite
 🚗 À 11 min en voiture de la plage de Bucerías · à 25 min de l'aéroport de Puerto Vallarta (PVR) · supermarchés à proximité
 
-💲 55 000 $ MXN par mois (environ 3 000 $ US · 4 300 $ CA)
+💲 55 000 $ MXN par mois (environ 3 000 $ US · 4 300 $ CA)
 Dépôt d'un mois · paiement par virement Wise ou en espèces
 
 Écrivez-nous vos dates et la durée de votre séjour pour connaître la disponibilité et les tarifs.
@@ -135,7 +135,7 @@ To check availability, please share your arrival and departure dates and number 
 Thanks for reaching out! 🌞 To check availability, could you share:
 1) arrival and departure dates, 2) number of guests, 3) any pets?
 Our season is January–April 2027: 3-month minimum, with the option to add a 4th month (subject to availability).
-We'll get back to you with availability and the monthly rate.
+The rate is $55,000 MXN per month (about US$3,000 / CA$4,300). We'll get back to you to confirm availability.
 ```
 
 *Qué incluye*
@@ -158,8 +158,8 @@ Condo Lua is in a gated community in Bucerías, Riviera Nayarit. By car it's abo
 ```
 For January–April 2027 the rate is $55,000 MXN per month (about US$3,000 / CA$4,300 at today's exchange rate), with a 3-month minimum and the option to add a 4th month (subject to availability).
 A one-month deposit ($55,000 MXN) is required. You can pay by Wise transfer, an easy way to pay from Canada or the US, or in cash.
-Cleaning service is available for an additional fee; just ask us for the rate.
-Would you like us to hold your dates?
+Cleaning is not included in the monthly rate; just ask us for the cleaning fee and details.
+Would you like us to check availability for your dates?
 ```
 
 ---

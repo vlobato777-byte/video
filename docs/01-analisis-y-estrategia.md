@@ -38,7 +38,7 @@
 | Textos en serif delgada, pequeños y en mayúsculas espaciadas ("C O N D O  L U A") | No se leen en un teléfono sin sonido. Fechas y CTA pequeñas | Titulares de 104 px, información de 66 px y CTA en píldora de 54 px. Sombra suave y oscurecimiento localizado |
 | "Your winter home in Bucerias" (sin acento) | Detalle de calidad | "Bucerías" en todo el material |
 | 5 s sobre un **detalle decorativo** (sillón) | Ocupa el espacio de un beneficio | El sillón se queda porque es una toma tranquila, pero ahora lleva el beneficio principal: servicios incluidos |
-| **Sin música** | En Reels, el silencio total se percibe como un error | Pista instrumental con licencia para anuncios (ver [04-musica.md](04-musica.md)) |
+| **Sin música** | En Reels, el silencio total se percibe como un error | Pista instrumental de Meta Sound Collection, con licencia para anuncios. **Pendiente:** elegir la pista e integrarla al render (ver [04-musica.md](04-musica.md)) |
 | Exportación de WhatsApp a 4 Mbps | Facebook la recomprime y se pierde nitidez | Export a CRF 16 (~5 Mbps con material provisional) desde los originales |
 
 ### Observaciones adicionales al brief

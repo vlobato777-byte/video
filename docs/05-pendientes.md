@@ -45,7 +45,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 
 | # | Pregunta | Dónde impacta |
 |---|---|---|
-| 1 | **Servicio de limpieza:** ¿cuánto cuesta? ¿Es una limpieza final obligatoria o un servicio periódico opcional (semanal o quincenal)? | Respuesta *Tarifa* (hoy dice "ask us for the rate") |
+| 1 | **Servicio de limpieza:** ¿cuánto cuesta? ¿Es una limpieza final obligatoria o un servicio periódico opcional (semanal o quincenal)? | Respuesta *Tarifa* (hoy dice que la limpieza no está incluida y que pregunten la tarifa) |
 | 2 | Cancelación: ¿hay política de reembolso del depósito? | Respuestas |
 | 3 | Ocupación máxima y camas (king + 2 individuales/matrimoniales) | Copy |
 | 4 | ¿Se aceptan mascotas? ¿Se permite fumar? | Respuestas (*snowbirds* con perro es un caso común) |
