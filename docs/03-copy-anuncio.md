@@ -1,6 +1,6 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. Las preguntas que siguen abiertas (reembolso del depósito/cancelación, tamaños de camas y sofá cama, fumar, cargo o depósito por mascota, velocidad del Wi-Fi, estacionamiento y vigilancia 24/7) no bloquean el copy actual, que no afirma nada sobre ellas; están en [05-pendientes.md](05-pendientes.md), sección B2.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. Las preguntas que siguen abiertas (reembolso del depósito/cancelación, monto de la limpieza profunda por mascota, velocidad del Wi-Fi, estacionamiento y vigilancia 24/7) no bloquean el copy actual, que no afirma nada sobre ellas; están en [05-pendientes.md](05-pendientes.md), sección B2.
 
 > **Escribe siempre "MXN" pegado al precio.** Un canadiense o estadounidense que lea "$55,000" piensa en dólares y descarta el anuncio. Por eso el copy usa `$55,000 MXN` y agrega el equivalente aproximado (≈ US$3,000 · CA$4,300, al tipo de cambio del 6 de octubre de 2026: USD/MXN ≈ 18.2, CAD/MXN ≈ 12.7). **Si el peso se mueve más de ~5 %, actualiza los equivalentes.**
 
@@ -20,7 +20,9 @@ Los textos para el público van en inglés (Canadá y Estados Unidos) y se agreg
 | Formas de pago | **Wise** (transferencia) o **efectivo** |
 | Limpieza | **Incluida, una vez cada quincena** |
 | Ocupación máxima | **6 personas** |
-| Mascotas | **Se aceptan perros de raza pequeña** |
+| Camas | **1 king, 2 individuales (twin) y 1 sofá cama king**: 6 lugares para dormir |
+| Fumar | **No se permite** |
+| Mascotas | **Se aceptan perros de raza pequeña**. Al final de la estancia se cobra una **limpieza profunda extra** (monto pendiente) |
 | Playa del video (`IMG_3349`) | **Bucerías**, confirmado |
 | Fotos editadas con Gemini | Solo se ajustó la luz: se pueden usar |
 
@@ -42,7 +44,8 @@ January–April 2027 · 3-month minimum stay, with the option to add a 4th month
 ✔ Cleaning every two weeks included
 ✔ Equipped kitchen + private laundry room (washer & dryer)
 ✔ A/C and ceiling fans
-✔ Up to 6 guests · small dogs welcome 🐶
+✔ Sleeps 6: king bed, 2 twin beds + king-size sofa bed
+✔ Non-smoking · small dogs welcome 🐶 (pet cleaning fee applies)
 ✔ Parking · gated community with security booth
 🚗 11 min drive to Bucerías beach · 25 min to Puerto Vallarta airport (PVR) · supermarkets nearby
 
@@ -57,7 +60,7 @@ Message us your dates and length of stay. We'll confirm availability and rates.
 ```
 Your winter could look like this. 🌴
 
-Private terrace · 2 bed / 2 bath · up to 6 guests · ground floor · Bucerías, Mexico.
+Private terrace · 2 bed / 2 bath · sleeps 6 · ground floor · Bucerías, Mexico.
 Included: electricity, water, Wi-Fi, condo fees and cleaning every two weeks. Small dogs welcome 🐶
 
 January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000 · CA$4,300).
@@ -95,7 +98,8 @@ De janvier à avril 2027 · séjour minimum de 3 mois, avec possibilité de prol
 ✔ Ménage aux deux semaines inclus
 ✔ Cuisine équipée + buanderie privée (laveuse et sécheuse)
 ✔ Climatisation et ventilateurs de plafond
-✔ Jusqu'à 6 personnes · petits chiens acceptés 🐶
+✔ 6 couchages : 1 lit king, 2 lits simples et 1 divan-lit king
+✔ Non-fumeur · petits chiens acceptés 🐶 (frais de grand ménage en fin de séjour)
 ✔ Stationnement · complexe à accès contrôlé avec guérite
 🚗 À 11 min en voiture de la plage de Bucerías · à 25 min de l'aéroport de Puerto Vallarta (PVR) · supermarchés à proximité
 
@@ -148,7 +152,7 @@ The rate is $55,000 MXN per month (about US$3,000 / CA$4,300). We'll get back to
 *Qué incluye*
 ```
 The monthly rate includes electricity (no usage cap), water, Wi-Fi, condo fees and cleaning every two weeks.
-The condo is fully furnished, with an equipped kitchen, a private laundry room (washer & dryer), A/C, parking and a private terrace. Guests can use the shared pool and gardens.
+The condo is fully furnished and sleeps 6 (1 king bed, 2 twin beds and a king-size sofa bed), with an equipped kitchen, a private laundry room (washer & dryer), A/C, parking and a private terrace. Guests can use the shared pool and gardens. It's a non-smoking condo.
 ```
 
 *Estancia mínima*
@@ -158,7 +162,7 @@ The minimum stay is 3 months, with the option to extend for a 4th month (subject
 
 *Mascotas*
 ```
-Small-breed dogs are welcome! 🐶 Tell us your dog's breed and size so we can confirm. Maximum occupancy is 6 guests.
+Small-breed dogs are welcome! 🐶 An extra deep-cleaning fee applies at the end of the stay. Tell us your dog's breed and size so we can confirm. Maximum occupancy is 6 guests.
 ```
 
 *Ubicación (con honestidad: evita reclamos)*
