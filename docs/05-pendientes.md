@@ -41,7 +41,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | Fotos editadas con Gemini | **Solo ajuste de luz** | Se usan tal cual |
 | Música | **Meta Sound Collection** | Ver [04-musica.md](04-musica.md) |
 | Limpieza | **Incluida, una vez cada quincena** | Copy ("Cleaning every two weeks included") y respuestas *Qué incluye* y *Tarifa* |
-| Ocupación máxima | **6 personas** | Copy ("Sleeps up to 6") y respuestas |
+| Ocupación máxima | **6 personas** (máximo de huéspedes; no implica camas para 6) | Copy ("Up to 6 guests" · FR "Jusqu'à 6 personnes") y respuestas *Disponibilidad* y *Mascotas* |
 | Mascotas | **Perros de raza pequeña** | Copy ("Small dogs welcome"), titular alternativo y respuesta *Mascotas* |
 
 ## B2. Datos que aún faltan
@@ -49,8 +49,8 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | # | Pregunta | Dónde impacta |
 |---|---|---|
 | 1 | Cancelación: ¿hay política de reembolso del depósito? | Respuestas (pendiente de resolver) |
-| 2 | Camas: tamaños (king, matrimonial, individual) y si hay sofá cama para llegar a 6 personas | Copy y respuesta *Mascotas/ocupación* |
-| 3 | ¿Se permite fumar? ¿Hay cargo o depósito extra por mascota? | Respuestas |
+| 2 | Camas: tamaños (king, matrimonial, individual) y si hay sofá cama para llegar a 6 personas | Copy y respuestas *Disponibilidad* y *Mascotas*. Hasta confirmarlo, decir "up to 6 guests", nunca "sleeps 6" ni camas para 6 |
+| 3 | ¿Se permite fumar? ¿Hay cargo o depósito extra por mascota? | Respuestas (*Mascotas*) y cierre "One monthly rate" del reel 3 (ver [06-serie-de-reels.md](06-serie-de-reels.md)) |
 | 4 | Velocidad del Wi-Fi (Mbps) | Copy (atrae a trabajadores remotos) |
 | 5 | Estacionamiento: ¿cuántos lugares? ¿techado? · Vigilancia: ¿caseta 24/7? | Copy |
 

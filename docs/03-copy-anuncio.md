@@ -1,6 +1,6 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. Las preguntas que siguen abiertas (cancelación, tamaño de camas, fumar, Wi-Fi y estacionamiento) no cambian el copy; están en [05-pendientes.md](05-pendientes.md), sección B2.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. Las preguntas que siguen abiertas (reembolso del depósito/cancelación, tamaños de camas y sofá cama, fumar, cargo o depósito por mascota, velocidad del Wi-Fi, estacionamiento y vigilancia 24/7) no bloquean el copy actual, que no afirma nada sobre ellas; están en [05-pendientes.md](05-pendientes.md), sección B2.
 
 > **Escribe siempre "MXN" pegado al precio.** Un canadiense o estadounidense que lea "$55,000" piensa en dólares y descarta el anuncio. Por eso el copy usa `$55,000 MXN` y agrega el equivalente aproximado (≈ US$3,000 · CA$4,300, al tipo de cambio del 6 de octubre de 2026: USD/MXN ≈ 18.2, CAD/MXN ≈ 12.7). **Si el peso se mueve más de ~5 %, actualiza los equivalentes.**
 
@@ -42,7 +42,7 @@ January–April 2027 · 3-month minimum stay, with the option to add a 4th month
 ✔ Cleaning every two weeks included
 ✔ Equipped kitchen + private laundry room (washer & dryer)
 ✔ A/C and ceiling fans
-✔ Sleeps up to 6 · small dogs welcome 🐶
+✔ Up to 6 guests · small dogs welcome 🐶
 ✔ Parking · gated community with security booth
 🚗 11 min drive to Bucerías beach · 25 min to Puerto Vallarta airport (PVR) · supermarkets nearby
 
@@ -57,7 +57,7 @@ Message us your dates and length of stay. We'll confirm availability and rates.
 ```
 Your winter could look like this. 🌴
 
-Private terrace · 2 bed / 2 bath · sleeps up to 6 · ground floor · Bucerías, Mexico.
+Private terrace · 2 bed / 2 bath · up to 6 guests · ground floor · Bucerías, Mexico.
 Included: electricity, water, Wi-Fi, condo fees and cleaning every two weeks. Small dogs welcome 🐶
 
 January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000 · CA$4,300).
@@ -158,7 +158,7 @@ The minimum stay is 3 months, with the option to extend for a 4th month (subject
 
 *Mascotas*
 ```
-Yes, small dogs are welcome! 🐶 Tell us the breed and size so we can confirm. The condo sleeps up to 6 guests.
+Small-breed dogs are welcome! 🐶 Tell us your dog's breed and size so we can confirm. Maximum occupancy is 6 guests.
 ```
 
 *Ubicación (con honestidad: evita reclamos)*
