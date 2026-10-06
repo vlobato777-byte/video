@@ -45,10 +45,11 @@
 
 1. **"Pool nearby" cambió a "Shared pool & gardens".** Las fotos muestran que la alberca y los jardines son del condominio. "Nearby" la hacía sonar externa y restaba valor. Si prefieres el texto original, se cambia en una línea del JSON.
 2. **Versión B: no repetir la misma toma.** En B, de 0 a 6 s hay dos tomas seguidas de terraza. Por eso la apertura usa el clip `IMG_6032` (mesa de día con cortinas en movimiento) y 3–6 s usa el plano amplio de la terraza con el ventanal.
-3. **Electricidad.** Si tiene tope, el texto de 22–27 s cambia a: "Water & Wi-Fi included" + "Electricity included up to [X] kWh". La alternativa está en [02-guion.md](02-guion.md). Es mejor aclararlo desde el anuncio que discutirlo en el chat.
+3. **Electricidad sin tope (confirmado).** "Electricity, water & Wi-Fi included" se queda tal cual. Es un diferenciador real: en México la luz es cara cuando se usa el A/C, y muchos anuncios la cobran aparte.
 4. **El precio no va en el video, pero sí en el copy.** Para estancias largas, el precio es el primer filtro del cliente. Un "From $X USD/month" en el texto del anuncio reduce las conversaciones que no llegan a nada y sube la proporción de mensajes con fechas reales. El video queda sin precio para que siga sirviendo si la tarifa cambia.
 5. **"Condo fees included".** Para un turista estadounidense el término natural es *HOA fees*; para un canadiense, *condo fees*. Se mantiene "Condo fees included", que ambos entienden. En el copy se explica como "no extra condo/HOA fees".
 6. **La llamada a la acción ya es correcta.** "Message us for dates & rates" funciona tanto con Messenger como con WhatsApp y pide justo lo que buscamos: fechas.
+7. **"Monthly stays" cambió a "3–4 month stays".** Con una estancia mínima de 3 meses, "Monthly stays" atraería a quien busca 1 o 2 meses y llenaría el chat de consultas que no cierran. "3–4 month stays" filtra desde el video, que es justo el objetivo del brief: consultas con duración real.
 
 ---
 
@@ -77,13 +78,13 @@ Meta exige declarar la categoría especial **Housing** en los anuncios de "renta
 Consecuencias prácticas:
 - No se puede segmentar por edad, género ni código postal. El radio mínimo es de 15 millas (~25 km).
 - La segmentación detallada por intereses es limitada.
-- **Por eso el creativo es el que segmenta.** "Your winter…", "Winter 2027" y "Monthly stays" hacen que el anuncio se seleccione solo: a quien no busca una estancia de invierno no le interesa. Conviene dejar que Meta optimice (Advantage+ audience) dentro de los países y regiones elegidos.
+- **Por eso el creativo es el que segmenta.** "Your winter…", "Winter 2027" y "3–4 month stays" hacen que el anuncio se seleccione solo: a quien no busca una estancia de invierno no le interesa. Conviene dejar que Meta optimice (Advantage+ audience) dentro de los países y regiones elegidos.
 
 ### 4.2 Configuración recomendada
 
 | Elemento | Recomendación |
 |---|---|
-| Objetivo | **Interacción → Mensajes** (Click-to-WhatsApp o Messenger, según dónde se responda más rápido y en inglés) |
+| Objetivo | **Interacción → Apps de mensajes**, con **WhatsApp y Messenger** activos: Meta lleva a cada persona a la app que usa. Requiere vincular el WhatsApp Business a la página |
 | Alternativa | **Clientes potenciales → Formulario instantáneo** con preguntas obligatorias: fecha de llegada, número de meses, número de huéspedes y correo. Úsala si no hay disponibilidad para responder chats en minutos |
 | Ubicaciones | Canadá y Estados Unidos. Prioridad: provincias y estados de invierno frío (BC, Alberta, Saskatchewan, Manitoba, Ontario, Quebec; Minnesota, Wisconsin, Michigan, Illinois, Washington, Oregon, Colorado, Nueva York, Nueva Inglaterra) |
 | Idioma | Inglés. Agrega un conjunto en francés para Quebec solo si alguien puede atender en francés (copy en [03-copy-anuncio.md](03-copy-anuncio.md)) |

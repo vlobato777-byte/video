@@ -31,22 +31,27 @@ El render actual ya es publicable como **versión de revisión**. Muchas tomas s
 
 > `IMG_4126` (reunión con personas) no se usa ni se sube al repositorio. `IMG_5694` (autopista a Guadalajara) queda guardada para el reel de la región (ver [06-serie-de-reels.md](06-serie-de-reels.md)).
 
-## B. Datos por confirmar (afectan al video o al copy)
+## B. Datos confirmados (6 de octubre de 2026)
+
+| Dato | Respuesta | Aplicado en |
+|---|---|---|
+| Tope de electricidad | **Sin tope** | El texto de 22–27 s se queda igual: "Electricity, water & Wi-Fi included". En las respuestas dice "no usage cap" |
+| Estancia mínima | **3 meses, con opción a un 4.º mes** | Cierre del video: "January–April · 3–4 month stays". Copy y respuestas |
+| Distancias | **Verificadas, en auto** | Copy y respuesta de ubicación ("11 min drive", "25 min to PVR") |
+| Nombre | **Condo Lua** | Video y copy. El mapa dice "Lua Condo (Matiari)": conviene actualizarlo antes de usarlo en un reel |
+| Destino del anuncio | **WhatsApp y Messenger** | Copy, sección 5: objetivo Interacción con las dos apps de mensajes |
+
+## B2. Datos que aún faltan
 
 | # | Pregunta | Dónde impacta |
 |---|---|---|
-| 1 | **¿La electricidad tiene tope?** (kWh o pesos al mes) | Texto 22–27 s y copy |
-| 2 | **Tarifa mensual** enero–abril 2027 y moneda (USD/CAD/MXN) | Copy y respuestas |
-| 3 | **Estancia mínima** (¿1, 2 o 3 meses?) y si se aceptan estancias parciales (p. ej., solo febrero–marzo) | Copy |
-| 4 | Depósito, forma de pago, cancelación y limpieza | Respuestas |
-| 5 | Ocupación máxima y camas (king + 2 individuales/matrimoniales) | Copy |
-| 6 | ¿Se aceptan mascotas? ¿Se permite fumar? | Respuestas (*snowbirds* con perro es un caso común) |
-| 7 | Velocidad del Wi-Fi (Mbps) | Copy (atrae a trabajadores remotos) |
-| 8 | Estacionamiento: ¿cuántos lugares? ¿techado? | Copy |
-| 9 | Vigilancia: ¿caseta 24/7? | Copy |
-| 10 | **Nombre comercial:** el brief dice "Condo Lua", el mapa dice "Lua Condo (Matiari)" y la web es *mymatiaricondo.com* | Video, copy y página. Hay que usar el mismo nombre en todo |
-| 11 | Destino del anuncio: **WhatsApp** (número de WhatsApp Business vinculado a la página) o **Messenger** | Botón del anuncio |
-| 12 | Distancias del mapa: Zona Dorada Bucerías 11 min / 5.7 km, Fibba Beach 15 min / 7.6 km, aeropuerto PVR 25 min / 13.4 km, supermercados La Comer, Mega Soriana y Walmart. **¿Son en auto y están verificadas en Google Maps?** | Copy (se citan como "about … drive") |
+| 1 | **Tarifa mensual** enero–abril 2027 y moneda (USD/CAD/MXN) | Copy ("From $[X] USD/month") y respuestas |
+| 2 | Depósito, forma de pago, cancelación y limpieza | Respuestas |
+| 3 | Ocupación máxima y camas (king + 2 individuales/matrimoniales) | Copy |
+| 4 | ¿Se aceptan mascotas? ¿Se permite fumar? | Respuestas (*snowbirds* con perro es un caso común) |
+| 5 | Velocidad del Wi-Fi (Mbps) | Copy (atrae a trabajadores remotos) |
+| 6 | Estacionamiento: ¿cuántos lugares? ¿techado? · Vigilancia: ¿caseta 24/7? | Copy |
+| 7 | ¿El atardecer de `IMG_3349` es en la playa de Bucerías? | Etiqueta "Bucerías beach" del video |
 
 ## C. Decisiones ya tomadas con base en el material
 

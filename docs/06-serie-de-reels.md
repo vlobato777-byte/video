@@ -25,7 +25,7 @@ Cada pieza responde una sola pregunta del cliente. Se arman con el mismo proyect
 
 1. Las fotos originales adjuntas como archivo (ver [05-pendientes.md](05-pendientes.md)), sobre todo terraza de día, cocina amplia, vestidor, estacionamiento y caseta.
 2. El mapa en alta resolución (PNG o PDF).
-3. Las respuestas de la lista de confirmaciones (tope de electricidad, tarifa y estancia mínima), porque los reels 3 y 5 dependen de ellas.
+3. La tarifa mensual: el reel 3 la necesita si va a decir "One monthly rate". El tope de electricidad (no hay), la estancia mínima (3 meses) y las distancias ya están confirmados.
 4. Para el 5b: los clips de playa y atardeceres (video vertical si es posible) y la confirmación de que son de Bucerías. Cada lugar se etiqueta con su nombre real, para que ninguna vista se confunda con la del departamento.
 5. Tu elección: ¿cuáles hago primero? Mi recomendación es **2 (emocional), 3 (incluido) y 5b (región)**, porque son los más distintos al principal.
 
