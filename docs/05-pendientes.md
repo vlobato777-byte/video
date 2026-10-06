@@ -53,6 +53,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | 2 | Monto de la limpieza profunda por mascota | Respuesta *Mascotas* (hoy solo dice que se cobra) |
 | 3 | Velocidad del Wi-Fi (Mbps) | Copy (atrae a trabajadores remotos) |
 | 4 | Estacionamiento: ¿cuántos lugares? ¿techado? · Vigilancia: ¿caseta 24/7? | Copy |
+| 5 | Baños: ¿los dos tienen regadera o tina? | Reel 4 de [06-serie-de-reels.md](06-serie-de-reels.md) ("full bathrooms" solo si se confirma) |
 
 ## C. Decisiones ya tomadas con base en el material
 

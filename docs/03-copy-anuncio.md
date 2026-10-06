@@ -61,7 +61,8 @@ Message us your dates and length of stay. We'll confirm availability and rates.
 Your winter could look like this. 🌴
 
 Private terrace · 2 bed / 2 bath · sleeps 6 · ground floor · Bucerías, Mexico.
-Included: electricity, water, Wi-Fi, condo fees and cleaning every two weeks. Small dogs welcome 🐶
+Included: electricity, water, Wi-Fi, condo fees and cleaning every two weeks.
+Non-smoking · small dogs welcome 🐶 (pet cleaning fee applies)
 
 January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000 · CA$4,300).
 👉 Message us your dates for availability & rates.
@@ -75,7 +76,7 @@ January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,00
 | 2 | Your winter home in Bucerías | Alternativa emocional |
 | 3 | Jan–Apr 2027 · 3–4 month stays | Alternativa informativa (filtra mejor por duración) |
 | 4 | Winter 2027 · $55,000 MXN/month | Alternativa con precio (filtra mejor por presupuesto) |
-| 5 | Small dogs welcome · Winter 2027 | Alternativa para quienes viajan con perro |
+| 5 | Small dogs welcome · Winter 2027 | Alternativa para quienes viajan con perro. Úsalo solo con un texto principal que diga "pet cleaning fee applies" y nunca en el anuncio del reel 3 ("One monthly rate") |
 
 **Descripción:** `Electricity, water, Wi-Fi & condo fees included`
 **Botón:** *Send message*. Con WhatsApp y Messenger activos, Meta muestra a cada persona la app que más usa. Coincide con el "Message us" del video.
@@ -144,7 +145,7 @@ To check availability, please share your arrival and departure dates and number 
 *Disponibilidad*
 ```
 Thanks for reaching out! 🌞 To check availability, could you share:
-1) arrival and departure dates, 2) number of guests (up to 6), 3) any pets? Small dogs are welcome.
+1) arrival and departure dates, 2) number of guests (up to 6), 3) any pets? Small dogs are welcome (an extra deep-cleaning fee applies at the end of the stay).
 Our season is January–April 2027: 3-month minimum, with the option to add a 4th month (subject to availability).
 The rate is $55,000 MXN per month (about US$3,000 / CA$4,300). We'll get back to you to confirm availability.
 ```
