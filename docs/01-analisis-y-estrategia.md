@@ -50,7 +50,7 @@
 5. **"Condo fees included".** Para un turista estadounidense el término natural es *HOA fees*; para un canadiense, *condo fees*. Se mantiene "Condo fees included", que ambos entienden. En el copy largo se aclara como "Condo (HOA) fees included".
 6. **La llamada a la acción ya es correcta.** "Message us for dates & rates" funciona tanto con Messenger como con WhatsApp y pide justo lo que buscamos: fechas.
 7. **"Monthly stays" cambió a "3–4 month stays".** Con una estancia mínima de 3 meses, "Monthly stays" atraería a quien busca 1 o 2 meses y llenaría el chat de consultas que no cierran. "3–4 month stays" filtra desde el video, que es justo el objetivo del brief: consultas con duración real.
-8. **Dos diferenciadores nuevos: limpieza quincenal incluida y perros pequeños aceptados** (con una limpieza profunda extra al final). Para una estancia de 3 o 4 meses, ambos pesan mucho: muchos *snowbirds* viajan con su perro y valoran no tener que contratar limpieza. El copy aclara el cargo por mascota desde el anuncio, para evitar sorpresas. Ya están en el copy y en las respuestas. Si quieres, "Cleaning every 2 weeks included" puede entrar como tercera línea en el bloque de 22–27 s (es un cambio de una línea en el JSON).
+8. **Dos diferenciadores nuevos: limpieza quincenal incluida y perros pequeños aceptados** (con una limpieza profunda extra al final). Para una estancia de 3 o 4 meses, ambos pesan mucho: muchos *snowbirds* viajan con su perro y valoran no tener que contratar limpieza. El copy aclara el cargo por mascota desde el anuncio, para evitar sorpresas. Ya están en el copy y en las respuestas, y la limpieza también aparece en el video: "Cleaning every 2 weeks included" es la tercera línea del bloque de 22–27 s (aprobado por la propietaria). Los perros no van en el video, porque llevan cargo extra.
 
 ---
 
@@ -63,7 +63,7 @@ Detalle toma por toma en [02-guion.md](02-guion.md). En resumen:
 3–6   Diferenciador       Terraza privada             "Your own private terrace"
 6–18  Prueba funcional    Sala · recámaras · cocina   furnished · ground floor · 2+2 · kitchen · laundry
 18–22 Entorno             Alberca y jardines          "Shared pool & gardens · Space to unwind"
-22–27 Beneficio clave     Toma tranquila (5 s)        "Electricity, water & Wi-Fi included" + "Condo fees included"
+22–27 Beneficio clave     Toma tranquila (5 s)        "Electricity, water & Wi-Fi included" + "Condo fees included" + "Cleaning every 2 weeks included"
 27–30 Destino             Playa de Bucerías (real)    "Bucerías beach"
 30–35 Cierre + CTA        Terraza cálida              CONDO LUA · Winter 2027 · Jan–Apr · Message us
 ```

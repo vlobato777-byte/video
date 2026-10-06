@@ -636,7 +636,7 @@
       "id": "c07_incluido",
       "start": 22.2,
       "end": 26.9,
-      "y": 0.36,
+      "y": 0.35,
       "gap": 34,
       "lines": [
         {
@@ -647,6 +647,12 @@
           "text": "Condo fees included",
           "style": "tag",
           "delay": 0.6
+        },
+        {
+          "text": "Cleaning every 2 weeks included",
+          "style": "tag",
+          "delay": 1.1,
+          "gap_before": 18
         }
       ]
     },

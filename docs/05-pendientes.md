@@ -40,7 +40,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | Playa de `IMG_3349` | **Bucerías**, confirmado | Etiqueta "Bucerías beach" del video |
 | Fotos editadas con Gemini | **Solo ajuste de luz** | Se usan tal cual |
 | Música | **Meta Sound Collection** | Ver [04-musica.md](04-musica.md) |
-| Limpieza | **Incluida, una vez cada quincena** | Copy ("Cleaning every two weeks included") y respuestas *Qué incluye* y *Tarifa* |
+| Limpieza | **Incluida, una vez cada quincena** | **Video (22–27 s): "Cleaning every 2 weeks included"**, copy ("Cleaning every two weeks included") y respuestas *Qué incluye* y *Tarifa* |
 | Ocupación y camas | **6 personas**: 1 king, 2 individuales (twin) y 1 sofá cama king | Copy ("Sleeps 6: king bed, 2 twin beds + king-size sofa bed" · FR "6 couchages") y respuestas *Qué incluye*, *Disponibilidad* y *Mascotas* |
 | Fumar | **No se permite** | Copy ("Non-smoking" · FR "Non-fumeur") y respuesta *Qué incluye* |
 | Mascotas | **Perros de raza pequeña**, con **limpieza profunda extra** al final de la estancia | Copy ("Small dogs welcome 🐶 (pet cleaning fee applies)"), titular alternativo y respuesta *Mascotas* |
