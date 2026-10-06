@@ -50,6 +50,7 @@
 5. **"Condo fees included".** Para un turista estadounidense el término natural es *HOA fees*; para un canadiense, *condo fees*. Se mantiene "Condo fees included", que ambos entienden. En el copy largo se aclara como "Condo (HOA) fees included".
 6. **La llamada a la acción ya es correcta.** "Message us for dates & rates" funciona tanto con Messenger como con WhatsApp y pide justo lo que buscamos: fechas.
 7. **"Monthly stays" cambió a "3–4 month stays".** Con una estancia mínima de 3 meses, "Monthly stays" atraería a quien busca 1 o 2 meses y llenaría el chat de consultas que no cierran. "3–4 month stays" filtra desde el video, que es justo el objetivo del brief: consultas con duración real.
+8. **Dos diferenciadores nuevos: limpieza quincenal incluida y perros pequeños aceptados.** Para una estancia de 3 o 4 meses, ambos pesan mucho: muchos *snowbirds* viajan con su perro y valoran no tener que contratar limpieza. Ya están en el copy y en las respuestas. Si quieres, "Cleaning every 2 weeks included" puede entrar como tercera línea en el bloque de 22–27 s (es un cambio de una línea en el JSON).
 
 ---
 

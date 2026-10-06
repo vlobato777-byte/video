@@ -1,6 +1,6 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. La tarifa de limpieza sigue pendiente: la respuesta *Tarifa* dice que la limpieza no está incluida en la renta y que nos pregunten la tarifa, sin dar una cifra. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Ya no quedan marcadores por llenar. Las preguntas que siguen abiertas (cancelación, tamaño de camas, fumar, Wi-Fi y estacionamiento) no cambian el copy; están en [05-pendientes.md](05-pendientes.md), sección B2.
 
 > **Escribe siempre "MXN" pegado al precio.** Un canadiense o estadounidense que lea "$55,000" piensa en dólares y descarta el anuncio. Por eso el copy usa `$55,000 MXN` y agrega el equivalente aproximado (≈ US$3,000 · CA$4,300, al tipo de cambio del 6 de octubre de 2026: USD/MXN ≈ 18.2, CAD/MXN ≈ 12.7). **Si el peso se mueve más de ~5 %, actualiza los equivalentes.**
 
@@ -18,7 +18,9 @@ Los textos para el público van en inglés (Canadá y Estados Unidos) y se agreg
 | Tarifa | **$55,000 MXN por mes** (≈ US$3,000 · CA$4,300) |
 | Depósito | **1 mes** ($55,000 MXN) |
 | Formas de pago | **Wise** (transferencia) o **efectivo** |
-| Limpieza | Servicio disponible; **tarifa pendiente** |
+| Limpieza | **Incluida, una vez cada quincena** |
+| Ocupación máxima | **6 personas** |
+| Mascotas | **Se aceptan perros de raza pequeña** |
 | Playa del video (`IMG_3349`) | **Bucerías**, confirmado |
 | Fotos editadas con Gemini | Solo se ajustó la luz: se pueden usar |
 
@@ -37,8 +39,10 @@ January–April 2027 · 3-month minimum stay, with the option to add a 4th month
 
 ✔ Electricity, water & Wi-Fi included
 ✔ Condo (HOA) fees included
+✔ Cleaning every two weeks included
 ✔ Equipped kitchen + private laundry room (washer & dryer)
 ✔ A/C and ceiling fans
+✔ Sleeps up to 6 · small dogs welcome 🐶
 ✔ Parking · gated community with security booth
 🚗 11 min drive to Bucerías beach · 25 min to Puerto Vallarta airport (PVR) · supermarkets nearby
 
@@ -53,8 +57,8 @@ Message us your dates and length of stay. We'll confirm availability and rates.
 ```
 Your winter could look like this. 🌴
 
-Private terrace · 2 bed / 2 bath · ground floor · Bucerías, Mexico.
-Electricity, water, Wi-Fi & condo fees included.
+Private terrace · 2 bed / 2 bath · sleeps up to 6 · ground floor · Bucerías, Mexico.
+Included: electricity, water, Wi-Fi, condo fees and cleaning every two weeks. Small dogs welcome 🐶
 
 January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,000 · CA$4,300).
 👉 Message us your dates for availability & rates.
@@ -68,6 +72,7 @@ January–April 2027 · stays of 3 to 4 months · $55,000 MXN/month (≈ US$3,00
 | 2 | Your winter home in Bucerías | Alternativa emocional |
 | 3 | Jan–Apr 2027 · 3–4 month stays | Alternativa informativa (filtra mejor por duración) |
 | 4 | Winter 2027 · $55,000 MXN/month | Alternativa con precio (filtra mejor por presupuesto) |
+| 5 | Small dogs welcome · Winter 2027 | Alternativa para quienes viajan con perro |
 
 **Descripción:** `Electricity, water, Wi-Fi & condo fees included`
 **Botón:** *Send message*. Con WhatsApp y Messenger activos, Meta muestra a cada persona la app que más usa. Coincide con el "Message us" del video.
@@ -87,8 +92,10 @@ De janvier à avril 2027 · séjour minimum de 3 mois, avec possibilité de prol
 
 ✔ Électricité, eau et Wi-Fi inclus
 ✔ Frais de copropriété inclus
+✔ Ménage aux deux semaines inclus
 ✔ Cuisine équipée + buanderie privée (laveuse et sécheuse)
 ✔ Climatisation et ventilateurs de plafond
+✔ Jusqu'à 6 personnes · petits chiens acceptés 🐶
 ✔ Stationnement · complexe à accès contrôlé avec guérite
 🚗 À 11 min en voiture de la plage de Bucerías · à 25 min de l'aéroport de Puerto Vallarta (PVR) · supermarchés à proximité
 
@@ -133,20 +140,25 @@ To check availability, please share your arrival and departure dates and number 
 *Disponibilidad*
 ```
 Thanks for reaching out! 🌞 To check availability, could you share:
-1) arrival and departure dates, 2) number of guests, 3) any pets?
+1) arrival and departure dates, 2) number of guests (up to 6), 3) any pets? Small dogs are welcome.
 Our season is January–April 2027: 3-month minimum, with the option to add a 4th month (subject to availability).
 The rate is $55,000 MXN per month (about US$3,000 / CA$4,300). We'll get back to you to confirm availability.
 ```
 
 *Qué incluye*
 ```
-The monthly rate includes electricity (no usage cap), water, Wi-Fi and condo fees.
+The monthly rate includes electricity (no usage cap), water, Wi-Fi, condo fees and cleaning every two weeks.
 The condo is fully furnished, with an equipped kitchen, a private laundry room (washer & dryer), A/C, parking and a private terrace. Guests can use the shared pool and gardens.
 ```
 
 *Estancia mínima*
 ```
 The minimum stay is 3 months, with the option to extend for a 4th month (subject to availability), so a full January–April 2027 stay is possible. Which months are you considering?
+```
+
+*Mascotas*
+```
+Yes, small dogs are welcome! 🐶 Tell us the breed and size so we can confirm. The condo sleeps up to 6 guests.
 ```
 
 *Ubicación (con honestidad: evita reclamos)*
@@ -158,7 +170,7 @@ Condo Lua is in a gated community in Bucerías, Riviera Nayarit. By car it's abo
 ```
 For January–April 2027 the rate is $55,000 MXN per month (about US$3,000 / CA$4,300 at today's exchange rate), with a 3-month minimum and the option to add a 4th month (subject to availability).
 A one-month deposit ($55,000 MXN) is required. You can pay by Wise transfer, an easy way to pay from Canada or the US, or in cash.
-Cleaning is not included in the monthly rate; just ask us for the cleaning fee and details.
+Cleaning every two weeks is included in the rate.
 Would you like us to check availability for your dates?
 ```
 
