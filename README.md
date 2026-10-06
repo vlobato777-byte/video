@@ -10,6 +10,7 @@ Anuncio vertical de 35 s (1080 × 1920) para atraer a residentes de Canadá y Es
 | `exports/CondoLua_Winter2027_35s_B_apertura-terraza.mp4` | **Versión B**: abre con la terraza de día. Lo demás es idéntico, para la prueba A/B |
 | `exports/storyboard.png` | Hoja de contactos: un cuadro por toma, con su texto |
 | `exports/*_preview_guias.mp4` | Vista previa con las zonas de la interfaz de Reels marcadas en rojo |
+| `exports/revision/` | Copias ligeras para revisar en el teléfono. **No usar para la pauta** |
 | `exports/overlays/` | Textos como PNG transparentes + `.srt`, por si se quiere rearmar en CapCut o Canva |
 | `project/condo_lua_reel.json` | **Proyecto editable**: tomas, tiempos, encuadres, color, textos, estilos y música |
 
