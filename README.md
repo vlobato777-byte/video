@@ -1,6 +1,6 @@
 # Condo Lua: reel de invierno 2027 (Facebook / Instagram)
 
-Anuncio vertical de 35 s (1080 × 1920) para atraer a residentes de Canadá y Estados Unidos que buscan una estancia de invierno de 1 a 4 meses en Bucerías, Nayarit (enero–abril de 2027).
+Anuncio vertical de 35 s (1080 × 1920) para atraer a residentes de Canadá y Estados Unidos que buscan una estancia de invierno de 3 a 4 meses en Bucerías, Nayarit (enero–abril de 2027).
 
 ## Entregables
 

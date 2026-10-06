@@ -2,7 +2,7 @@
 
 ## A. Material que falta para la versión final
 
-El render actual ya es publicable como **versión de revisión**. Muchas tomas salen de cuadros del video de WhatsApp (`media/source/borrador_whatsapp/`), que tienen menor calidad. Para la exportación final hay que reemplazarlas por las **fotos originales**.
+El render actual sirve como **versión de revisión** (todavía no para la pauta). Muchas tomas salen de cuadros del video de WhatsApp (`media/source/borrador_whatsapp/`), que tienen menor calidad. Para la exportación final hay que reemplazarlas por las **fotos originales**.
 
 | Toma | Estado | Qué falta (archivo original) |
 |---|---|---|
@@ -22,7 +22,7 @@ El render actual ya es publicable como **versión de revisión**. Muchas tomas s
 | 09 Cierre | Cuadro del borrador | ⏳ Terraza de noche (copas, vela, luces) |
 | 01B Terraza (versión B) | ✅ `IMG_6032.MOV` original | — |
 
-**Faltan 8 archivos para la versión 35 s definitiva** (marcados con ⏳). La versión actual ya se puede publicar; con los originales gana nitidez.
+**Faltan 8 archivos para la versión 35 s definitiva** (marcados con ⏳). La versión actual **todavía no se debe pautar**. Antes hay que (1) confirmar que el atardecer de `IMG_3349` es en la playa de Bucerías (B2 #7); si no lo es, cambiar o quitar la etiqueta "Bucerías beach"; y (2) enviar los originales sin editar del baño (04c) y de la terraza de noche (09), o confirmar que la edición solo ajustó la luz. Con los originales, además, gana nitidez.
 
 > ⚠️ **Fotos con marca de IA:** dos de las imágenes que pegaste en el chat (la terraza de noche con copas y vela, y el baño con regadera) tienen en la esquina inferior derecha el destello de cuatro puntas que agrega Google Gemini al editar. El brief pide no añadir nada con IA. Envía la **foto original sin editar** o confirma que la edición solo ajustó la luz, sin agregar ni quitar elementos.
 

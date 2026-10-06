@@ -1,6 +1,6 @@
 # Copy del anuncio y mensajes (Meta Ads)
 
-Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Lo único pendiente es la **tarifa mensual**, marcada como `$[X]`.
+Los textos para el público van en inglés (Canadá y Estados Unidos) y se agrega una versión en francés para Quebec. Lo que falta en el copy es la **tarifa mensual**, marcada como `$[X]`, y el depósito y la forma de pago, marcados como `[Deposit / payment terms]` en la respuesta *Tarifa*. No envíes esa respuesta hasta reemplazar ambos. Las demás preguntas abiertas están en [05-pendientes.md](05-pendientes.md), sección B2.
 
 **Datos confirmados con la propietaria** (6 de octubre de 2026):
 
@@ -25,10 +25,10 @@ Trade snow for sunshine this winter. ☀️
 
 Condo Lua is a fully furnished 2-bedroom, 2-bath ground-floor condo in Bucerías, Mexico, with your own private terrace, a shared pool and quiet gardens.
 
-January–April 2027 · 3-month minimum stay, with the option to extend a 4th month (subject to availability).
+January–April 2027 · 3-month minimum stay, with the option to add a 4th month (subject to availability).
 
 ✔ Electricity, water & Wi-Fi included
-✔ Condo fees included
+✔ Condo (HOA) fees included
 ✔ Equipped kitchen + private laundry room (washer & dryer)
 ✔ A/C and ceiling fans
 ✔ Parking · gated community with security booth
@@ -59,7 +59,7 @@ January–April 2027 · stays of 3 to 4 months.
 | 2 | Your winter home in Bucerías | Alternativa emocional |
 | 3 | Jan–Apr 2027 · 3–4 month stays | Alternativa informativa (filtra mejor por duración) |
 
-**Descripción:** `Utilities, Wi-Fi & condo fees included`
+**Descripción:** `Electricity, water, Wi-Fi & condo fees included`
 **Botón:** *Send message*. Con WhatsApp y Messenger activos, Meta muestra a cada persona la app que más usa. Coincide con el "Message us" del video.
 
 ---
@@ -71,30 +71,33 @@ January–April 2027 · stays of 3 to 4 months.
 ```
 Échangez la neige contre le soleil cet hiver. ☀️
 
-Condo Lua : condo meublé de 2 chambres et 2 salles de bain au rez-de-chaussée, à Bucerías (Mexique), avec terrasse privée, piscine commune et jardins.
+Condo Lua : condo entièrement meublé de 2 chambres et 2 salles de bain au rez-de-chaussée, à Bucerías (Mexique), avec terrasse privée, piscine commune et jardins.
 
 De janvier à avril 2027 · séjour minimum de 3 mois, avec possibilité de prolonger d'un 4e mois (selon disponibilité).
 
 ✔ Électricité, eau et Wi-Fi inclus
 ✔ Frais de copropriété inclus
 ✔ Cuisine équipée + buanderie privée (laveuse et sécheuse)
-✔ Climatisation · stationnement · résidence fermée avec poste de sécurité
-🚗 11 min en voiture de la plage de Bucerías · 25 min de l'aéroport de Puerto Vallarta · supermarchés à proximité
+✔ Climatisation et ventilateurs de plafond
+✔ Stationnement · complexe à accès contrôlé avec guérite
+🚗 À 11 min en voiture de la plage de Bucerías · à 25 min de l'aéroport de Puerto Vallarta (PVR) · supermarchés à proximité
 
 À partir de [X] $ US/mois
 
 Écrivez-nous vos dates et la durée de votre séjour pour connaître la disponibilité et les tarifs.
 ```
 
-Titular FR: `Hiver 2027 à Bucerías, Mexique` · Descripción: `Services, Wi-Fi et frais de copropriété inclus`
+Titular FR: `Hiver 2027 à Bucerías, Mexique` · Descripción: `Électricité, eau, Wi-Fi et frais de copropriété inclus`
 
 ---
 
 ## 5. Configuración de mensajes (WhatsApp + Messenger)
 
 **En Ads Manager:** objetivo **Interacción**. En el conjunto de anuncios, la ubicación de la conversión es **Apps de mensajes**: marca **Messenger** y **WhatsApp** (Instagram Direct es opcional).
-**Requisito:** el número de WhatsApp Business debe estar vinculado a la página de Facebook (Configuración de la página → WhatsApp).
+**Requisito:** el número de WhatsApp Business debe estar vinculado a la página de Facebook (Configuración → Cuentas vinculadas → WhatsApp).
 **Bandeja:** responde Messenger desde Meta Business Suite y WhatsApp desde la app WhatsApp Business. Activa las notificaciones en ambas: responder en minutos marca la diferencia.
+
+**Plantilla de mensajes del anuncio.** Se elige **una sola** opción: *mensaje precargado* **o** *preguntas frecuentes*. Para este anuncio usa el **mensaje precargado**, porque pide fechas, que es el objetivo del brief.
 
 **Mensaje precargado (igual en las dos apps)**
 ```
@@ -102,7 +105,7 @@ Hi! I'm interested in Condo Lua for winter 2027.
 Arrival: ___  Departure: ___  Guests: ___
 ```
 
-**Preguntas frecuentes / ice-breakers (máximo 4)**
+**Preguntas frecuentes (fuera del anuncio, máximo 4).** Configúralas en Meta Business Suite → Bandeja de entrada → Automatizaciones → Preguntas frecuentes (Messenger), y como respuestas rápidas en WhatsApp Business. Aparecen cuando alguien escribe a la página por su cuenta.
 1. Is January–April 2027 available?
 2. What's the monthly rate?
 3. What's included?
@@ -110,7 +113,7 @@ Arrival: ___  Departure: ___  Guests: ___
 
 **Mensaje de bienvenida y de ausencia (WhatsApp Business y Messenger)**
 ```
-Thanks for writing to Condo Lua! 🌴 We usually reply within a few hours (Mexico Pacific time).
+Thanks for writing to Condo Lua! 🌴 We usually reply within a few hours (Puerto Vallarta time).
 To check availability, please share your arrival and departure dates and number of guests.
 ```
 
@@ -120,7 +123,7 @@ To check availability, please share your arrival and departure dates and number 
 ```
 Thanks for reaching out! 🌞 To check availability, could you share:
 1) arrival and departure dates, 2) number of guests, 3) any pets?
-Stays are 3 months minimum (January–April 2027), with the option to extend a 4th month.
+Our season is January–April 2027: 3-month minimum, with the option to add a 4th month (subject to availability).
 We'll get back to you with availability and the monthly rate.
 ```
 
@@ -132,7 +135,7 @@ The condo is fully furnished, with an equipped kitchen, a private laundry room (
 
 *Estancia mínima*
 ```
-The minimum stay is 3 months, and you can extend for a 4th month, so January–April 2027 works perfectly. Which months are you considering?
+The minimum stay is 3 months, with the option to extend for a 4th month (subject to availability), so a full January–April 2027 stay is possible. Which months are you considering?
 ```
 
 *Ubicación (con honestidad: evita reclamos)*

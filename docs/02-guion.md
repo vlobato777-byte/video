@@ -11,17 +11,17 @@ La fuente de verdad es [`project/condo_lua_reel.json`](../project/condo_lua_reel
 
 | Tiempo | Toma | Texto en pantalla | Movimiento y transición | Música |
 |---|---|---|---|---|
-| 0.0–3.0 | **Alberca**: la toma más luminosa, con poco cielo (encuadre bajo) | **Your winter could look like this.** (serif 104 px) · *Bucerías, Mexico* (entra a los 0.65 s) | Acercamiento lento del 10 al 16 % | Entrada suave, sin golpe |
+| 0.0–3.0 | **Alberca**: la toma más luminosa, con poco cielo (encuadre bajo) | **Your winter could look like this.** (serif 104 px) · *Bucerías, Mexico* (entra a los 0.65 s) | Acercamiento lento del 4 al 12 % | Entrada suave, sin golpe |
 | 3.0–6.0 | **Terraza privada**, de día: mesa + puerta o ventanal | **Your own private terrace** | Corte. Paneo lateral corto + acercamiento del 4 % | Entra el ritmo |
-| 6.0–8.0 | **Sala → comedor → cocina** (`IMG_5857`, original): explica la distribución | **Fully furnished** / **Ground floor** (+0.35 s, de 6.15 a 9.9) | Corte. Acercamiento del 5 % | |
-| 8.0–10.0 | **Comedor y sala con la terraza al fondo** (`IMG_5838`, recortada) | (continúa) | Corte. Paneo lateral | |
+| 6.0–8.0 | **Comedor → sala → terraza** (`IMG_5993`, original): explica la distribución | **Fully furnished** / **Ground floor** (+0.35 s, de 6.15 a 9.9) | Corte. Acercamiento del 6 % | |
+| 8.0–10.0 | **Sala → cocina** (`IMG_5857`, original) | (continúa) | Corte. Paneo lateral | |
 | 10.0–11.6 | **Recámara principal** | **2 bedrooms · 2 bathrooms** (de 10.15 a 13.9) | Corte. Acercamiento del 5 % | |
-| 11.6–12.9 | **Segunda recámara** | (continúa) | Corte. Alejamiento del 5 % | |
+| 11.6–12.9 | **Segunda recámara** (`IMG_5896`, original) | (continúa) | Corte. Paneo lateral corto | |
 | 12.9–14.0 | **Baño** (solo si la toma es buena) | (continúa) | Corte | |
 | 14.0–16.2 | **Cocina equipada** (`IMG_5864`, original vertical) | **Equipped kitchen** | Corte. Acercamiento del 6 % | |
 | 16.2–18.0 | **Lavadora y secadora** | **In-suite laundry** (aparece con la lavadora) | Corte | |
 | 18.0–20.0 | **Alberca al atardecer**: ángulo distinto al de la apertura | **Shared pool & gardens** / **Space to unwind** | Disolvencia de 0.2 s (interior → exterior) | |
-| 20.0–22.0 | **Jardines** | (continúa) | Corte. Paneo suave | |
+| 20.0–22.0 | **Jardines** | (continúa) | Corte. Alejamiento del 4 % | |
 | 22.0–27.0 | **Toma tranquila del departamento**, con zona despejada arriba | **Electricity, water & Wi-Fi included** + píldora **Condo fees included** (+0.6 s) | Disolvencia de 0.2 s. Acercamiento muy lento. Oscurecimiento sutil del 18 % detrás del texto | Bajar la intensidad para leer |
 | 27.0–30.0 | **Playa de Bucerías**: `IMG_3349.mov`, atardecer real de enero | **Bucerías beach** | Disolvencia de 0.2 s. Acercamiento del 5 % | Momento emotivo |
 | 30.0–35.0 | **Cierre: terraza cálida** (la del cierre actual) | **CONDO LUA** · *Bucerías · Winter 2027* · **January–April · 3–4 month stays** · píldora **Message us for dates & rates** (entradas escalonadas de 0.3 s; quedan fijas hasta el final) | Disolvencia de 0.3 s. Oscurecimiento del 38 % detrás del texto. **Sin fundido a negro**, para que el último cuadro muestre la llamada a la acción | Resolución y salida de 2.5 s |
@@ -47,4 +47,4 @@ Así, cualquier diferencia de resultados se debe solo a la apertura.
 
 ## Ritmo de lectura
 
-Ningún texto está en pantalla menos de 2.7 s. El beneficio principal (servicios incluidos) dura 4.7 s y la llamada a la acción final, 3.75 s. Así se lee cómodamente sin sonido.
+Cada bloque de texto dura al menos 2.7 s. Las líneas que entran con retraso duran menos: "Bucerías, Mexico", 2.25 s, e "In-suite laundry", 1.6 s, porque aparece con la lavadora. El beneficio principal (servicios incluidos) dura 4.7 s y la llamada a la acción final, 3.75 s. Así se lee cómodamente sin sonido.

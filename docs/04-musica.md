@@ -17,7 +17,7 @@ El archivo preliminar no tiene audio, y el render actual lleva una pista de audi
 
 ## Dónde conseguirla (con licencia para anuncios)
 
-1. **Meta Sound Collection (recomendada, gratis).** Es la biblioteca libre de regalías de Meta y se puede usar en publicaciones y anuncios **dentro de Facebook e Instagram** (no sirve para YouTube ni para tu web). Se descarga desde Meta Business Suite o Creator Studio, en *Sound Collection*.
+1. **Meta Sound Collection (recomendada, gratis).** Es la biblioteca libre de regalías de Meta y se puede usar en publicaciones y anuncios **dentro de Facebook e Instagram** (no sirve para YouTube ni para tu web). Se descarga desde Meta Business Suite (Todas las herramientas → *Sound Collection*). Creator Studio ya no existe.
 2. **Bibliotecas de pago** (Artlist, Epidemic Sound, Musicbed, Soundstripe). Verifica que **tu plan cubra anuncios pagados**: en general, los planes personales o "creator" no los cubren.
 3. **No usar** las canciones "en tendencia" de la biblioteca de Reels: son para uso personal, no para anuncios de empresa.
 
