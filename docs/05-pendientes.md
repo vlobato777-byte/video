@@ -33,7 +33,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | Tope de electricidad | **Sin tope** | El texto de 22–27 s se queda igual: "Electricity, water & Wi-Fi included". En las respuestas dice "no usage cap" |
 | Estancia mínima | **3 meses, con opción a un 4.º mes** | Cierre del video: "January–April · 3–4 month stays". Copy y respuestas |
 | Distancias | **Verificadas, en auto** | Copy y respuesta de ubicación ("11 min drive", "25 min to PVR") |
-| Nombre | **Condo Lua** | Video y copy. El mapa dice "Lua Condo (Matiari)": conviene actualizarlo antes de usarlo en un reel |
+| Nombre | **Condo Lua** | Video y copy. El mapa se cambiará a "Condo Lua" (aprobado por la propietaria); falta adjuntarlo como archivo |
 | Destino del anuncio | **WhatsApp y Messenger** | Copy, sección 5: objetivo Interacción con las dos apps de mensajes |
 | Tarifa | **$55,000 MXN por mes** (≈ US$3,000 · CA$4,300 al 6 oct 2026) | Copy (siempre con "MXN") y respuesta *Tarifa* |
 | Depósito y pago | **1 mes de depósito**; pago por **Wise** o en **efectivo** | Copy y respuesta *Tarifa* |

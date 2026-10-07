@@ -9,7 +9,7 @@ Revisión de las fotos compartidas el 7 de octubre de 2026 (cinco grupos). Por c
 |---|---|
 | ⭐ 1 | **Adjuntar como archivo: alberca con pérgolas dentro del agua, alberca con camastros al atardecer (vertical), andador del jardín (vertical) y baño con regadera.** Mejorarían las 4 tomas que aún salen del borrador (0–3, 20–22, 12.9–14 y la versión de respaldo). La primera Es la mejor apertura disponible: luminosa, de impacto y con cielo limpio para el titular. Reemplazaría la toma 01A, que hoy sale de un cuadro del borrador |
 | 2 | Adjuntar la panorámica de la alberca con toallas en los camastros, si existe en mayor resolución |
-| 3 | **No usar** la caja fuerte con pasaporte ni el vestidor con espejo de marco plateado: el vestidor original que compartiste después tiene un espejo angosto sin marco, así que el marco plateado **se agregó con IA** |
+| 3 | **No usar** la caja fuerte con pasaporte ni el vestidor con espejo de marco plateado (el marco se agregó con IA). Para el vestidor se usará la original con el espejo angosto |
 | 4 | No usar fotos donde se lee "Torre 13" ni el cajón de estacionamiento "13-104": identifican el edificio y el número exacto del departamento |
 | 5 | No usar la foto de la alberca con personas nadando, salvo con su permiso por escrito |
 
@@ -29,7 +29,7 @@ Revisión de las fotos compartidas el 7 de octubre de 2026 (cinco grupos). Por c
 | 10 | Entrada a la torre (pasillo con pérgola) | 📎 | Buena | ⛔ Evitar | Se lee "Torre 13" e identifica el edificio exacto; por seguridad de los huéspedes, mejor no publicarlo. Además, los pasillos no venden |
 | 11 | Letrero "Torre 13 · Área Parque Casa Club" | 📎 | — | ⛔ Evitar | Mismo motivo |
 | 12 | Alberca panorámica con toallas en los camastros, al atardecer (horizontal) | 📎 | Muy buena composición | Para la serie | Reel 2 ("Afternoon by the pool") con paneo horizontal. En 9:16 hay que recortarla mucho: **pedir el original en máxima resolución** |
-| 13 | Vestidor con espejo de marco plateado y toallas | 📎 | — | ⚠️ **No usar por ahora** | Tiene el destello de Gemini en la esquina. Además, la foto anterior del mismo vestidor muestra un espejo angosto **sin marco** y un burro de planchar: el espejo grande pudo agregarse con IA. Usar la versión anterior o confirmar que es real |
+| 13 | Vestidor con espejo de marco plateado y toallas | 📎 | — | ⛔ **Descartada** | Tiene el destello de Gemini en la esquina. Además, la foto anterior del mismo vestidor muestra un espejo angosto **sin marco** y un burro de planchar: el espejo grande pudo agregarse con IA. Se usará la versión original con el espejo angosto (#34) |
 | 14 | Parrilla vitrocerámica Mabe y cafetera | 📎 | Buena | Para la serie | Reel 4 o 2 como detalle de "Equipped kitchen". En el principal se queda la cocina completa (`IMG_5864`), que muestra mejor el espacio |
 
 ## Preguntas para confirmar
@@ -54,16 +54,16 @@ Revisión de las fotos compartidas el 7 de octubre de 2026 (cinco grupos). Por c
 | 22 | Andador del jardín con palmeras (vertical) | 📎 | ⭐ **Para el video** | **20–22 s** ("Space to unwind"): mejor que el cuadro actual del borrador. **Adjuntar como archivo** |
 | 23 | Alberca con dos personas nadando | 📎 | ⚠️ Solo con permiso | Personas identificables: no usar en anuncios sin su autorización por escrito |
 | 24 | Alberca con camastros y sombrillas al atardecer (vertical) | 📎 | ⭐ **Para el video** | Es el original de la toma 0–3 s (versión A) que hoy sale del borrador. Junto con la de pérgolas, la mejor candidata para la apertura. **Adjuntar como archivo** |
-| 25 | Mapa de ubicación | 📎 | Serie | Reel 5. ⚠️ Dice "LUA CONDO (MATIARI)": debe decir **Condo Lua** para coincidir con el anuncio |
+| 25 | Mapa de ubicación | 📎 | Serie | Reel 5. **Pendiente:** cambiar "LUA CONDO (MATIARI)" por **CONDO LUA** y quitar el logotipo de Matiari (es la marca del desarrollador; en un anuncio particular podría parecer que lo publica la desarrolladora), que se sustituye por un pin de ubicación. **Adjuntar el mapa como archivo** |
 | 26 | Lavabo con toallas | 📎 | Serie | Detalle para el reel 4 |
 | 27 | Baño con regadera y luz en el plafón | 📎 | ⭐ **Para el video** | **12.9–14 s**: es el original de la toma del baño que hoy sale del borrador. **Adjuntar como archivo** |
-| 28 | Patio pequeño con sillas blancas junto a una recámara (de noche) | 📎 | Pregunta | ¿Es un segundo patio privado, junto a la recámara? Si sí, es un argumento extra: "Two private outdoor spaces" |
+| 28 | Rincón de la terraza con sillas blancas, junto a la recámara (de noche) | 📎 | ✅ Misma terraza | Confirmado: es la misma terraza privada (las sillas blancas del cierre). La terraza conecta con la sala y con la recámara: en el reel 4 se puede decir "Terrace off the living room and bedroom" |
 | 29 | Edificio al atardecer con jardín | 📎 | Serie | Reel 2 o 5b. En el principal repetiría la apertura |
 | 30 | Área de mesas techada junto a la alberca | 📎 | Serie | Igual que la 21 |
 | 31 | Comedor vertical con lámpara de mimbre | 📎 | Alternativa | Vertical y luminosa. Podría reemplazar la toma de 6–8 s si se prefiere el comedor de frente |
 | 32 | Doble lavabo | 📎 | Serie | Reel 4: "2 bathrooms" o "Double vanity" |
 | 33 | Detalle de canastas con toallas | 📎 | Decorativa | Solo como transición en el reel 2 |
-| 34 | Vestidor original (espejo angosto, burro de planchar) | 📎 | ✅ Real | Úsala en lugar de la versión con espejo de marco plateado. Reel 4: "Walk-in closet" |
+| 34 | Vestidor original (espejo angosto, burro de planchar) | 📎 | ✅ **Elegida** | La propietaria eligió esta versión. Reel 4: "Walk-in closet". **Adjuntar como archivo** cuando se produzca el reel |
 
 ## Cómo enviar las fotos para que lleguen como archivo
 
