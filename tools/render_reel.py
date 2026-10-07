@@ -64,6 +64,12 @@ def ease_out(p):
     return 1 - (1 - p) ** 3
 
 
+def shown(path):
+    """Path relative to the repo when inside it, absolute otherwise (for log lines)."""
+    path = Path(path).resolve()
+    return path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+
+
 def resolve(path):
     p = Path(path)
     return p if p.is_absolute() else ROOT / p
@@ -596,7 +602,7 @@ def render_version(proj, version, args, out_path):
             sys.exit("ffmpeg encode failed")
     for s in srcs:
         s.close()
-    print(f"\r  {version}: done -> {out_path.relative_to(ROOT)}")
+    print(f"\r  {version}: done -> {shown(out_path)}")
 
 
 def render_storyboard(proj, out_path):
@@ -631,7 +637,7 @@ def render_storyboard(proj, out_path):
         d.text((x, y + th + 10), tag, font=f, fill=(60, 45, 35))
     out_path.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(out_path)
-    print(f"  storyboard -> {out_path.relative_to(ROOT)}")
+    print(f"  storyboard -> {shown(out_path)}")
 
 
 def export_overlays(proj, out_dir):
@@ -654,7 +660,7 @@ def export_overlays(proj, out_dir):
         text = "\n".join(ln["text"].replace("\n", " ") for ln in cap["lines"])
         srt.append(f"{i}\n{ts(cap['start'])} --> {ts(cap['end'])}\n{text}\n")
     (out_dir / "textos_en_pantalla.srt").write_text("\n".join(srt), encoding="utf-8")
-    print(f"  overlays -> {out_dir.relative_to(ROOT)}/")
+    print(f"  overlays -> {shown(out_dir)}/")
 
 
 def main():
