@@ -392,29 +392,28 @@
       "id": "06a_alberca_jardin",
       "start": 18.0,
       "end": 20.0,
-      "source": "media/source/06a_alberca_jardin.jpg",
+      "source": "media/source/fotos_web/alberca_toallas.jpg",
       "transition_in": {
         "type": "dissolve",
         "duration": 0.2
       },
       "from": {
         "cx": 0.5,
-        "cy": 0.66,
-        "zoom": 1.12
+        "cy": 0.45,
+        "zoom": 1.0
       },
       "to": {
         "cx": 0.5,
-        "cy": 0.64,
-        "zoom": 1.18
+        "cy": 0.45,
+        "zoom": 1.05
       },
       "grade": {},
       "placeholder": {
         "title": "ALBERCA / JARDINES 1",
-        "need": "Ángulo distinto al de la apertura. Evitar repetir vistas similares del edificio."
+        "need": "Detalle de alberca con toallas (sin repetir el edificio de la apertura)."
       },
-      "draft": "media/source/borrador_whatsapp/pre30_alberca_atardecer_00.05s.jpg",
       "shade": {
-        "amount": 0.16,
+        "amount": 0.18,
         "center_y": 0.34,
         "spread": 0.2
       }
@@ -450,20 +449,20 @@
       "id": "07_toma_tranquila",
       "start": 22.0,
       "end": 27.0,
-      "source": "media/source/07_toma_tranquila.jpg",
+      "source": "media/source/fotos_web/sala_dia_sofa_cama.jpg",
       "transition_in": {
         "type": "dissolve",
         "duration": 0.2
       },
       "from": {
-        "cx": 0.5,
+        "cx": 0.62,
         "cy": 0.5,
         "zoom": 1.0
       },
       "to": {
-        "cx": 0.5,
+        "cx": 0.62,
         "cy": 0.5,
-        "zoom": 1.05
+        "zoom": 1.04
       },
       "shade": {
         "amount": 0.18,
@@ -474,8 +473,7 @@
       "placeholder": {
         "title": "TOMA TRANQUILA DEL DEPTO",
         "need": "Interior sereno con zona despejada en el tercio superior para leer los beneficios."
-      },
-      "draft": "media/source/borrador_whatsapp/pre35_12_22.45s.jpg"
+      }
     },
     {
       "id": "08_playa_bucerias",

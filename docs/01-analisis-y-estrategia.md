@@ -17,6 +17,7 @@
 | `IMG_5993`, `IMG_5857`, `IMG_5896`, `IMG_5864` (HEIC) | Comedor → sala → terraza, sala → cocina, segunda recámara y cocina vertical, fotos originales | **Comedor → sala (6–8 s), sala → cocina (8–10 s), segunda recámara (11.6–12.9 s) y cocina (14–16.2 s)** |
 | `IMG_5837.HEIC` | Comedor de día, foto original | Alternativa para el comedor |
 | `IMG_4126`, `IMG_5694` | Reunión con personas y una carretera | No se usan: no son del departamento |
+| Fotos web (`media/source/fotos_web/`) | Toallas junto a la alberca y sala de día con sofá cama, entre otras | **Alberca (18–20 s) y toma tranquila (22–27 s)**. Análisis completo en [07-banco-de-fotos.md](07-banco-de-fotos.md) |
 | Fotos pegadas en el chat | Alberca, jardines, recámaras, baños, cocina, sala, terraza | No llegan como archivo. **Hay que adjuntarlas** (ver [05-pendientes.md](05-pendientes.md)) |
 | Mapa de ubicación | Playa Zona Dorada a 11 min / 5.7 km, aeropuerto PVR a 25 min / 13.4 km | Copy. **La playa no queda a distancia caminable** |
 | Carpeta de Drive y web | Bloqueadas por la red de este entorno | — |

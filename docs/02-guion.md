@@ -20,9 +20,9 @@ La fuente de verdad es [`project/condo_lua_reel.json`](../project/condo_lua_reel
 | 12.9–14.0 | **Baño** (solo si la toma es buena) | (continúa) | Corte | |
 | 14.0–16.2 | **Cocina equipada** (`IMG_5864`, original vertical) | **Equipped kitchen** | Corte. Acercamiento del 6 % | |
 | 16.2–18.0 | **Lavadora y secadora** | **In-suite laundry** (aparece con la lavadora) | Corte | |
-| 18.0–20.0 | **Alberca al atardecer**: ángulo distinto al de la apertura | **Shared pool & gardens** / **Space to unwind** | Disolvencia de 0.2 s (interior → exterior) | |
+| 18.0–20.0 | **Toallas junto a la alberca** (`fotos_web/alberca_toallas.jpg`): detalle luminoso que no repite el edificio de la apertura | **Shared pool & gardens** / **Space to unwind** | Disolvencia de 0.2 s (interior → exterior) | |
 | 20.0–22.0 | **Jardines** | (continúa) | Corte. Alejamiento del 4 % | |
-| 22.0–27.0 | **Toma tranquila del departamento**, con zona despejada arriba | **Electricity, water & Wi-Fi included** + píldoras **Condo fees included** (+0.6 s) y **Cleaning every 2 weeks included** (+1.1 s) | Disolvencia de 0.2 s. Acercamiento muy lento. Oscurecimiento sutil del 18 % detrás del texto | Bajar la intensidad para leer |
+| 22.0–27.0 | **Toma tranquila del departamento**: sala de día, recortada sobre el sillón con manta mostaza y la terraza (`fotos_web/sala_dia_sofa_cama.jpg`) | **Electricity, water & Wi-Fi included** + píldoras **Condo fees included** (+0.6 s) y **Cleaning every 2 weeks included** (+1.1 s) | Disolvencia de 0.2 s. Acercamiento muy lento. Oscurecimiento sutil del 18 % detrás del texto | Bajar la intensidad para leer |
 | 27.0–30.0 | **Playa de Bucerías**: `IMG_3349.mov`, atardecer real de enero | **Bucerías beach** | Disolvencia de 0.2 s. Acercamiento del 5 % | Momento emotivo |
 | 30.0–35.0 | **Cierre: terraza cálida** (la del cierre actual) | **CONDO LUA** · *Bucerías · Winter 2027* · **January–April · 3–4 month stays** · píldora **Message us for dates & rates** (entradas escalonadas de 0.3 s; quedan fijas hasta el final) | Disolvencia de 0.3 s. Oscurecimiento del 38 % detrás del texto. **Sin fundido a negro**, para que el último cuadro muestre la llamada a la acción | Resolución y salida de 2.5 s |
 

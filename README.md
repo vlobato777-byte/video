@@ -22,10 +22,11 @@ Anuncio vertical de 35 s (1080 × 1920) para atraer a residentes de Canadá y Es
 4. [Música y licencias](docs/04-musica.md)
 5. [Pendientes: material y confirmaciones](docs/05-pendientes.md)
 6. [Serie de reels: propuesta](docs/06-serie-de-reels.md)
+7. [Banco de fotos: análisis de las tomas](docs/07-banco-de-fotos.md)
 
 ## Estado
 
-**Lista para pautar en cuanto lleve música** de Meta Sound Collection (ver [docs/04-musica.md](docs/04-musica.md)). Nueve tomas de la versión A (ocho de la B) usan cuadros extraídos del preliminar de WhatsApp (`media/source/borrador_whatsapp/`). Se ven bien, pero al agregar cada foto original en la ruta `source` de su toma, el render la usa automáticamente y gana nitidez.
+**Lista para pautar en cuanto lleve música** de Meta Sound Collection (ver [docs/04-musica.md](docs/04-musica.md)). Siete tomas de la versión A (seis de la B) usan cuadros extraídos del preliminar de WhatsApp (`media/source/borrador_whatsapp/`). Se ven bien, pero al agregar cada foto original en la ruta `source` de su toma, el render la usa automáticamente y gana nitidez.
 
 ## Cómo renderizar
 

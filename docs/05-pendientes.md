@@ -6,7 +6,7 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 
 | Toma | Estado | Qué falta (archivo original) |
 |---|---|---|
-| 01A Alberca (0–3 s) | Cuadro del borrador | ⏳ **Foto vertical de la alberca con camastros al atardecer** |
+| 01A Alberca (0–3 s) | Cuadro del borrador | ⏳ **Adjuntar la foto vertical de la alberca con pérgolas dentro del agua** (la mejor apertura, ver [07-banco-de-fotos.md](07-banco-de-fotos.md)) |
 | 02 Terraza privada (3–6 s) | Cuadro del borrador (gran angular inclinado) | ⏳ **Foto diurna y recta de la terraza** con la mesa y el ventanal |
 | 03a Comedor → sala → terraza (6–8 s) | ✅ `IMG_5993` original | — |
 | 03b Sala → cocina (8–10 s) | ✅ `IMG_5857` original | — |
@@ -15,14 +15,14 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 | 04c Baño | Cuadro del borrador | ⏳ Baño con regadera y luz cálida en el plafón |
 | 05a Cocina | ✅ `IMG_5864` original | — |
 | 05b Lavandería | Cuadro del borrador | ⏳ Lavadora y secadora |
-| 06a Alberca al atardecer | Cuadro del borrador de 30 s | ⏳ (puede ser la misma de 01A en otro encuadre, o la panorámica de la alberca con los dos edificios) |
+| 06a Alberca (18–20 s) | ✅ Foto web: toallas junto a la alberca | — |
 | 06b Jardines | Cuadro del borrador | Opcional: jardín con andador y palmeras. Alternativa: `IMG_6083` |
-| 07 Toma tranquila | Cuadro del borrador | ⏳ Sillón con manta mostaza junto al ventanal |
+| 07 Toma tranquila | ✅ Foto web: sala de día (recorte sobre el sillón) | — |
 | 08 Playa | ✅ `IMG_3349.mov` original (HDR) | — |
 | 09 Cierre | Cuadro del borrador | ⏳ Terraza de noche (copas, vela, luces) |
 | 01B Terraza (versión B) | ✅ `IMG_6032.MOV` original | — |
 
-**Opcional: 8 archivos originales** (marcados con ⏳) para ganar nitidez. Estas tomas usan cuadros del video de WhatsApp: se ven bien en el teléfono, pero los originales dan una imagen más limpia. No bloquean la pauta.
+**Opcional: 6 archivos originales** (marcados con ⏳) para ganar nitidez. Estas tomas usan cuadros del video de WhatsApp: se ven bien en el teléfono, pero los originales dan una imagen más limpia. No bloquean la pauta.
 
 > ✅ **Fotos editadas con Gemini (terraza de noche y baño):** la propietaria confirmó que solo se ajustó la luz, sin agregar ni quitar elementos. Se pueden usar.
 
