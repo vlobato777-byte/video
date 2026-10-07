@@ -12,7 +12,8 @@ La fuente de verdad es [`project/condo_lua_reel.json`](../project/condo_lua_reel
 | Tiempo | Toma | Texto en pantalla | Movimiento y transición | Música |
 |---|---|---|---|---|
 | 0.0–3.0 | **Alberca**: la toma más luminosa, con poco cielo (encuadre bajo) | **Your winter could look like this.** (serif 104 px) · *Bucerías, Mexico* (entra a los 0.65 s) | Acercamiento lento del 4 al 12 % | Entrada suave, sin golpe |
-| 3.0–6.0 | **Terraza privada**, de día: mesa + puerta o ventanal | **Your own private terrace** | Corte. Paneo lateral corto + acercamiento del 4 % | Entra el ritmo |
+| 3.0–4.4 | **Sala → terraza** (`fotos_web/sala_amplia_dia.jpg`): acercamiento desde la sala hacia la mesa de la terraza | **Your own private terrace** (de 3.15 a 5.9) | Corte. Acercamiento del 12 % hacia la terraza | Entra el ritmo |
+| 4.4–6.0 | **Mesa de la terraza de día** (`fotos_web/terraza_mesa_dia.jpg`) | (continúa) | Corte. Acercamiento del 5 % | |
 | 6.0–8.0 | **Comedor → sala → terraza** (`IMG_5993`, original): explica la distribución | **Fully furnished** / **Ground floor** (+0.35 s, de 6.15 a 9.9) | Corte. Acercamiento del 6 % | |
 | 8.0–10.0 | **Sala → cocina** (`IMG_5857`, original) | (continúa) | Corte. Paneo lateral | |
 | 10.0–11.6 | **Recámara principal** | **2 bedrooms · 2 bathrooms** (de 10.15 a 13.9) | Corte. Acercamiento del 5 % | |
@@ -22,7 +23,7 @@ La fuente de verdad es [`project/condo_lua_reel.json`](../project/condo_lua_reel
 | 16.2–18.0 | **Lavadora y secadora** | **In-suite laundry** (aparece con la lavadora) | Corte | |
 | 18.0–20.0 | **Toallas junto a la alberca** (`fotos_web/alberca_toallas.jpg`): detalle luminoso que no repite el edificio de la apertura | **Shared pool & gardens** / **Space to unwind** | Disolvencia de 0.2 s (interior → exterior) | |
 | 20.0–22.0 | **Jardines** | (continúa) | Corte. Alejamiento del 4 % | |
-| 22.0–27.0 | **Toma tranquila del departamento**: sala de día, recortada sobre el sillón con manta mostaza y la terraza (`fotos_web/sala_dia_sofa_cama.jpg`) | **Electricity, water & Wi-Fi included** + píldoras **Condo fees included** (+0.6 s) y **Cleaning every 2 weeks included** (+1.1 s) | Disolvencia de 0.2 s. Acercamiento muy lento. Oscurecimiento sutil del 18 % detrás del texto | Bajar la intensidad para leer |
+| 22.0–27.0 | **Toma tranquila del departamento**: mesa puesta con el sofá al fondo (`fotos_web/comedor_mesa_puesta.jpg`) | **Electricity, water & Wi-Fi included** + píldoras **Condo fees included** (+0.6 s) y **Cleaning every 2 weeks included** (+1.1 s) | Disolvencia de 0.2 s. Acercamiento muy lento. Oscurecimiento sutil del 18 % detrás del texto | Bajar la intensidad para leer |
 | 27.0–30.0 | **Playa de Bucerías**: `IMG_3349.mov`, atardecer real de enero | **Bucerías beach** | Disolvencia de 0.2 s. Acercamiento del 5 % | Momento emotivo |
 | 30.0–35.0 | **Cierre: terraza cálida** (la del cierre actual) | **CONDO LUA** · *Bucerías · Winter 2027* · **January–April · 3–4 month stays** · píldora **Message us for dates & rates** (entradas escalonadas de 0.3 s; quedan fijas hasta el final) | Disolvencia de 0.3 s. Oscurecimiento del 38 % detrás del texto. **Sin fundido a negro**, para que el último cuadro muestre la llamada a la acción | Resolución y salida de 2.5 s |
 

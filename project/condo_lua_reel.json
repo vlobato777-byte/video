@@ -175,28 +175,54 @@
       }
     },
     {
-      "id": "02_terraza",
+      "id": "02a_sala_a_terraza",
       "start": 3.0,
-      "end": 6.0,
-      "source": "media/source/02_terraza_mesa.jpg",
+      "end": 4.4,
+      "source": "media/source/fotos_web/sala_amplia_dia.jpg",
       "from": {
-        "cx": 0.45,
+        "cx": 0.46,
+        "cy": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "cx": 0.47,
         "cy": 0.55,
-        "zoom": 1.02
+        "zoom": 1.12
+      },
+      "grade": {},
+      "placeholder": {
+        "title": "SALA → TERRAZA",
+        "need": "Vista diurna desde la sala hacia la terraza (conexión con el departamento)."
+      },
+      "shade": {
+        "amount": 0.2,
+        "center_y": 0.34,
+        "spread": 0.2
+      }
+    },
+    {
+      "id": "02b_terraza_mesa",
+      "start": 4.4,
+      "end": 6.0,
+      "source": "media/source/fotos_web/terraza_mesa_dia.jpg",
+      "from": {
+        "cx": 0.55,
+        "cy": 0.5,
+        "zoom": 1.0
       },
       "to": {
         "cx": 0.55,
-        "cy": 0.55,
-        "zoom": 1.06
+        "cy": 0.5,
+        "zoom": 1.05
       },
       "grade": {},
       "placeholder": {
         "title": "TERRAZA PRIVADA",
-        "need": "Toma diurna: mesa de la terraza y su conexión con el departamento (puerta o ventanal visible)."
+        "need": "Mesa de la terraza de día."
       },
       "draft": "media/source/borrador_whatsapp/pre35_02_05.95s.jpg",
       "shade": {
-        "amount": 0.26,
+        "amount": 0.22,
         "center_y": 0.34,
         "spread": 0.2
       }
@@ -449,18 +475,18 @@
       "id": "07_toma_tranquila",
       "start": 22.0,
       "end": 27.0,
-      "source": "media/source/fotos_web/sala_dia_sofa_cama.jpg",
+      "source": "media/source/fotos_web/comedor_mesa_puesta.jpg",
       "transition_in": {
         "type": "dissolve",
         "duration": 0.2
       },
       "from": {
-        "cx": 0.62,
+        "cx": 0.45,
         "cy": 0.5,
         "zoom": 1.0
       },
       "to": {
-        "cx": 0.62,
+        "cx": 0.45,
         "cy": 0.5,
         "zoom": 1.04
       },
@@ -703,6 +729,11 @@
     "media/source/originales/IMG_5866_2.jpg": "Cocina horizontal, de noche",
     "media/source/originales/IMG_5837_comedor.jpg": "Comedor de día (horizontal)",
     "media/source/originales/IMG_6083.jpg": "Área común con pérgola y jardín (vertical, de día)",
-    "media/source/originales/IMG_5694_carretera_gdl.jpg": "Autopista a Guadalajara con campos de agave (para el reel de la región)"
+    "media/source/originales/IMG_5694_carretera_gdl.jpg": "Autopista a Guadalajara con campos de agave (para el reel de la región)",
+    "media/source/fotos_web/sala_dia_sofa_cama.jpg": "Sala de día con sillón y manta mostaza (antes en 22–27 s)",
+    "media/source/fotos_web/cocina_electrodomesticos.jpg": "Barra de cocina con licuadora, hervidor y utensilios (baja resolución: solo serie)",
+    "media/source/fotos_web/toallas_closet.jpg": "Toallas en el clóset",
+    "media/source/fotos_web/puerta_cerradura.jpg": "Puerta con cerradura digital",
+    "media/source/fotos_web/lavanda_detalle.jpg": "Detalle de lavanda (decorativo)"
   }
 }

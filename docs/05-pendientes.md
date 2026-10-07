@@ -6,23 +6,23 @@ El render actual **ya se puede pautar en cuanto lleve música** (ver [04-musica.
 
 | Toma | Estado | Qué falta (archivo original) |
 |---|---|---|
-| 01A Alberca (0–3 s) | Cuadro del borrador | ⏳ **Adjuntar la foto vertical de la alberca con pérgolas dentro del agua** (la mejor apertura, ver [07-banco-de-fotos.md](07-banco-de-fotos.md)) |
-| 02 Terraza privada (3–6 s) | Cuadro del borrador (gran angular inclinado) | ⏳ **Foto diurna y recta de la terraza** con la mesa y el ventanal |
+| 01A Alberca (0–3 s) | Cuadro del borrador | ⏳ **Adjuntar la alberca con camastros al atardecer (vertical) o la alberca con pérgolas** (ver [07-banco-de-fotos.md](07-banco-de-fotos.md)) |
+| 02 Terraza privada (3–6 s) | ✅ Fotos web: sala → terraza (3–4.4 s) y mesa de la terraza (4.4–6 s) | Confirmar que la foto de la mesa solo tiene ajuste de luz (marca de Gemini) |
 | 03a Comedor → sala → terraza (6–8 s) | ✅ `IMG_5993` original | — |
 | 03b Sala → cocina (8–10 s) | ✅ `IMG_5857` original | — |
 | 04a Recámara principal | Cuadro del borrador | ⏳ Foto de la cama king con A/C y la ventana al patio |
 | 04b Segunda recámara | ✅ `IMG_5896` original | — |
-| 04c Baño | Cuadro del borrador | ⏳ Baño con regadera y luz cálida en el plafón |
+| 04c Baño | Cuadro del borrador | ⏳ **Adjuntar el baño con regadera y luz en el plafón** |
 | 05a Cocina | ✅ `IMG_5864` original | — |
 | 05b Lavandería | Cuadro del borrador | ⏳ Lavadora y secadora |
 | 06a Alberca (18–20 s) | ✅ Foto web: toallas junto a la alberca | — |
-| 06b Jardines | Cuadro del borrador | Opcional: jardín con andador y palmeras. Alternativa: `IMG_6083` |
-| 07 Toma tranquila | ✅ Foto web: sala de día (recorte sobre el sillón) | — |
+| 06b Jardines | Cuadro del borrador | ⏳ **Adjuntar el andador del jardín con palmeras (vertical)** |
+| 07 Toma tranquila | ✅ Foto web: mesa puesta con el sofá al fondo | — |
 | 08 Playa | ✅ `IMG_3349.mov` original (HDR) | — |
 | 09 Cierre | Cuadro del borrador | ⏳ Terraza de noche (copas, vela, luces) |
 | 01B Terraza (versión B) | ✅ `IMG_6032.MOV` original | — |
 
-**Opcional: 6 archivos originales** (marcados con ⏳) para ganar nitidez. Estas tomas usan cuadros del video de WhatsApp: se ven bien en el teléfono, pero los originales dan una imagen más limpia. No bloquean la pauta.
+**Opcional: archivos originales** (marcados con ⏳) para ganar nitidez. Estas tomas usan cuadros del video de WhatsApp: se ven bien en el teléfono, pero los originales dan una imagen más limpia. No bloquean la pauta.
 
 > ✅ **Fotos editadas con Gemini (terraza de noche y baño):** la propietaria confirmó que solo se ajustó la luz, sin agregar ni quitar elementos. Se pueden usar.
 
