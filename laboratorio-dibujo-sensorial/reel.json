@@ -1,0 +1,50 @@
+{
+  "notas": "Guion del reel de 30 s (PROMPT_REEL_TALLER.pdf). Tiempos en segundos. Los textos se pueden cambiar aquí y volver a renderizar con: python3 tools/reel_laboratorio.py. Los datos del cierre (fecha, sede, WhatsApp) salen de datos.json. 'y' es el centro vertical del texto en píxeles de 1920; la zona segura de Reels va de 269 a 1248. 'tam' cambia el tamaño de un texto (títulos 100, texto 54).",
+  "salida": {
+    "ancho": 1080,
+    "alto": 1920,
+    "fps": 30,
+    "duracion": 30.0,
+    "archivo": "LabDibujoSensorial_Reel_30s"
+  },
+  "tomas": [
+    {"id": "01_macro_gesto", "inicio": 0.0, "fin": 1.7, "tipo": "macro", "region": [80, 1120, 660, 2150], "deriva": [0, -40], "nota": "Abre con la acción: el trazo amplio entra al papel."},
+    {"id": "02_rollo_gesto", "inicio": 1.7, "fin": 4.0, "tipo": "foto", "escena": "rollo_gesto", "de": [0.56, 0.40, 1.28], "a": [0.52, 0.46, 1.10], "nota": "El mismo trazo termina en la mano."},
+    {"id": "03_pausa", "inicio": 4.0, "fin": 8.0, "tipo": "foto", "escena": "rollo_pausa", "de": [0.52, 0.47, 1.02], "a": [0.60, 0.53, 1.16], "nota": "Pausa de escucha: manos sobre el papel."},
+    {"id": "04_textura", "inicio": 8.0, "fin": 10.5, "tipo": "foto", "escena": "textura", "de": [0.55, 0.30, 1.04], "a": [0.60, 0.28, 1.16], "nota": "La mano explora una textura."},
+    {"id": "05_macro_trama", "inicio": 10.5, "fin": 13.0, "tipo": "macro", "region": [380, 1130, 900, 2050], "deriva": [-20, 30], "nota": "Nueva marca: la textura se vuelve trazo."},
+    {"id": "06_macro_sonido", "inicio": 13.0, "fin": 15.0, "tipo": "macro", "region": [60, 640, 600, 1600], "deriva": [25, 0], "nota": "Un sonido: puntos en ritmo."},
+    {"id": "07_macro_sensacion", "inicio": 15.0, "fin": 17.0, "tipo": "macro", "region": [200, 300, 740, 1260], "deriva": [-20, 20], "nota": "Una sensación: mancha suave."},
+    {"id": "08_macro_recuerdo", "inicio": 17.0, "fin": 19.0, "tipo": "macro", "region": [110, 60, 650, 1020], "deriva": [15, 25], "nota": "Un recuerdo: lazo terracota."},
+    {"id": "09_rollo_gesto_capas", "inicio": 19.0, "fin": 21.6, "tipo": "foto", "escena": "rollo_gesto", "de": [0.55, 0.44, 1.14], "a": [0.52, 0.48, 1.0], "nota": "Sigue dibujando: un trazo más llega a la mano."},
+    {"id": "10_rollo_amplio", "inicio": 21.6, "fin": 24.0, "tipo": "foto", "escena": "rollo_amplio", "de": [0.62, 0.45, 1.22], "a": [0.55, 0.45, 1.04], "nota": "Plano amplio: todas las capas."},
+    {"id": "11_cierre", "inicio": 24.0, "fin": 30.0, "tipo": "cierre"}
+  ],
+  "textos": [
+    {"id": "t1", "inicio": 0.35, "fin": 3.85, "y": 1100, "texto": "¿Cómo dibujarías\nun sonido?", "estilo": "titulo"},
+    {"id": "t2", "inicio": 4.35, "fin": 7.85, "y": 1120, "texto": "Respira. Escucha.", "estilo": "titulo"},
+    {"id": "t3a", "inicio": 8.3, "fin": 10.45, "y": 1120, "texto": "Siente.", "estilo": "titulo"},
+    {"id": "t3b", "inicio": 10.6, "fin": 12.9, "y": 1120, "texto": "Traza.", "estilo": "titulo"},
+    {"id": "t4a", "inicio": 13.15, "fin": 14.92, "y": 1120, "texto": "Un sonido.", "estilo": "titulo"},
+    {"id": "t4b", "inicio": 15.15, "fin": 16.92, "y": 1120, "texto": "Una sensación.", "estilo": "titulo"},
+    {"id": "t4c", "inicio": 17.15, "fin": 18.92, "y": 1120, "texto": "Un recuerdo.", "estilo": "titulo"},
+    {"id": "t5a", "inicio": 19.3, "fin": 21.75, "y": 1100, "texto": "Capa a capa,\ndescubre tu propio trazo.", "estilo": "titulo", "tam": 86},
+    {"id": "t5b", "inicio": 21.95, "fin": 23.9, "y": 1120, "texto": "No necesitas experiencia previa.", "estilo": "texto"}
+  ],
+  "cierre": {
+    "frase": "RESPIRA.\nSIENTE.\nTRAZA.",
+    "nombre": "LABORATORIO DE DIBUJO SENSORIAL",
+    "reserva": "Reserva: WhatsApp {whatsapp}"
+  },
+  "portada": {
+    "frase": "RESPIRA. SIENTE. TRAZA.",
+    "nombre": "Laboratorio de dibujo sensorial",
+    "escena": "rollo_gesto",
+    "tiempo": 3.95
+  },
+  "nota_imagenes": "Imágenes ilustrativas",
+  "musica": {
+    "bpm": 84,
+    "nivel_lufs": -14.0
+  }
+}

@@ -2,7 +2,7 @@
 
 Taller de dibujo, meditación y exploración del trazo personal. Imparten Carmen Elizondo y Almendra García en Concéntrica Artes Aplicadas.
 
-El flyer define la identidad visual de la campaña. El reel y el carrusel se harán con esta misma identidad.
+El flyer define la identidad visual de la campaña. El reel usa la misma identidad y el carrusel también la usará.
 
 ## Estado
 
@@ -10,8 +10,8 @@ El flyer define la identidad visual de la campaña. El reel y el carrusel se har
 |---|---|
 | **Flyer 1080 × 1350** | **Listo en Canva y editable.** Falta el número de WhatsApp |
 | Flyer para estados e historias (1080 × 1920) | Pendiente: se adapta del flyer cuando esté aprobado |
+| **Reel 30 s (1080 × 1920)** | **Listo para revisión.** Video, portada, copy y capas de texto. Falta el número de WhatsApp |
 | Carrusel | Pendiente |
-| Reel | Pendiente |
 
 **Flyer en Canva:** diseño *“Flyer taller de dibujo sensorial”* (ID `DAHXYHwz8Oc`) → <https://www.canva.com/d/RT7uJwrJYnRplNE>
 
@@ -26,6 +26,15 @@ Para descargarlo: *Compartir → Descargar → PNG*, tamaño 1080 × 1350.
 | `exports/flyer/canva/papel_1080x1350.png` | Fondo de papel artístico #F4EBDD con textura muy sutil (es el fondo del flyer en Canva) |
 | `exports/flyer/canva/trazos_1080x1350.png` | Trazos de carbón sobre transparencia, colocados solo donde no hay texto |
 | `exports/flyer/canva/nota_imagen_ilustrativa.png` | Etiqueta “Imagen ilustrativa” para la foto generada |
+| `exports/reel/LabDibujoSensorial_Reel_30s.mp4` | **Reel final** 1080 × 1920, 30 fps, con música y sonido de carbón |
+| `exports/reel/revision/` | Copia ligera del reel para revisarlo en el teléfono. **No usar para publicar** |
+| `exports/reel/portada_1080x1920.png` | Portada del reel (y `portada_recorte_4x5.png`, como se ve en el perfil) |
+| `exports/reel/storyboard.png` | Un cuadro por toma, con su texto |
+| `exports/reel/textos/` | Textos del reel como PNG transparentes + `.srt`, y los textos y el logo del cierre, para rearmarlo en CapCut o Canva |
+| `docs/reel.md` | Guion, copy de la publicación y decisiones del reel |
+| `reel.json` | Tomas, tiempos, encuadres y textos del reel (editable) |
+| `media/escenas/` | Escenas conceptuales del estudio usadas en el reel (generadas en Canva) |
+| `media/logo/concentrica.png` | Logo de Concéntrica con fondo transparente, tomado de la presentación de la clienta |
 | `datos.json` | Datos del taller, paleta, tipografías y textos de la campaña |
 
 ## Cómo está construido el flyer
@@ -64,19 +73,21 @@ En las páginas 4 y 5 de esa presentación quedan textos ocultos de una edición
 2. **Confirmar la ciudad.** *Cd. Madero* se dedujo del C. P. 89460 de la presentación.
 3. **Confirmar el costo.** ¿Los $1,600 cubren las tres sesiones? ¿Se puede pagar por sesión?
 4. **Confirmar el formato del papel:** pliego vertical sobre tablero o pared, como en la foto.
-5. **Fotos o videos reales** del taller o de Carmen y Almendra dibujando. Sustituyen a la ilustración en el flyer, el carrusel y el reel.
+5. **Fotos o videos reales** del taller o de Carmen y Almendra dibujando. Sustituyen a la ilustración en el flyer, el carrusel y el reel (ver `docs/reel.md`). Las fotos de referencia que mencionaste para el reel no llegaron a esta sesión: solo llegó el PDF del brief.
 6. **Tipografías en Canva.** El conector de Canva no muestra los nombres de las fuentes. Al seleccionar un título debería decir *Barlow Condensed*, y en el cuerpo *DM Sans*. Si no, cámbialas con el menú de fuente.
 7. En tu Canva quedó también el borrador previo *Flyer taller de dibujo sensorial* de 1080 × 1440 (ID `DAHXYChIPF0`). Ya no se usa y puedes borrarlo.
 
-## Cómo regenerar los gráficos y la maqueta
+## Cómo regenerar los gráficos, la maqueta y el reel
 
-Requisitos: Python 3.9+, Pillow y numpy.
+Requisitos: Python 3.9+, Pillow, numpy y ffmpeg.
 
 ```bash
-python3 tools/laboratorio.py flyer
+python3 tools/laboratorio.py flyer          # gráficos del flyer y maqueta
+python3 tools/reel_laboratorio.py --stills  # portada, storyboard y textos del reel
+python3 tools/reel_laboratorio.py           # reel final (~8 min)
 ```
 
-Si cambias un dato en `datos.json`, cambia el mismo texto en Canva. Si quieres verlo en la maqueta, pon la foto en `media/fotos/principal.jpg` y el logo en `media/logo/concentrica.png`.
+Si cambias un dato en `datos.json`, cambia el mismo texto en Canva y vuelve a renderizar el reel. Si quieres ver la foto en la maqueta del flyer, ponla en `media/fotos/principal.jpg`.
 
 Los trazos se generan con una semilla fija: siempre salen iguales. Si cambias los trazos, sube el PNG nuevo y reemplázalo en Canva.
 

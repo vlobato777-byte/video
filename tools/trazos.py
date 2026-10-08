@@ -134,6 +134,9 @@ class Stroke:
             return p
         if self.ease == "respira":       # slow start and end, like an exhale
             return 0.5 - 0.5 * math.cos(math.pi * p)
+        if self.ease == "llega":         # steady speed, settles where the hand stops
+            m0, m1 = 1.15, 0.3           # Hermite end slopes
+            return m0 * (p ** 3 - 2 * p ** 2 + p) + (3 * p ** 2 - 2 * p ** 3) + m1 * (p ** 3 - p ** 2)
         return 1 - (1 - p) ** 1.8        # "gesto": fast attack, slows down at the end
 
     def speed(self, t, dt=1 / 30):
