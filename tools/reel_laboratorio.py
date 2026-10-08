@@ -92,55 +92,130 @@ def sheet_corners(scale=1.0):
 
 # --------------------------------------------------------------------------- drawing
 
+def llegar(pts, tip, frac=0.06):
+    """Bend the last part of a path so it ends exactly at the charcoal tip."""
+    pts = np.array(pts, float)
+    n = len(pts)
+    k = max(2, int(n * frac))
+    w = tz.smoothstep(np.linspace(0, 1, k))[:, None]
+    pts[-k:] = pts[-k:] * (1 - w) + (pts[-k:] + (np.array(tip) - pts[-1])) * w
+    pts[-1] = tip
+    return pts
+
+
 def dibujo():
-    """The one drawing of the reel, in sheet units, with absolute times."""
+    """The one drawing of the reel, in sheet units, with absolute times.
+
+    Two kinds of marks, each with its own handwriting:
+    - answers to a sound: rhythmic, with accents, oscillations and staccato;
+    - answers to a texture touched with the eyes covered: searching, broken,
+      hesitant lines that turn suddenly.
+    All of them carry the tremor of the hand, uneven speed and pressure.
+    """
     rng = np.random.default_rng(8)
     quad = ESCENAS["rollo_gesto"]["quad"]
     h = homography(quad, sheet_corners())
     tip = apply_h(h, *ESCENAS["rollo_gesto"]["punta"])
     S = []
 
-    # 1 · the wide gesture that opens the reel and ends at her hand
-    ctrl = [(150, 2060), (290, 1830), (500, 1580), (630, 1350), (540, 1120), (300, 1000),
-            (250, 800), (420, 640), (560, 480), (520, 330), tip]
-    pts = tz.hand(tz.spline(ctrl, 900), 4, rng)
-    pts[-1] = tip
-    S.append(tz.Stroke(pts, "carbon", 54, tz.pressure_curve(len(pts), rng, 1.15, 0.3, cell=160),
-                       t0=0.08, dur=3.75, ease="llega", seed=101, taper=0.05))
+    # 1 · sound: the gesture that opens the reel, drawn with the edge of the
+    #     charcoal; it sweeps, presses on the accents, trembles and ends
+    #     at her hand
+    ctrl = [(150, 2060), (300, 1850), (470, 1620), (640, 1360), (520, 1130), (290, 1010),
+            (260, 800), (430, 650), (560, 470), (515, 330), tip]
+    base = tz.hand(tz.spline(ctrl, 900), 20, rng, cell=90)
+    pts = llegar(tz.pulso(base, rng, amp=4.8, wl=24, micro=1.7), tip)
+    n = len(pts)
+    pres = (tz.presion_ritmo(n, [0.1, 0.13, 0.35, 0.39, 0.57, 0.6, 0.85], rng, base=0.72, acento=0.55, ancho=0.02)
+            * tz.presion_titubeo(n, rng, base=1.0, saltos=3, var=0.22))
+    S.append(tz.Stroke(pts, "punta", 17, pres, t0=0.06, dur=3.8, ease="mano", pausas=2, seed=101, taper=0.03,
+                       grosor=tz.grosor_giro(n, rng, 0.3, 1.7, cell=n / 18)))
 
-    # 2 · texture: the bark becomes a fast hatching
-    pts = tz.trama(470, 1390, 390, 400, 0.5, 21, rng)
-    S.append(tz.Stroke(pts, "punta", 9, tz.pressure_curve(len(pts), rng, 0.75, 0.25, cell=90),
-                       t0=10.75, dur=1.95, ease="lineal", seed=102, taper=0.02))
+    # 2 · texture with the eyes covered: mapping the bark that was touched —
+    #     fissures along the trunk, lost and found again, and ridges across
+    t = 10.6
+    for k, path in enumerate(tz.corteza(480, 1380, 380, 450, rng, lineas=7)):
+        pts = tz.pulso(path, rng, amp=1.3, wl=15, micro=0.8)
+        if len(pts) < 3:
+            continue
+        n = len(pts)
+        ridge = n < 40
+        d = (0.06 if ridge else 0.2) + rng.uniform(0, 0.05)
+        S.append(tz.Stroke(pts, "punta", rng.uniform(4.5, 6.5) if ridge else rng.uniform(6, 10),
+                           tz.presion_titubeo(n, rng, base=0.9, saltos=0 if ridge else 2, var=0.3),
+                           t0=t, dur=d, ease="mano", pausas=1, seed=150 + k, taper=0.12,
+                           grosor=tz.grosor_giro(n, rng, 0.6, 1.4)))
+        t += d * 0.58
 
-    # 3 · a sound: dots in rhythm over a breathing graphite line
-    path = tz.spline([(110, 1090), (260, 1050), (420, 1120), (570, 1080)], 300)
-    dots = tz.ritmo(path, [3, 1, 4, 2, 3], rng, spread=3.0)
-    S.append(tz.Stroke(dots, "punto", 21, 0.9 + 0.1 * rng.random(len(dots)),
-                       t0=13.2, dur=1.55, ease="lineal", seed=103))
-    pts = tz.onda(100, 590, 1235, 16, 170, rng, wobble=2.0)
-    S.append(tz.Stroke(pts, "grafito", 4.5, tz.pressure_curve(len(pts), rng, 0.8, 0.2),
-                       ink="grafito", t0=13.45, dur=1.4, ease="respira", seed=104))
+    # 3 · sound: a beat heard — dots and dashes of different weight ...
+    path = tz.pulso(tz.spline([(110, 1090), (260, 1050), (420, 1120), (575, 1075)], 300), rng, amp=6, wl=60)
+    seg = np.hypot(*np.diff(path, axis=0).T)
+    arc = np.concatenate([[0], np.cumsum(seg)])
+    ritmo = [("p", 1.0), ("p", 0.7), ("r", 1.6), ("p", 0.9), ("r", 2.4), ("p", 0.6), ("p", 0.6),
+             ("p", 1.1), ("r", 1.3), ("p", 0.8), ("r", 3.0), ("p", 1.0), ("p", 0.7)]
+    total = sum(v for _, v in ritmo) + 0.6 * len(ritmo)
+    pos, t = 0.0, 13.2
+    for i, (kind, v) in enumerate(ritmo):
+        a0 = pos / total * arc[-1]
+        a1 = (pos + v) / total * arc[-1]
+        x0, y0 = np.interp(a0, arc, path[:, 0]), np.interp(a0, arc, path[:, 1])
+        if kind == "p":
+            S.append(tz.Stroke([(x0 + rng.normal(0, 3), y0 + rng.normal(0, 5))], "punto", 14 + 16 * v,
+                               min(1.3, 0.6 + 0.5 * v), t0=t, dur=0.01, ease="lineal", seed=130 + i))
+            t += 0.06 + 0.06 * v
+        else:
+            x1, y1 = np.interp(a1, arc, path[:, 0]), np.interp(a1, arc, path[:, 1]) + rng.normal(0, 6)
+            dash = tz.pulso(tz.spline([(x0, y0), ((x0 + x1) / 2, (y0 + y1) / 2 + rng.normal(0, 4)), (x1, y1)], 40),
+                            rng, amp=1.5, wl=12, micro=0.9)
+            S.append(tz.Stroke(dash, "carbon", 15, tz.presion_ritmo(len(dash), [0.05], rng, 0.75, 0.6, 0.08),
+                               t0=t, dur=0.1 * v, ease="gesto", seed=130 + i, taper=0.15))
+            t += 0.1 * v + 0.05
+        pos += v + 0.6
+    # ... and a line that shivers after each beat, like a sound ringing out
+    golpes = [(0.1, 1.0), (0.24, 0.6), (0.33, 0.9), (0.52, 0.5), (0.6, 1.0), (0.78, 0.7), (0.88, 0.45)]
+    x = np.linspace(100, 590, 900)
+    f = (x - 100) / 490
+    y = 1238 + 9 * tz.noise1d(len(x), 160, rng)
+    for b, s_ in golpes:
+        g = np.clip(f - b, 0, None)
+        lam = rng.uniform(0.007, 0.012)
+        y += (34 * s_ * np.exp(-g / rng.uniform(0.02, 0.04)) * np.sin(2 * np.pi * g / lam + 0.3)
+              * (f >= b) * (0.7 + 0.3 * rng.random()))
+    pts = tz.pulso(np.stack([x, y], 1), rng, amp=1.3, wl=18, micro=0.9)
+    n = len(pts)
+    S.append(tz.Stroke(pts, "punta", 5.5, tz.presion_ritmo(n, [b for b, _ in golpes], rng, 0.5, 0.7, 0.02),
+                       ink="grafito", t0=13.45, dur=1.45, ease="mano", pausas=1, seed=104, taper=0.03))
 
-    # 4 · a sensation: a soft wide smudge and a discreet olive arc
-    pts = tz.lazo(470, 760, 150, 105, 1.7, rng, drift=(60, -40), wobble=0.2)
-    S.append(tz.Stroke(pts, "carbon", 72, tz.pressure_curve(len(pts), rng, 0.38, 0.12),
-                       t0=15.2, dur=1.45, ease="respira", seed=105, taper=0.1))
-    pts = tz.hand(tz.spline([(300, 610), (400, 560), (520, 590), (600, 660)], 200), 2, rng)
-    S.append(tz.Stroke(pts, "carbon", 26, 1.0, ink="olivo", t0=16.1, dur=0.7, ease="gesto",
-                       seed=106, taper=0.15))
+    # 4 · a sensation: very fine lines that fall like threads in the wind,
+    #     one of them a discreet olive
+    hilos = [(300, 330, 760), (390, 300, 900), (470, 360, 680), (560, 320, 820), (640, 380, 640), (250, 420, 560)]
+    for k, (x, y, largo) in enumerate(hilos):
+        pts = tz.pulso(tz.hilo(x, y, largo, rng, viento=rng.uniform(0.7, 1.3)), rng, amp=0.8, wl=10, micro=0.5)
+        n = len(pts)
+        olivo = k == 3
+        S.append(tz.Stroke(pts, "grafito" if not olivo else "punta", rng.uniform(1.6, 2.6) if not olivo else 3.2,
+                           tz.presion_titubeo(n, rng, base=0.55 if not olivo else 0.8, saltos=2, var=0.25),
+                           ink="grafito" if not olivo else "olivo", t0=15.3 + 0.2 * k, dur=rng.uniform(0.9, 1.3),
+                           ease="mano", pausas=1, seed=160 + k, taper=0.1))
+        S[-1].t0, S[-1].dur = 15.25 + 0.15 * k, min(S[-1].dur, 1.6 - 0.15 * k)
 
-    # 5 · a memory: a terracotta loop
-    pts = tz.lazo(380, 545, 125, 92, 1.3, rng, drift=(130, -50), wobble=0.16, phase=2.2)
-    S.append(tz.Stroke(pts, "carbon", 28, tz.pressure_curve(len(pts), rng, 1.25, 0.2),
-                       ink="terracota", t0=17.2, dur=1.5, ease="gesto", seed=107, taper=0.08))
+    # 5 · a memory: a terracotta loop retraced as it is remembered
+    pts = tz.pulso(tz.lazo(380, 545, 120, 88, 2.3, rng, drift=(130, -50), wobble=0.3, phase=2.2),
+                   rng, amp=3.0, wl=40, micro=1.0)
+    n = len(pts)
+    S.append(tz.Stroke(pts, "carbon", 20, tz.presion_titubeo(n, rng, base=1.2, saltos=3, var=0.35),
+                       ink="terracota", t0=17.15, dur=1.6, ease="mano", pausas=3, seed=107, taper=0.06,
+                       grosor=tz.grosor_giro(n, rng, 0.55, 1.2)))
 
-    # 6 · one more line that arrives at her hand
-    ctrl = [(860, 2380), (720, 1830), (840, 1260), (640, 830), (570, 500), tip]
-    pts = tz.hand(tz.spline(ctrl, 500), 3, rng)
-    pts[-1] = tip
-    S.append(tz.Stroke(pts, "punta", 15, tz.pressure_curve(len(pts), rng, 0.85, 0.2),
-                       t0=19.2, dur=2.1, ease="llega", seed=108, taper=0.04))
+    # 6 · sound again: a fast, nervous line with sharp turns that arrives at her hand
+    ctrl = [(860, 2380), (720, 1830), (880, 1520), (760, 1260), (840, 1050), (640, 830),
+            (700, 640), (570, 500), tip]
+    pts = tz.vibra(tz.hand(tz.spline(ctrl, 500), 10, rng), rng, amp=6, onda=(28, 110))
+    pts = llegar(tz.pulso(pts, rng, amp=3.5, wl=26, micro=1.2), tip)
+    n = len(pts)
+    S.append(tz.Stroke(pts, "punta", 14, tz.presion_ritmo(n, [0.15, 0.33, 0.4, 0.58, 0.77, 0.86], rng, 0.8, 0.6),
+                       t0=19.2, dur=2.1, ease="mano", pausas=2, seed=108, taper=0.03,
+                       grosor=tz.grosor_giro(n, rng, 0.6, 1.3)))
     return S
 
 
@@ -149,9 +224,16 @@ def cierre_trazos(S):
     rng = np.random.default_rng(31)
     out = []
     ctrl = [(-60, 1560), (180, 1440), (420, 1530), (600, 1660), (820, 1520), (1000, 1420), (1160, 1470)]
-    pts = tz.hand(tz.spline([(x * S, y * S) for x, y in ctrl], 600), 3 * S, rng)
-    out.append(tz.Stroke(pts, "carbon", 46 * S, tz.pressure_curve(len(pts), rng, 0.85, 0.3, cell=150),
-                         t0=24.05, dur=1.3, ease="gesto", seed=201, taper=0.04))
+    base = tz.hand(tz.spline([(x * S, y * S) for x, y in ctrl], 600), 10 * S, rng)
+    pts = tz.pulso(base, rng, amp=3 * S, wl=30 * S, micro=1.0 * S, step=1.5 * S)
+    n = len(pts)
+    out.append(tz.Stroke(pts, "punta", 18 * S, tz.presion_ritmo(n, [0.2, 0.45, 0.7], rng, 1.0, 0.4, 0.03),
+                         t0=24.05, dur=1.35, ease="mano", pausas=1, seed=201, taper=0.04,
+                         grosor=tz.grosor_giro(n, rng, 0.35, 1.5)))
+    pts = tz.pulso(tz.hilo(900 * S, 1300 * S, 520 * S, rng, viento=0.8 * S, step=2.5 * S), rng,
+                   amp=0.8 * S, wl=10 * S, micro=0.5 * S, step=1.5 * S)
+    out.append(tz.Stroke(pts, "grafito", 2.2 * S, tz.presion_titubeo(len(pts), rng, 0.6, 2, 0.25), ink="grafito",
+                         t0=24.6, dur=1.2, ease="mano", pausas=1, seed=203, taper=0.1))
     return out
 
 
@@ -440,8 +522,11 @@ class Cierre:
         y = 908 * S
         pts = tz.hand(tz.spline([(x - 4 * S, y + 4 * S), (x + traza_w * 0.4, y + 8 * S), (x + traza_w * 0.8, y),
                                  (x + traza_w + 30 * S, y - 12 * S)], 200), 1.5 * S, rng)
-        self.strokes.append(tz.Stroke(pts, "carbon", 15 * S, 0.9, ink="terracota", t0=25.05, dur=0.6,
-                                      ease="gesto", seed=202, taper=0.12))
+        pts = tz.pulso(pts, rng, amp=1.6 * S, wl=22 * S, micro=0.7 * S, step=1.5 * S)
+        n = len(pts)
+        self.strokes.append(tz.Stroke(pts, "carbon", 15 * S, tz.presion_titubeo(n, rng, 1.0, 1, 0.25),
+                                      ink="terracota", t0=25.05, dur=0.6, ease="mano", pausas=1, seed=202,
+                                      taper=0.12, grosor=tz.grosor_giro(n, rng, 0.6, 1.25)))
 
     def frame(self, t):
         for s in self.strokes:

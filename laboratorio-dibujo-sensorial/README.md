@@ -8,9 +8,9 @@ El flyer define la identidad visual de la campaña. El reel usa la misma identid
 
 | Pieza | Estado |
 |---|---|
-| **Flyer 1080 × 1350** | **Listo en Canva y editable.** Falta el número de WhatsApp |
+| **Flyer 1080 × 1350** | **Listo en Canva y editable**, con WhatsApp 833 300 8857 |
 | Flyer para estados e historias (1080 × 1920) | Pendiente: se adapta del flyer cuando esté aprobado |
-| **Reel 30 s (1080 × 1920)** | **Listo para revisión.** Video, portada, copy y capas de texto. Falta el número de WhatsApp |
+| **Reel 30 s (1080 × 1920)** | **Listo para revisión.** Video, portada, copy y capas de texto. Trazos hechos a mano (sonido, corteza a ciegas, hilos) |
 | Carrusel | Pendiente |
 
 **Flyer en Canva:** diseño *“Flyer taller de dibujo sensorial”* (ID `DAHXYHwz8Oc`) → <https://www.canva.com/d/RT7uJwrJYnRplNE>
@@ -69,13 +69,12 @@ En las páginas 4 y 5 de esa presentación quedan textos ocultos de una edición
 
 ## Pendientes
 
-1. **Número de WhatsApp.** En Canva dice `WhatsApp [NÚMERO]`. Es texto editable: basta con escribir el número.
-2. **Confirmar la ciudad.** *Cd. Madero* se dedujo del C. P. 89460 de la presentación.
-3. **Confirmar el costo.** ¿Los $1,600 cubren las tres sesiones? ¿Se puede pagar por sesión?
-4. **Confirmar el formato del papel:** pliego vertical sobre tablero o pared, como en la foto.
-5. **Fotos o videos reales** del taller o de Carmen y Almendra dibujando. Sustituyen a la ilustración en el flyer, el carrusel y el reel (ver `docs/reel.md`). Las fotos de referencia que mencionaste para el reel no llegaron a esta sesión: solo llegó el PDF del brief.
-6. **Tipografías en Canva.** El conector de Canva no muestra los nombres de las fuentes. Al seleccionar un título debería decir *Barlow Condensed*, y en el cuerpo *DM Sans*. Si no, cámbialas con el menú de fuente.
-7. En tu Canva quedó también el borrador previo *Flyer taller de dibujo sensorial* de 1080 × 1440 (ID `DAHXYChIPF0`). Ya no se usa y puedes borrarlo.
+1. **Confirmar la ciudad.** *Cd. Madero* se dedujo del C. P. 89460 de la presentación.
+2. **Confirmar el costo.** ¿Los $1,600 cubren las tres sesiones? ¿Se puede pagar por sesión?
+3. **Confirmar el formato del papel:** pliego vertical sobre tablero o pared, como en la foto.
+4. **Fotos o videos reales** del taller o de Carmen y Almendra dibujando. Sustituyen a la ilustración en el flyer, el carrusel y el reel (ver `docs/reel.md`). Las fotos de referencia que mencionaste para el reel no llegaron a esta sesión: solo llegó el PDF del brief.
+5. **Tipografías en Canva.** El conector de Canva no muestra los nombres de las fuentes. Al seleccionar un título debería decir *Barlow Condensed*, y en el cuerpo *DM Sans*. Si no, cámbialas con el menú de fuente.
+6. En tu Canva quedó también el borrador previo *Flyer taller de dibujo sensorial* de 1080 × 1440 (ID `DAHXYChIPF0`). Ya no se usa y puedes borrarlo.
 
 ## Cómo regenerar los gráficos, la maqueta y el reel
 

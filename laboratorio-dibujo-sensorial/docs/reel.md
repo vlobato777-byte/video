@@ -6,17 +6,22 @@ Brief: `PROMPT_REEL_TALLER.pdf`. Formato 1080 × 1920 (9:16), 30 fps, 30 s.
 
 | Tiempo | Imagen | Texto en pantalla |
 |---|---|---|
-| 0–1.7 s | Detalle: un trazo amplio de carbón entra al papel | ¿Cómo dibujarías un sonido? |
+| 0–1.7 s | Detalle: entra al papel una línea de carbón que responde a un sonido | ¿Cómo dibujarías un sonido? |
 | 1.7–4 s | Plano medio: el mismo trazo termina justo en la mano que dibuja | (sigue) |
 | 4–8 s | Pausa: ojos cerrados, manos sobre el papel | Respira. Escucha. |
 | 8–10.5 s | La mano explora la textura de una corteza | Siente. |
-| 10.5–13 s | Detalle: la textura se vuelve una trama nueva | Traza. |
-| 13–15 s | Detalle del mismo dibujo: puntos en ritmo | Un sonido. |
-| 15–17 s | Detalle: mancha suave y un arco olivo | Una sensación. |
-| 17–19 s | Detalle: lazo terracota | Un recuerdo. |
+| 10.5–13 s | Detalle: el recuerdo táctil de la corteza se vuelve un mapa de grietas y relieves, dibujado a ciegas | Traza. |
+| 13–15 s | Detalle del mismo dibujo: puntos y rayas de distinto peso, y una línea que vibra después de cada golpe | Un sonido. |
+| 15–17 s | Detalle: líneas muy finas que caen como hilos al viento, una de ellas olivo | Una sensación. |
+| 17–19 s | Detalle: lazo terracota repasado varias veces | Un recuerdo. |
 | 19–21.6 s | Plano medio: un trazo más llega a la mano; se ven todas las capas | Capa a capa, descubre tu propio trazo. |
 | 21.6–24 s | Plano amplio de la persona y el dibujo completo | No necesitas experiencia previa. |
 | 24–30 s | Cierre en crema: trazo de carbón, subrayado terracota, datos y logo | RESPIRA. SIENTE. TRAZA. · Laboratorio de dibujo sensorial · fecha y sede · Reserva: WhatsApp |
+
+**Trazos hechos a mano:** cada línea muestra el pulso de quien dibuja. Tiembla, cambia de grosor cuando el carbón gira entre los dedos, acelera, titubea y se oscurece donde la mano se detiene. Además, cada tipo de marca tiene su propia caligrafía, energía, ritmo e intensidad:
+- **Respuesta a un sonido:** líneas con acentos de presión, puntos y rayas en ritmo, y una línea que vibra después de cada golpe.
+- **Respuesta a una textura tocada con los ojos vendados:** el mapa de las grietas de la corteza. Son líneas que se pierden y se retoman, con relieves cruzados.
+- **Líneas muy sutiles:** hilos finos de grafito que caen como al viento.
 
 **Continuidad:** es un solo dibujo. Cada capa se agrega encima de las anteriores y ninguna desaparece entre tomas. Los planos de detalle muestran ese mismo dibujo, en las mismas posiciones del papel.
 
@@ -51,7 +56,8 @@ No hay video ni fotos reales del taller. Las escenas del estudio son **ilustraci
 > 🕕 6:00 a 8:00 p. m.
 > 🎟️ $1,600 · Incluye materiales · Cupo limitado
 >
-> Reserva tu lugar por WhatsApp: [NÚMERO]
+> Reserva tu lugar por WhatsApp: 833 300 8857
+> https://wa.me/528333008857
 >
 > #DibujoSensorial #LaboratorioDeDibujo #TrazoLibre #DibujoEnGrande #Concéntrica
 
@@ -61,7 +67,8 @@ No hay video ni fotos reales del taller. Las escenas del estudio son **ilustraci
 
 ## Cómo editarlo
 
-- **Textos y tiempos:** `reel.json`. Los datos del cierre salen de `datos.json`. Al llegar el número de WhatsApp, cámbialo en `datos.json` y vuelve a renderizar.
+- **Textos y tiempos:** `reel.json`. Los datos del cierre (fecha, sede y WhatsApp 833 300 8857) salen de `datos.json`.
+- **Trazos:** función `dibujo()` en `tools/reel_laboratorio.py`; las herramientas de línea (`pulso`, `ciego`, `corteza`, `hilo`, `vibra`) están en `tools/trazos.py`.
 - **Para armarlo en CapCut o Canva:** en `exports/reel/textos/` hay un PNG transparente por cada texto, con sus tiempos en el nombre, un `.srt` y los textos y el logo del cierre.
 
 ```bash
