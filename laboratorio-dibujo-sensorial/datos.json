@@ -1,0 +1,38 @@
+{
+  "taller": "Laboratorio de dibujo sensorial",
+  "notas": "Datos tomados de la presentación de Canva de la clienta ('Copia de DIBUJO EN ORIGAMI', páginas 1 y 4). La ciudad se dedujo del C. P. 89460 y debe confirmarse. Al cambiar un dato aquí, vuelve a correr tools/laboratorio.py y actualiza el mismo texto en Canva.",
+  "paleta": {
+    "crema": "#F4EBDD",
+    "carbon": "#272522",
+    "terracota": "#D85B35",
+    "olivo": "#78834B"
+  },
+  "tipografia": {
+    "titulos": "assets/fonts/BarlowCondensed-SemiBold.ttf",
+    "cuerpo": "assets/fonts/DMSans-Regular.ttf",
+    "cuerpo_medio": "assets/fonts/DMSans-Medium.ttf",
+    "cuerpo_semi": "assets/fonts/DMSans-SemiBold.ttf",
+    "cuerpo_negrita": "assets/fonts/DMSans-Bold.ttf"
+  },
+  "datos": {
+    "imparten": "Carmen Elizondo y Almendra García",
+    "fecha_horario": "Jueves 15, 22 y 29 de octubre · 6:00 a 8:00 p. m.",
+    "sede": "Concéntrica Artes Aplicadas",
+    "direccion": "Ejército Mexicano 1902, Col. Loma del Gallo, Cd. Madero",
+    "costo": "$1,600 · Incluye materiales · Cupo limitado",
+    "whatsapp": "[NÚMERO]"
+  },
+  "flyer": {
+    "frase": "RESPIRA.\nSIENTE.\nTRAZA.",
+    "nombre": "LABORATORIO DE\nDIBUJO SENSORIAL",
+    "pregunta": "¿Cómo se dibuja un sonido, una textura\no un recuerdo?",
+    "invitacion": "Explora tus sentidos y construye un dibujo por capas.",
+    "sin_experiencia": "No necesitas experiencia previa.",
+    "imparten_label": "Imparten:",
+    "reserva": "Reserva tu lugar:",
+    "nota_foto": "Imagen ilustrativa",
+    "foto": "laboratorio-dibujo-sensorial/media/fotos/principal.jpg",
+    "foto_ilustrativa": true,
+    "logo": "laboratorio-dibujo-sensorial/media/logo/concentrica.png"
+  }
+}
