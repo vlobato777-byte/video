@@ -10,7 +10,7 @@ El flyer define la identidad visual de la campaña. El reel usa la misma identid
 |---|---|
 | **Flyer 1080 × 1350** | **Listo en Canva y editable**, con WhatsApp 833 300 8857 |
 | Flyer para estados e historias (1080 × 1920) | Pendiente: se adapta del flyer cuando esté aprobado |
-| **Reel 30 s (1080 × 1920)** | **Listo para revisión.** Video, portada, copy y capas de texto. Trazos hechos a mano (sonido, corteza a ciegas, hilos) |
+| **Reel 30 s (1080 × 1920)** | **Listo para revisión.** Video, portada, copy y capas de texto. La mano dibuja cada trazo en una línea continua (sonido, corteza a ciegas, hilos, recuerdo) |
 | Carrusel | Pendiente |
 
 **Flyer en Canva:** diseño *“Flyer taller de dibujo sensorial”* (ID `DAHXYHwz8Oc`) → <https://www.canva.com/d/RT7uJwrJYnRplNE>
@@ -34,6 +34,7 @@ Para descargarlo: *Compartir → Descargar → PNG*, tamaño 1080 × 1350.
 | `docs/reel.md` | Guion, copy de la publicación y decisiones del reel |
 | `reel.json` | Tomas, tiempos, encuadres y textos del reel (editable) |
 | `media/escenas/` | Escenas conceptuales del estudio usadas en el reel (generadas en Canva) |
+| `media/mano/mano_carboncillo.png` | Mano con carboncillo recortada (imagen ilustrativa generada en Canva). Es la que dibuja en los planos de detalle del reel |
 | `media/logo/concentrica.png` | Logo de Concéntrica con fondo transparente, tomado de la presentación de la clienta |
 | `datos.json` | Datos del taller, paleta, tipografías y textos de la campaña |
 
@@ -83,7 +84,7 @@ Requisitos: Python 3.9+, Pillow, numpy y ffmpeg.
 ```bash
 python3 tools/laboratorio.py flyer          # gráficos del flyer y maqueta
 python3 tools/reel_laboratorio.py --stills  # portada, storyboard y textos del reel
-python3 tools/reel_laboratorio.py           # reel final (~8 min)
+python3 tools/reel_laboratorio.py           # reel final (~15 min)
 ```
 
 Si cambias un dato en `datos.json`, cambia el mismo texto en Canva y vuelve a renderizar el reel. Si quieres ver la foto en la maqueta del flyer, ponla en `media/fotos/principal.jpg`.

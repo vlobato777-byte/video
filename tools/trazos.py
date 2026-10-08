@@ -377,7 +377,7 @@ def hilo(x, y, largo, rng, viento=1.0, step=2.5):
     return np.stack([x + sway + lean, yy], 1)
 
 
-def corteza(x0, y0, w, h, rng, lineas=6, gap_frac=(0.15, 0.4)):
+def corteza(x0, y0, w, h, rng, lineas=6, gap_frac=(0.15, 0.4), crestas=None):
     """Mapping the tactile memory of a bark: fissures that run along the trunk,
     meander together, break where the finger lost them, and short ridges across.
 
@@ -397,7 +397,7 @@ def corteza(x0, y0, w, h, rng, lineas=6, gap_frac=(0.15, 0.4)):
             if sel.sum() > 3:
                 paths.append(np.stack([x[sel], ys[sel]], 1))
             f = g + rng.uniform(*gap_frac) * 0.2
-    for _ in range(lineas * 2):                              # ridges felt between two fissures
+    for _ in range(lineas * 2 if crestas is None else crestas):   # ridges felt between two fissures
         i = int(rng.integers(0, lineas - 1))
         j = int(rng.integers(10, len(ys) - 10))
         a, b = np.array([cols[i][j], ys[j]]), np.array([cols[i + 1][j + int(rng.integers(-6, 6))], ys[j]])
@@ -543,21 +543,27 @@ class Canvas:
         wgt = smoothstep((1 - rr) * 2.5)
         D[y0:y1, x0:x1] += (alpha * wgt).astype(np.float32)
 
-    def coverage(self, ink):
-        """Visible charcoal (0-1) for one ink: the paper tooth breaks up light deposit."""
+    def coverage(self, ink, box=None):
+        """Visible charcoal (0-1) for one ink: the paper tooth breaks up light deposit.
+
+        `box` = (x0, y0, x1, y1) limits the work to a crop of the canvas."""
         _, maxa, grain = INKS[ink]
         D = self.dep.get(ink)
         if D is None:
             return None
-        thresh = grain * 0.55 * (1 - self.tooth)
-        eff = np.maximum(0.0, D * (1 - 0.35 * grain + 0.35 * grain * self.tooth) - thresh * 0.35)
+        tooth = self.tooth
+        if box is not None:
+            x0, y0, x1, y1 = box
+            D, tooth = D[y0:y1, x0:x1], tooth[y0:y1, x0:x1]
+        thresh = grain * 0.55 * (1 - tooth)
+        eff = np.maximum(0.0, D * (1 - 0.35 * grain + 0.35 * grain * tooth) - thresh * 0.35)
         return maxa * (1 - np.exp(-3.2 * eff))
 
-    def compose(self, inks=None):
-        """Paper + charcoal as an RGB image."""
-        out = self.rgb.copy()
+    def compose(self, inks=None, box=None):
+        """Paper + charcoal as an RGB image (optionally only the crop `box`)."""
+        out = self.rgb.copy() if box is None else self.rgb[box[1]:box[3], box[0]:box[2]].copy()
         for name in (inks or INKS):
-            a = self.coverage(name)
+            a = self.coverage(name, box)
             if a is None:
                 continue
             color = np.array(INKS[name][0], np.float32)

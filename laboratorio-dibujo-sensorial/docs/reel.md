@@ -6,17 +6,20 @@ Brief: `PROMPT_REEL_TALLER.pdf`. Formato 1080 × 1920 (9:16), 30 fps, 30 s.
 
 | Tiempo | Imagen | Texto en pantalla |
 |---|---|---|
-| 0–1.7 s | Detalle: entra al papel una línea de carbón que responde a un sonido | ¿Cómo dibujarías un sonido? |
-| 1.7–4 s | Plano medio: el mismo trazo termina justo en la mano que dibuja | (sigue) |
+| 0–3 s | Detalle: la mano traza con carbón una línea continua que responde a un sonido. La cámara la sigue hasta arriba | ¿Cómo dibujarías un sonido? |
+| 3–4 s | Plano medio: la línea recién trazada termina en su mano | (sigue) |
 | 4–8 s | Pausa: ojos cerrados, manos sobre el papel | Respira. Escucha. |
 | 8–10.5 s | La mano explora la textura de una corteza | Siente. |
-| 10.5–13 s | Detalle: el recuerdo táctil de la corteza se vuelve un mapa de grietas y relieves, dibujado a ciegas | Traza. |
-| 13–15 s | Detalle del mismo dibujo: puntos y rayas de distinto peso, y una línea que vibra después de cada golpe | Un sonido. |
-| 15–17 s | Detalle: líneas muy finas que caen como hilos al viento, una de ellas olivo | Una sensación. |
-| 17–19 s | Detalle: lazo terracota repasado varias veces | Un recuerdo. |
-| 19–21.6 s | Plano medio: un trazo más llega a la mano; se ven todas las capas | Capa a capa, descubre tu propio trazo. |
-| 21.6–24 s | Plano amplio de la persona y el dibujo completo | No necesitas experiencia previa. |
-| 24–30 s | Cierre en crema: trazo de carbón, subrayado terracota, datos y logo | RESPIRA. SIENTE. TRAZA. · Laboratorio de dibujo sensorial · fecha y sede · Reserva: WhatsApp |
+| 10.5–13 s | Detalle: la mano, a ciegas, mapea el recuerdo táctil de la corteza: grietas y relieves | Traza. |
+| 13–15 s | Detalle: la mano marca puntos y rayas de distinto peso y luego una línea que vibra después de cada golpe | Un sonido. |
+| 15–17 s | Detalle: la mano deja caer líneas muy finas, como hilos al viento. Una es olivo | Una sensación. |
+| 17–19 s | Detalle: la mano repasa varias veces un lazo terracota | Un recuerdo. |
+| 19–20.4 s | Detalle: una línea nerviosa sube por el papel. La cámara sigue la mano | Capa a capa, descubre tu propio trazo. |
+| 20.4–22.2 s | Plano medio: se ven todas las capas, y la última línea termina en su mano | (sigue) |
+| 22.2–24 s | Plano amplio de la persona y el dibujo completo | No necesitas experiencia previa. |
+| 24–30 s | Cierre en crema: aparecen un trazo de carbón y un subrayado terracota, los datos y el logo | RESPIRA. SIENTE. TRAZA. · Laboratorio de dibujo sensorial · fecha y sede · Reserva: WhatsApp |
+
+**La mano hace cada trazo:** ninguna línea aparece sola. En los planos de detalle, la punta del carboncillo va justo en la punta de la línea mientras crece, así que se ve una sola línea continua que sale de la mano. La mano dibuja una marca a la vez. Entre una y otra se levanta, se mueve y vuelve a apoyarse; su sombra crece cuando se separa del papel. Para el lazo usa un pastel terracota y para el hilo olivo, un carboncillo olivo. En los planos de la cámara que sigue a la mano, la línea nunca sale del cuadro. Los textos van debajo de la acción, para no tapar la punta del carbón. En las fotos del estudio el dibujo no crece: ahí solo se ve lo que la mano ya trazó.
 
 **Trazos hechos a mano:** cada línea muestra el pulso de quien dibuja. Tiembla, cambia de grosor cuando el carbón gira entre los dedos, acelera, titubea y se oscurece donde la mano se detiene. Además, cada tipo de marca tiene su propia caligrafía, energía, ritmo e intensidad:
 - **Respuesta a un sonido:** líneas con acentos de presión, puntos y rayas en ritmo, y una línea que vibra después de cada golpe.
@@ -35,7 +38,8 @@ No hay video ni fotos reales del taller. Las escenas del estudio son **ilustraci
 
 - El papel es un **rollo vertical grande sobre un tablero**, como en la foto de la página 4 de la presentación de la clienta. Falta confirmar que en el taller se usará este formato.
 - En las escenas el papel está en blanco. El dibujo de carbón se pinta encima con `tools/trazos.py`, en perspectiva y por detrás de manos y brazos, para que las capas se acumulen de verdad.
-- **Cuando haya videos reales**, conviene reemplazar las tomas 02, 03, 04, 09 y 10 por planos reales: el cuerpo dibujando en grande, las manos, el papel. Los detalles del dibujo, los textos y el cierre se pueden conservar.
+- La mano de los planos de detalle (`media/mano/mano_carboncillo.png`) es un recorte de otra imagen generada en Canva. También es ilustrativa. La manga negra se prolonga con el script hasta salir del cuadro.
+- **Cuando haya videos reales**, conviene reemplazar las tomas 02, 03, 04, 10 y 11 por planos reales: el cuerpo dibujando en grande, las manos, el papel. Lo ideal es grabar también detalles de una mano real trazando, para sustituir los planos de detalle. Los textos y el cierre se pueden conservar.
 
 ## Copy para la publicación
 
@@ -68,11 +72,12 @@ No hay video ni fotos reales del taller. Las escenas del estudio son **ilustraci
 ## Cómo editarlo
 
 - **Textos y tiempos:** `reel.json`. Los datos del cierre (fecha, sede y WhatsApp 833 300 8857) salen de `datos.json`.
-- **Trazos:** función `dibujo()` en `tools/reel_laboratorio.py`; las herramientas de línea (`pulso`, `ciego`, `corteza`, `hilo`, `vibra`) están en `tools/trazos.py`.
+- **Trazos:** función `dibujo()` en `tools/reel_laboratorio.py`; las herramientas de línea (`pulso`, `ciego`, `corteza`, `hilo`, `vibra`) están en `tools/trazos.py`. Cada trazo tiene su momento (`t0`) y su duración (`dur`), y la mano los sigue sola.
+- **Planos de detalle:** en `reel.json`, `region` es la parte del papel que se ve. Con `seguir` la cámara sigue a la mano y `ancla` dice en qué punto del cuadro queda la punta del carbón. Con `deriva` la cámara se mueve poco a poco. `angulo` es la inclinación de la mano.
 - **Para armarlo en CapCut o Canva:** en `exports/reel/textos/` hay un PNG transparente por cada texto, con sus tiempos en el nombre, un `.srt` y los textos y el logo del cierre.
 
 ```bash
 python3 tools/reel_laboratorio.py --stills    # portada, storyboard y capas de texto (20 s)
 python3 tools/reel_laboratorio.py --preview   # video a media resolución
-python3 tools/reel_laboratorio.py             # video final y copia ligera de revisión (~8 min)
+python3 tools/reel_laboratorio.py             # video final y copia ligera de revisión (~15 min)
 ```

@@ -8,17 +8,18 @@
     "archivo": "LabDibujoSensorial_Reel_30s"
   },
   "tomas": [
-    {"id": "01_macro_gesto", "inicio": 0.0, "fin": 1.7, "tipo": "macro", "region": [80, 1120, 660, 2150], "deriva": [0, -40], "nota": "Abre con la acción: el trazo amplio entra al papel."},
-    {"id": "02_rollo_gesto", "inicio": 1.7, "fin": 4.0, "tipo": "foto", "escena": "rollo_gesto", "de": [0.56, 0.40, 1.28], "a": [0.52, 0.46, 1.10], "nota": "El mismo trazo termina en la mano."},
+    {"id": "01_macro_gesto", "inicio": 0.0, "fin": 3.0, "tipo": "macro", "region": [140, 1300, 800], "seguir": 1.0, "ancla": [0.40, 0.36], "suave": 0.28, "angulo": 22, "nota": "Abre con la acción: la mano traza una línea continua y la cámara la sigue hasta arriba."},
+    {"id": "02_rollo_gesto", "inicio": 3.0, "fin": 4.0, "tipo": "foto", "escena": "rollo_gesto", "de": [0.53, 0.44, 1.18], "a": [0.52, 0.46, 1.08], "nota": "Plano medio: la línea recién trazada termina en su mano."},
     {"id": "03_pausa", "inicio": 4.0, "fin": 8.0, "tipo": "foto", "escena": "rollo_pausa", "de": [0.52, 0.47, 1.02], "a": [0.60, 0.53, 1.16], "nota": "Pausa de escucha: manos sobre el papel."},
     {"id": "04_textura", "inicio": 8.0, "fin": 10.5, "tipo": "foto", "escena": "textura", "de": [0.55, 0.30, 1.04], "a": [0.60, 0.28, 1.16], "nota": "La mano explora una textura."},
-    {"id": "05_macro_trama", "inicio": 10.5, "fin": 13.0, "tipo": "macro", "region": [380, 1130, 900, 2050], "deriva": [-20, 30], "nota": "Nueva marca: la textura se vuelve trazo."},
-    {"id": "06_macro_sonido", "inicio": 13.0, "fin": 15.0, "tipo": "macro", "region": [60, 640, 600, 1600], "deriva": [25, 0], "nota": "Un sonido: puntos en ritmo."},
-    {"id": "07_macro_sensacion", "inicio": 15.0, "fin": 17.0, "tipo": "macro", "region": [200, 300, 740, 1260], "deriva": [-20, 20], "nota": "Una sensación: mancha suave."},
-    {"id": "08_macro_recuerdo", "inicio": 17.0, "fin": 19.0, "tipo": "macro", "region": [110, 60, 650, 1020], "deriva": [15, 25], "nota": "Un recuerdo: lazo terracota."},
-    {"id": "09_rollo_gesto_capas", "inicio": 19.0, "fin": 21.6, "tipo": "foto", "escena": "rollo_gesto", "de": [0.55, 0.44, 1.14], "a": [0.52, 0.48, 1.0], "nota": "Sigue dibujando: un trazo más llega a la mano."},
-    {"id": "10_rollo_amplio", "inicio": 21.6, "fin": 24.0, "tipo": "foto", "escena": "rollo_amplio", "de": [0.62, 0.45, 1.22], "a": [0.55, 0.45, 1.04], "nota": "Plano amplio: todas las capas."},
-    {"id": "11_cierre", "inicio": 24.0, "fin": 30.0, "tipo": "cierre"}
+    {"id": "05_macro_corteza", "inicio": 10.5, "fin": 13.0, "tipo": "macro", "region": [388, 1298, 972], "angulo": 18, "deriva": [-6, 10], "nota": "La mano mapea a ciegas la corteza: grietas y relieves."},
+    {"id": "06_macro_sonido", "inicio": 13.0, "fin": 15.0, "tipo": "macro", "region": [61, 827, 629], "angulo": 20, "deriva": [8, 0], "nota": "Un sonido: puntos, rayas y una línea que vibra."},
+    {"id": "07_macro_sensacion", "inicio": 15.0, "fin": 17.0, "tipo": "macro", "region": [108, 236, 828], "angulo": 16, "deriva": [0, 8], "nota": "Una sensación: hilos finos que caen."},
+    {"id": "08_macro_recuerdo", "inicio": 17.0, "fin": 19.0, "tipo": "macro", "region": [137, 270, 627], "angulo": 22, "deriva": [-6, 6], "nota": "Un recuerdo: lazo terracota repasado."},
+    {"id": "09_macro_linea", "inicio": 19.0, "fin": 20.4, "tipo": "macro", "region": [340, 520, 1000], "seguir": 1.0, "ancla": [0.42, 0.36], "suave": 0.25, "angulo": 24, "nota": "Una línea más, nerviosa, que sube hasta donde está su mano."},
+    {"id": "10_rollo_gesto_capas", "inicio": 20.4, "fin": 22.2, "tipo": "foto", "escena": "rollo_gesto", "de": [0.55, 0.44, 1.12], "a": [0.52, 0.48, 1.0], "nota": "Todas las capas; la última línea termina en su mano."},
+    {"id": "11_rollo_amplio", "inicio": 22.2, "fin": 24.0, "tipo": "foto", "escena": "rollo_amplio", "de": [0.60, 0.45, 1.18], "a": [0.55, 0.45, 1.04], "nota": "Plano amplio: el dibujo completo."},
+    {"id": "12_cierre", "inicio": 24.0, "fin": 30.0, "tipo": "cierre"}
   ],
   "textos": [
     {"id": "t1", "inicio": 0.35, "fin": 3.85, "y": 1100, "texto": "¿Cómo dibujarías\nun sonido?", "estilo": "titulo"},
@@ -29,7 +30,7 @@
     {"id": "t4b", "inicio": 15.15, "fin": 16.92, "y": 1120, "texto": "Una sensación.", "estilo": "titulo"},
     {"id": "t4c", "inicio": 17.15, "fin": 18.92, "y": 1120, "texto": "Un recuerdo.", "estilo": "titulo"},
     {"id": "t5a", "inicio": 19.3, "fin": 21.75, "y": 1100, "texto": "Capa a capa,\ndescubre tu propio trazo.", "estilo": "titulo", "tam": 86},
-    {"id": "t5b", "inicio": 21.95, "fin": 23.9, "y": 1120, "texto": "No necesitas experiencia previa.", "estilo": "texto"}
+    {"id": "t5b", "inicio": 22.35, "fin": 23.9, "y": 1120, "texto": "No necesitas experiencia previa.", "estilo": "texto"}
   ],
   "cierre": {
     "frase": "RESPIRA.\nSIENTE.\nTRAZA.",

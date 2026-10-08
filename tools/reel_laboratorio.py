@@ -103,6 +103,15 @@ def llegar(pts, tip, frac=0.06):
     return pts
 
 
+def encajar(strokes, t0, t1):
+    """Fit a sequence of marks into [t0, t1], keeping their order and proportions."""
+    a, b = min(s.t0 for s in strokes), max(s.t1 for s in strokes)
+    k = (t1 - t0) / (b - a)
+    for s in strokes:
+        s.t0, s.dur = t0 + (s.t0 - a) * k, s.dur * k
+    return strokes
+
+
 def dibujo():
     """The one drawing of the reel, in sheet units, with absolute times.
 
@@ -128,24 +137,27 @@ def dibujo():
     n = len(pts)
     pres = (tz.presion_ritmo(n, [0.1, 0.13, 0.35, 0.39, 0.57, 0.6, 0.85], rng, base=0.72, acento=0.55, ancho=0.02)
             * tz.presion_titubeo(n, rng, base=1.0, saltos=3, var=0.22))
-    S.append(tz.Stroke(pts, "punta", 17, pres, t0=0.06, dur=3.8, ease="mano", pausas=2, seed=101, taper=0.03,
+    S.append(tz.Stroke(pts, "punta", 12, pres, t0=0.05, dur=2.8, ease="mano", pausas=2, seed=101, taper=0.03,
                        grosor=tz.grosor_giro(n, rng, 0.3, 1.7, cell=n / 18)))
 
     # 2 · texture with the eyes covered: mapping the bark that was touched —
     #     fissures along the trunk, lost and found again, and ridges across
-    t = 10.6
-    for k, path in enumerate(tz.corteza(480, 1380, 380, 450, rng, lineas=7)):
+    t, last, corteza = 10.62, None, []
+    for k, path in enumerate(tz.corteza(480, 1380, 380, 450, rng, lineas=6, crestas=5)):
         pts = tz.pulso(path, rng, amp=1.3, wl=15, micro=0.8)
         if len(pts) < 3:
             continue
         n = len(pts)
         ridge = n < 40
-        d = (0.06 if ridge else 0.2) + rng.uniform(0, 0.05)
-        S.append(tz.Stroke(pts, "punta", rng.uniform(4.5, 6.5) if ridge else rng.uniform(6, 10),
-                           tz.presion_titubeo(n, rng, base=0.9, saltos=0 if ridge else 2, var=0.3),
-                           t0=t, dur=d, ease="mano", pausas=1, seed=150 + k, taper=0.12,
-                           grosor=tz.grosor_giro(n, rng, 0.6, 1.4)))
-        t += d * 0.58
+        if last is not None:                               # the hand travels to the next mark
+            t += float(np.clip(np.hypot(*(pts[0] - last)) / 2200, 0.03, 0.09))
+        d = (0.045 if ridge else 0.12) + rng.uniform(0, 0.025)
+        corteza.append(tz.Stroke(pts, "punta", rng.uniform(4.5, 6.5) if ridge else rng.uniform(6, 10),
+                                 tz.presion_titubeo(n, rng, base=0.9, saltos=0 if ridge else 2, var=0.3),
+                                 t0=t, dur=d, ease="mano", pausas=1, seed=150 + k, taper=0.12,
+                                 grosor=tz.grosor_giro(n, rng, 0.6, 1.4)))
+        t, last = t + d, pts[-1]
+    S += encajar(corteza, 10.62, 12.9)
 
     # 3 · sound: a beat heard — dots and dashes of different weight ...
     path = tz.pulso(tz.spline([(110, 1090), (260, 1050), (420, 1120), (575, 1075)], 300), rng, amp=6, wl=60)
@@ -154,7 +166,7 @@ def dibujo():
     ritmo = [("p", 1.0), ("p", 0.7), ("r", 1.6), ("p", 0.9), ("r", 2.4), ("p", 0.6), ("p", 0.6),
              ("p", 1.1), ("r", 1.3), ("p", 0.8), ("r", 3.0), ("p", 1.0), ("p", 0.7)]
     total = sum(v for _, v in ritmo) + 0.6 * len(ritmo)
-    pos, t = 0.0, 13.2
+    pos, t = 0.0, 13.1
     for i, (kind, v) in enumerate(ritmo):
         a0 = pos / total * arc[-1]
         a1 = (pos + v) / total * arc[-1]
@@ -162,14 +174,14 @@ def dibujo():
         if kind == "p":
             S.append(tz.Stroke([(x0 + rng.normal(0, 3), y0 + rng.normal(0, 5))], "punto", 14 + 16 * v,
                                min(1.3, 0.6 + 0.5 * v), t0=t, dur=0.01, ease="lineal", seed=130 + i))
-            t += 0.06 + 0.06 * v
+            t += 0.045 + 0.04 * v
         else:
             x1, y1 = np.interp(a1, arc, path[:, 0]), np.interp(a1, arc, path[:, 1]) + rng.normal(0, 6)
             dash = tz.pulso(tz.spline([(x0, y0), ((x0 + x1) / 2, (y0 + y1) / 2 + rng.normal(0, 4)), (x1, y1)], 40),
                             rng, amp=1.5, wl=12, micro=0.9)
             S.append(tz.Stroke(dash, "carbon", 15, tz.presion_ritmo(len(dash), [0.05], rng, 0.75, 0.6, 0.08),
-                               t0=t, dur=0.1 * v, ease="gesto", seed=130 + i, taper=0.15))
-            t += 0.1 * v + 0.05
+                               t0=t, dur=0.07 * v, ease="gesto", seed=130 + i, taper=0.15))
+            t += 0.07 * v + 0.035
         pos += v + 0.6
     # ... and a line that shivers after each beat, like a sound ringing out
     golpes = [(0.1, 1.0), (0.24, 0.6), (0.33, 0.9), (0.52, 0.5), (0.6, 1.0), (0.78, 0.7), (0.88, 0.45)]
@@ -184,27 +196,30 @@ def dibujo():
     pts = tz.pulso(np.stack([x, y], 1), rng, amp=1.3, wl=18, micro=0.9)
     n = len(pts)
     S.append(tz.Stroke(pts, "punta", 5.5, tz.presion_ritmo(n, [b for b, _ in golpes], rng, 0.5, 0.7, 0.02),
-                       ink="grafito", t0=13.45, dur=1.45, ease="mano", pausas=1, seed=104, taper=0.03))
+                       ink="grafito", t0=t + 0.08, dur=14.93 - t - 0.08, ease="mano", pausas=1, seed=104, taper=0.03))
 
     # 4 · a sensation: very fine lines that fall like threads in the wind,
     #     one of them a discreet olive
-    hilos = [(300, 330, 760), (390, 300, 900), (470, 360, 680), (560, 320, 820), (640, 380, 640), (250, 420, 560)]
+    #     (cut 520 units below their start so each fall fits above the text in its close shot)
+    hilos = [(300, 330, 700), (400, 300, 820), (480, 360, 640), (570, 320, 760), (650, 380, 600)]
     for k, (x, y, largo) in enumerate(hilos):
         pts = tz.pulso(tz.hilo(x, y, largo, rng, viento=rng.uniform(0.7, 1.3)), rng, amp=0.8, wl=10, micro=0.5)
         n = len(pts)
         olivo = k == 3
-        S.append(tz.Stroke(pts, "grafito" if not olivo else "punta", rng.uniform(1.6, 2.6) if not olivo else 3.2,
-                           tz.presion_titubeo(n, rng, base=0.55 if not olivo else 0.8, saltos=2, var=0.25),
-                           ink="grafito" if not olivo else "olivo", t0=15.3 + 0.2 * k, dur=rng.uniform(0.9, 1.3),
+        width = rng.uniform(1.6, 2.6) if not olivo else 3.2
+        pres = tz.presion_titubeo(n, rng, base=0.55 if not olivo else 0.8, saltos=2, var=0.25)
+        below = np.nonzero(pts[:, 1] > y + 520)[0]
+        keep = int(below[0]) if len(below) else n
+        S.append(tz.Stroke(pts[:keep], "grafito" if not olivo else "punta", width, pres[:keep],
+                           ink="grafito" if not olivo else "olivo", t0=15.1 + 0.36 * k, dur=0.3,
                            ease="mano", pausas=1, seed=160 + k, taper=0.1))
-        S[-1].t0, S[-1].dur = 15.25 + 0.15 * k, min(S[-1].dur, 1.6 - 0.15 * k)
 
     # 5 · a memory: a terracotta loop retraced as it is remembered
     pts = tz.pulso(tz.lazo(380, 545, 120, 88, 2.3, rng, drift=(130, -50), wobble=0.3, phase=2.2),
                    rng, amp=3.0, wl=40, micro=1.0)
     n = len(pts)
     S.append(tz.Stroke(pts, "carbon", 20, tz.presion_titubeo(n, rng, base=1.2, saltos=3, var=0.35),
-                       ink="terracota", t0=17.15, dur=1.6, ease="mano", pausas=3, seed=107, taper=0.06,
+                       ink="terracota", t0=17.1, dur=1.7, ease="mano", pausas=3, seed=107, taper=0.06,
                        grosor=tz.grosor_giro(n, rng, 0.55, 1.2)))
 
     # 6 · sound again: a fast, nervous line with sharp turns that arrives at her hand
@@ -214,7 +229,7 @@ def dibujo():
     pts = llegar(tz.pulso(pts, rng, amp=3.5, wl=26, micro=1.2), tip)
     n = len(pts)
     S.append(tz.Stroke(pts, "punta", 14, tz.presion_ritmo(n, [0.15, 0.33, 0.4, 0.58, 0.77, 0.86], rng, 0.8, 0.6),
-                       t0=19.2, dur=2.1, ease="mano", pausas=2, seed=108, taper=0.03,
+                       t0=19.05, dur=1.25, ease="mano", pausas=1, seed=108, taper=0.03,
                        grosor=tz.grosor_giro(n, rng, 0.6, 1.3)))
     return S
 
@@ -343,41 +358,194 @@ class Foto:
         return out.filter(ImageFilter.UnsharpMask(radius=1.4 * self.W / 1080, percent=45, threshold=2))
 
 
-class Macro:
-    """A close shot of the drawing itself, on paper like the roll's."""
+MANO = {"archivo": "mano_carboncillo.png", "punta": (101, 10), "mm_px": 4.0}
+TINTAS_MANO = {"terracota": (196, 88, 58), "olivo": (110, 120, 70)}
 
-    def __init__(self, toma, strokes, W, H):
-        self.toma, self.strokes, self.W, self.H = toma, strokes, W, H
+
+class Mano:
+    """The hand with the charcoal (cut out photo), placed so the charcoal tip
+    sits exactly on the point being drawn; the forearm runs out of frame."""
+
+    def __init__(self):
+        img = Image.open(PROJECT / "media" / "mano" / MANO["archivo"]).convert("RGBA")
+        pad = 90
+        a = np.pad(np.asarray(img), ((0, 0), (pad, pad), (0, 0)))
+        self.base = np.concatenate([a, self._manga(a, 5200)], 0)
+        self.tip = (MANO["punta"][0] + pad, MANO["punta"][1])
+        self.sprites = {"carbon": Image.fromarray(self.base, "RGBA")}
+        stick = self._stick_mask()
+        for ink, col in TINTAS_MANO.items():
+            b = self.base.astype(np.float32).copy()
+            lum = b[..., :3].mean(-1, keepdims=True) / 255
+            tint = np.array(col, np.float32) * (0.55 + 0.9 * lum)
+            b[..., :3] = b[..., :3] * (1 - stick) + tint * stick
+            self.sprites[ink] = Image.fromarray(np.clip(b, 0, 255).astype(np.uint8), "RGBA")
+
+    @staticmethod
+    def _manga(a, n):
+        """The black sleeve continued out of frame: it keeps widening a little
+        towards the elbow, with soft folds and rounded shading, and blends
+        out of the photo's last rows."""
+        w = a.shape[1]
+        rows = a[-40:]
+        on = rows[..., 3] > 128
+        left = np.mean([np.nonzero(r)[0].min() for r in on])
+        right = np.mean([np.nonzero(r)[0].max() for r in on])
+        i = np.arange(n, dtype=np.float32)[:, None]
+        x = np.arange(w, dtype=np.float32)[None, :]
+        grow = np.minimum(i, 1200) / 1200
+        lo, hi = left - 34 * grow - 0.004 * i, right + 14 * grow - 0.004 * i
+        alpha = np.clip(x - lo + 0.5, 0, 1) * np.clip(hi - x + 0.5, 0, 1)
+        u = np.clip((x - lo) / np.maximum(hi - lo, 1), 0, 1)
+        rng = np.random.default_rng(8)
+        folds = np.zeros((n, w), np.float32)
+        for k in range(7):                                    # diagonal folds of the fabric
+            f = rng.uniform(1 / 420, 1 / 160)
+            folds += rng.uniform(0.4, 1) * np.sin(2 * np.pi * f * (i + rng.uniform(-0.6, -0.2) * x) + rng.uniform(0, 6))
+        folds = folds / 4
+        lum = 11 + 9 * np.exp(-((u - 0.32) / 0.22) ** 2) - 5 * u ** 3 + 5 * folds * np.sin(np.pi * u)
+        lum *= 1 - 0.25 * np.minimum(i, 2000) / 2000
+        ext = np.zeros((n, w, 4), np.float32)
+        ext[..., 0], ext[..., 1], ext[..., 2] = lum, lum * 0.98, lum * 0.97
+        ext[..., 3] = alpha * 255
+        k = np.clip(i / 120, 0, 1)[..., None]                 # blend out of the photo
+        ext = a[-1:].astype(np.float32) * (1 - k) + ext * k
+        return np.clip(ext + 0.5, 0, 255).astype(np.uint8)
+
+    def _stick_mask(self):
+        a = self.base.astype(np.float32)
+        h, w = a.shape[:2]
+        yy, xx = np.mgrid[0:h, 0:w]
+        dark = (a[..., :3].max(-1) < 90) & (a[..., 3] > 128)
+        near = ((xx - self.tip[0]) ** 2 + (yy - self.tip[1]) ** 2) < 150 ** 2
+        m = (dark & near).astype(np.float32)
+        return np.asarray(Image.fromarray((m * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1)),
+                          np.float32)[..., None] / 255
+
+    def draw(self, frame, x, y, scale, angle, lift, ink="carbon"):
+        """Composite the hand with its tip at (x, y) px; `lift` 0 = on paper, 1 = in the air."""
+        spr = self.sprites.get(ink, self.sprites["carbon"])
+        s = scale * (1 + 0.05 * lift)
+        th = math.radians(angle)
+        c, sn = math.cos(th), math.sin(th)
+        W, H = frame.size
+
+        def layer(ox, oy):
+            # output (u, v) -> sprite: inverse of translate(tip -> x, y) . rotate . scale
+            a, b = c / s, sn / s
+            d, e = -sn / s, c / s
+            u0, v0 = x + ox, y + oy
+            return spr.transform((W, H), Image.AFFINE,
+                                 (a, b, self.tip[0] - a * u0 - b * v0, d, e, self.tip[1] - d * u0 - e * v0),
+                                 resample=Image.BICUBIC)
+
+        off = (10 + 34 * lift) * W / 1080
+        sh = layer(off, off * 1.3).getchannel("A")
+        small = sh.resize((W // 4, H // 4), Image.BILINEAR).filter(ImageFilter.GaussianBlur(2 + 3 * lift))
+        sh = small.resize((W, H), Image.BILINEAR).point(lambda v: int(v * (0.32 - 0.12 * lift)))
+        frame.paste((40, 30, 22), (0, 0), sh)
+        hand = layer(0, 0)
+        frame.paste(hand.convert("RGB"), (0, 0), hand)
+
+
+def pista(strokes, t0, t1):
+    """Where the charcoal tip is (sheet units), if it touches the paper, and
+    with which ink, for every moment of a shot: one hand, one mark at a time,
+    lifting and travelling between marks."""
+    marks = sorted([s for s in strokes if s.t1 > t0 and s.t0 < t1], key=lambda s: s.t0)
+
+    def head(s, t):
+        if len(s.pts) == 1:
+            return s.pts[0]
+        p = s.progress(t)
+        a = p * s.length
+        return np.array([np.interp(a, s.arc, s.pts[:, 0]), np.interp(a, s.arc, s.pts[:, 1])])
+
+    def at(t):
+        if not marks:
+            return None
+        for i, s in enumerate(marks):
+            if s.t0 <= t <= s.t1:
+                return head(s, t), 0.0, s.ink
+            if t < s.t0:
+                if i == 0:                                     # coming in before the first mark
+                    k = tz.smoothstep(1 - (s.t0 - t) / 0.35)
+                    return head(s, s.t0) + (1 - k) * np.array([90.0, 140.0]), 1 - k, s.ink
+                prev = marks[i - 1]
+                k = (t - prev.t1) / max(s.t0 - prev.t1, 1e-6)
+                k2 = tz.smoothstep(k)
+                p = head(prev, prev.t1) * (1 - k2) + head(s, s.t0) * k2
+                return p, math.sin(math.pi * k), s.ink
+        last = marks[-1]                                       # lifting away after the last mark
+        k = tz.smoothstep((t - last.t1) / 0.6)
+        return head(last, last.t1) + k * np.array([60.0, 110.0]), k, last.ink
+
+    return at
+
+
+class Macro:
+    """A close shot of the drawing, on paper like the roll's, with the hand
+    drawing each mark; the camera can follow the hand."""
+
+    def __init__(self, toma, strokes, W, H, mano, fps):
+        self.toma, self.strokes, self.W, self.H, self.mano = toma, strokes, W, H, mano
         u0, v0, u1 = toma["region"][:3]
         self.scale = W / (u1 - u0)
+        vw, vh = u1 - u0, H / self.scale
         du, dv = toma.get("deriva", [0, 0])
-        m = 12
-        ox, oy = u0 - max(0, -du) - m, v0 - max(0, -dv) - m
-        cw = int((u1 - u0 + abs(du) + 2 * m) * self.scale)
-        ch = int((H / self.scale + abs(dv) + 2 * m) * self.scale)
-        self.origin = (ox, oy)
-        self.view0 = ((u0 - ox) * self.scale, (v0 - oy) * self.scale)
-        self.drift = (du * self.scale, dv * self.scale)
-        self.canvas = tz.Canvas(cw, ch, self.scale, paper_seed=33, paper_strength=1.0,
-                                tone=PAPEL_MACRO, origin=self.origin)
+        seguir = toma.get("seguir", 0.0)
+        ax, ay = toma.get("ancla", [0.42, 0.40])
+        self.pista = pista(strokes, toma["inicio"], toma["fin"])
+        # camera path (centre, sheet units) for every frame, smoothed both ways
+        times = np.arange(toma["inicio"], toma["fin"] + 1e-6, 1 / fps)
+        cs = []
+        for t in times:
+            p = (t - toma["inicio"]) / (toma["fin"] - toma["inicio"])
+            c = np.array([u0 + vw / 2 + du * p, v0 + vh / 2 + dv * p])
+            h = self.pista(t)
+            if seguir and h is not None:
+                target = h[0] + np.array([(0.5 - ax) * vw, (0.5 - ay) * vh])
+                c = c * (1 - seguir) + target * seguir
+            cs.append(c)
+        cs = np.array(cs)
+        a = 1 - math.exp(-1 / (fps * toma.get("suave", 0.22)))
+        for rng_ in (range(1, len(cs)), range(len(cs) - 2, -1, -1)):
+            for i in rng_:
+                j = i - 1 if rng_.step == 1 else i + 1
+                cs[i] = cs[j] + a * (cs[i] - cs[j])
+        self.times, self.centres = times, cs
+        m = 20
+        lo = cs.min(0) - [vw / 2 + m, vh / 2 + m]
+        hi = cs.max(0) + [vw / 2 + m, vh / 2 + m]
+        self.origin = (float(lo[0]), float(lo[1]))
+        self.canvas = tz.Canvas(int((hi[0] - lo[0]) * self.scale), int((hi[1] - lo[1]) * self.scale), self.scale,
+                                paper_seed=33, paper_strength=1.0, tone=PAPEL_MACRO, origin=self.origin)
+        self.view = (vw, vh)
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
         light = 1.05 - 0.10 * (xx / W * 0.6 + yy / H * 0.4)
         vig = 1 - 0.20 * ((xx / W - 0.5) ** 2 + (yy / H - 0.45) ** 2) * 2.2
         self.light = (light * vig)[..., None]
-        self.pulso = Pulso(zlib.crc32(toma["id"].encode()) + 7)
+        self.hand_scale = self.scale / MANO["mm_px"] * toma.get("mano", 1.1)
 
     def frame(self, t):
         for s in self.strokes:
             p = s.progress(t)
             if p > 0:
                 self.canvas.draw(s, p)
-        p = (t - self.toma["inicio"]) / (self.toma["fin"] - self.toma["inicio"])
-        dx, dy, _ = self.pulso(t)
-        x = self.view0[0] + self.drift[0] * p + dx * self.W * 0.6
-        y = self.view0[1] + self.drift[1] * p + dy * self.H * 0.6
-        x = min(max(x, 0), self.canvas.w - self.W)
-        y = min(max(y, 0), self.canvas.h - self.H)
-        img = self.canvas.compose().crop((int(x), int(y), int(x) + self.W, int(y) + self.H))
+        c = np.array([np.interp(t, self.times, self.centres[:, 0]), np.interp(t, self.times, self.centres[:, 1])])
+        x0 = (c[0] - self.view[0] / 2 - self.origin[0]) * self.scale
+        y0 = (c[1] - self.view[1] / 2 - self.origin[1]) * self.scale
+        x0 = int(round(min(max(x0, 0), self.canvas.w - self.W)))
+        y0 = int(round(min(max(y0, 0), self.canvas.h - self.H)))
+        img = self.canvas.compose(box=(x0, y0, x0 + self.W, y0 + self.H))
+        h = self.pista(t)
+        if h is not None:
+            (hx, hy), lift, ink = h
+            lift = float(lift)
+            px = (hx - self.origin[0]) * self.scale - x0
+            py = (hy - self.origin[1]) * self.scale - y0
+            ang = self.toma.get("angulo", 20) + 3.5 * math.sin(1.1 * t) + 2 * math.sin(2.7 * t + 1)
+            self.mano.draw(img, px, py, self.hand_scale, ang, lift, ink)
         a = np.asarray(img, np.float32) * self.light
         warm = np.array([1.0, 0.985, 0.955], np.float32)
         return Image.fromarray(np.clip(a * warm + 0.5, 0, 255).astype(np.uint8))
@@ -529,12 +697,16 @@ class Cierre:
                                       taper=0.12, grosor=tz.grosor_giro(n, rng, 0.6, 1.25)))
 
     def frame(self, t):
-        for s in self.strokes:
-            p = s.progress(t)
-            if p > 0:
-                self.canvas.draw(s, p)
-        img = self.canvas.compose().convert("RGBA")
-        for t0, L in self.layers:
+        if not hasattr(self, "paper"):
+            # the card's charcoal marks appear already drawn (no line draws itself)
+            self.paper = self.canvas.compose()
+            self.marks = []
+            for s in self.strokes:
+                cv = tz.Canvas(self.W, self.H, 1.0, paper_seed=11, paper_strength=0.55)
+                cv.draw(s, 1.0)
+                self.marks.append((s.t0, cv.alpha_layer()))
+        img = self.paper.convert("RGBA")
+        for t0, L in self.marks + self.layers:
             a = smooth((t - t0) / 0.4)
             if a <= 0:
                 continue
@@ -617,6 +789,7 @@ class Reel:
         self.fps, self.dur = o["fps"], o["duracion"]
         self.strokes = dibujo()
         self.hoja = Hoja(self.strokes)
+        self.mano = Mano()
         self.tomas = self.reel["tomas"]
         self.textos = [Texto(s, self.cfg, self.W, self.H, S) for s in self.reel["textos"]]
         self.shots = {}
@@ -632,6 +805,11 @@ class Reel:
             t = toma["fin"]
         if abs(t - self.dur) > 1e-6:
             sys.exit("shots must cover the whole reel")
+        for toma in self.tomas:
+            if toma["tipo"] == "foto":
+                live = [s for s in self.strokes if s.t1 > toma["inicio"] + 1e-6 and s.t0 < toma["fin"] - 1e-6]
+                if live:
+                    print(f"  ! {toma['id']}: {len(live)} trazo(s) se dibujan sin mano en una foto fija", file=sys.stderr)
         top, bottom = self.H * SAFE_TOP, self.H * (1 - SAFE_BOTTOM)
         for tx in self.textos:
             if tx.y + 28 * self.S < top or tx.y + tx.img.height - 28 * self.S > bottom or tx.x < self.W * SAFE_SIDE - 28 * self.S:
@@ -643,7 +821,7 @@ class Reel:
             if toma["tipo"] == "foto":
                 self.shots[key] = Foto(toma, self.hoja, self.W, self.H)
             elif toma["tipo"] == "macro":
-                self.shots[key] = Macro(toma, self.strokes, self.W, self.H)
+                self.shots[key] = Macro(toma, self.strokes, self.W, self.H, self.mano, self.fps)
             else:
                 self.shots[key] = self.get_cierre(toma)
         return self.shots[key]
