@@ -18,7 +18,7 @@ Tools
 import math
 
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image
 
 # Campaign palette (see laboratorio-dibujo-sensorial/project/datos.json).
 CREMA = (0xF4, 0xEB, 0xDD)
@@ -360,9 +360,6 @@ class Canvas:
         D = self.dep.get(ink)
         if D is None:
             return None
-        small = Image.fromarray(D, "F").resize((max(1, self.w // 4), max(1, self.h // 4)), Image.BILINEAR)
-        dust = np.asarray(small.filter(ImageFilter.BoxBlur(2)).resize((self.w, self.h), Image.BILINEAR),
-                          np.float32) if False else None
         thresh = grain * 0.55 * (1 - self.tooth)
         eff = np.maximum(0.0, D * (1 - 0.35 * grain + 0.35 * grain * self.tooth) - thresh * 0.35)
         return maxa * (1 - np.exp(-3.2 * eff))

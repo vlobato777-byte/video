@@ -1,5 +1,7 @@
 # Condo Lua: reel de invierno 2027 (Facebook / Instagram)
 
+> Este repositorio también contiene la campaña del **[Laboratorio de dibujo sensorial](laboratorio-dibujo-sensorial/)** (flyer, reel y carrusel).
+
 Anuncio vertical de 35 s (1080 × 1920) para atraer a residentes de Canadá y Estados Unidos que buscan una estancia de invierno de 3 a 4 meses en Bucerías, Nayarit (enero–abril de 2027).
 
 ## Entregables

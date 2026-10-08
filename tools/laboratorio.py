@@ -36,7 +36,7 @@ PROJECT = ROOT / "laboratorio-dibujo-sensorial"
 LAYOUT = {
     "margin": 72,
     "foto": (560, 0, 520, 693),
-    "logo": (830, 1000, 178, 210),
+    "logo": (788, 1062, 220, 75),            # Concéntrica logo, about 2.9 : 1
     "banda": (0, 1240, 1080, 110),
     "frase": (72, 40, 140, 129),            # x, y, size, line step
     "nombre": (72, 486, 54, 57),
@@ -49,7 +49,7 @@ LAYOUT = {
     "sede": (72, 1102, 26, 33),
     "costo": (72, 1180, 29),
     "reserva": (72, 1281, 30),
-    "whatsapp": (330, 1258, 60),
+    "whatsapp": (330, 1265, 54),
 }
 
 
@@ -178,7 +178,7 @@ def render_flyer(cfg, out):
     x, y, s = L["reserva"]
     text_block(d, (x, y), fl["reserva"], font(T["cuerpo_medio"], s), pal["crema"])
     x, y, s = L["whatsapp"]
-    text_block(d, (x, y), "WhatsApp " + dat["whatsapp"], font(T["titulos"], s), pal["crema"])
+    text_block(d, (x, y), "WhatsApp " + dat["whatsapp"], font(T["cuerpo_negrita"], s), pal["crema"])
     if photo.exists() and fl.get("foto_ilustrativa"):
         tag = Image.open(canva / "nota_imagen_ilustrativa.png")
         im.paste(tag, (fx + fw - tag.width - 16, fy + fh - tag.height - 16), tag)
